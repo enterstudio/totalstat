@@ -1,6 +1,7 @@
 # Create your views here.
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
+from django.template import RequestContext
 
 # def home(args):
 # 	return HttpResponse("Hello")
@@ -31,9 +32,9 @@ def _create_plot(text, words):
 	pylab.xlabel("Word Offset") 
 	pylab.savefig('public/dispersion.png')
 
-def dispersion(args):
+def dispersion(request):
 	raw = open("documents/591_16cac_textbook.txt").read()
 	tokens = nltk.word_tokenize(raw)
 	text = nltk.Text(tokens)
 	_create_plot(text,["users", "groups", "ntfs", "DNS"])
-	return HttpResponse('<img src="static/dispersion.png" />')
+	return render_to_response("index.html", {}, context_instance = RequestContext(request))
