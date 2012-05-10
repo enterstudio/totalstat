@@ -34,7 +34,7 @@ def _create_plot(text, words):
 	pylab.xlabel("Word Offset") 
 	pylab.savefig('public/dispersion.png')
 
-def _frequency_plot(text, dist): 
+def _frequency_plot(text): 
 	""" 
 	Plot samples from the frequency distribution 
 	displaying the most frequent sample first.  If an integer 
@@ -54,15 +54,12 @@ def _frequency_plot(text, dist):
 		raise ValueError('The plot function requires the matplotlib package (aka pylab).' 
 					 'See http://matplotlib.sourceforge.net/') 
 	 
-	samples = list(islice(text, dist)) 
+	samples = list(islice(text, 25)) 
 	 
-	cumulative = True
-	if cumulative: 
-		freqs = list(text._cumulative_frequencies(samples)) 
-		ylabel = "Cumulative Counts" 
-	else: 
-		freqs = [text[sample] for sample in samples] 
-		ylabel = "Counts" 
+	cumulative = True 
+	freqs = list(text._cumulative_frequencies(samples)) 
+	ylabel = "Cumulative Counts" 
+	 
 	# percents = [f * 100 for f in freqs]  only in ProbDist? 
 	 
 	pylab.grid(True, color="silver") 
@@ -83,13 +80,10 @@ def dispersion(request):
 	raw = open("documents/591_16cac_textbook.txt").read()
 	tokens = nltk.word_tokenize(raw)
 	text = nltk.Text(tokens)
-	_create_plot(text,["users", "groups", "ntfs", "DNS"])
-	return render_to_response("index.html", {}, context_instance = RequestContext(request))
-
-def frequency(request):
+	_create_plot(text,["users", "groups", "ntfs", "permissions"])
 	raw = open("documents/591_16cac_textbook.txt").read()
 	tokens = nltk.word_tokenize(raw)
 	text = nltk.Text(tokens)
 	fdist1 = nltk.FreqDist(text)
-	_frequency_plot(fdist1, 50)
-	return redirect('/')
+	_frequency_plot(fdist1)
+	return render_to_response("index.html", {}, context_instance = RequestContext(request))

@@ -1,0 +1,654 @@
+﻿591_01w.doc                3/15/2012
+(cn)Chapter 1
+(ct)The Path of the PC Tech
+“Never trust a computer you can’t throw out a window.”
+—Steve Wozniak
+In this chapter, you will learn how to
+1. Explain the importance of skill in managing and troubleshooting PCs
+2. Explain the importance of CompTIA A+ certification
+3. Describe how to become CompTIA A+ certified
+Computers have taken over the world, or at least many professions. Everywhere you turn, a quick dig beneath the surface sawdust of construction, the grease of auto mechanics, and the hum of medical technology reveals one or more personal computers (PCs) working away, doing essential jobs. Because the PC evolved from novelty item to essential science tool to everyday object in a short period of time, there’s a huge demand for a workforce that can build, maintain, troubleshoot, and repair PCs.
+(1)The Importance of Skill in Managing and Troubleshooting PCs
+The people who work with computers, often lumped into a single group known as the Information Technology (IT) workforce, do an amazingly varied number of jobs. These include diverse pursuits such as designing hardware, writing computer programs, and creating networks (groups of computers connected together to share data or programs). IT people built the Internet and maintain the millions of computers that keep it running. 
+But for all this IT diversity, it’s the computer technicians (or PC techs, as those of us in the field call each other) who make up the core of the IT workforce. Without us techs, none of the other stuff would work, so none of the other jobs could exist. Getting workers with skill in building, maintaining, troubleshooting, and fixing PCs is essential for the success of every modern business. We need more PC techs. We need you!
+In the early days of the personal computer, anyone who used a PC had to have skills as a PC tech. The PC was new, buggy, and prone to problems. If you owned a PC back then, you didn’t want to rely on others to fix your PC when the inevitable problems arose. Today’s PCs are much more robust and have fewer problems, so using one no longer requires having PC tech skills, but they’re also much more complex machines. Today’s IT industry, therefore, needs specialized workers who know how to make the machines run well and fix them when they break for the millions of users who lack PC tech skills.
+Every profession requires specialized skills. For the most part, if you want to get or keep a job that requires those specialized skills, you need some type of certification or license. If you want a job fixing automobiles in the United States, for example, you get the Automotive Service Excellence (ASE) certification. If you want to perform companies’ financial audits in the United Kingdom, you get your Chartered Accountant certification.
+Nearly every profession has some criteria that you must meet to show your competence and ability to perform at a certain level. Although the way this works varies widely from one profession to another, all of them will at some point make you take an exam or series of exams. Passing these exams proves that you have the necessary skills to work at a certain level in your profession, whether you’re an aspiring plumber, teacher, barber, or lawyer.
+If you successfully pass these exams, the organization that administers those exams grants you certification. You receive some piece of paper or pin or membership card that you can show to potential clients or employers. This certification gives those potential clients or employers a level of confidence that you can do what you say you can do. Without this certification, either you will not find suitable work in that profession or no one will trust you to do the work. Until relatively recently, PC technicians have been the exception to this rule.
+(1)The Importance of CompTIA A+ Certification
+Microcomputers were introduced in the late 1970s, and for many years PC technicians did not have a universally recognized way to show clients or employers that they know what to do under the hood of a personal computer. Sure, vendor-specific certifications existed, but the only way to get them was to get a job at an authorized warranty or repair facility first and then get the certification. There’s nothing wrong with vendor-specific training, but no single manufacturer has taken enough market share to make IBM training, for example, something that works for any job. (Then there is always that little detail of getting the job first before you can be certified…)
+The software and networking sides of our business have not suffered from the same lack of certifications. Due to the dominance of certain companies at one time or another (for example, Microsoft and Cisco), the vendor-specific certifications have provided a great way to get and keep a job. For example, Microsoft’s Microsoft Certified IT Professional (MCITP) and Cisco’s Cisco Certified Internetwork Expert (CCIE) certifications have opened the employment doors for many.
+But what about the person who runs around all day repairing printers, repartitioning hard drives, upgrading device drivers, and assembling systems? What about the PC hobbyists who want to be paid for their skills? What about the folks who, because they had the audacity to show that they knew the difference between a homegroup and a workgroup, find themselves with a new title such as PC Support Technician or Electronic Services Specialist? On the other hand, how about the worst title of them all: “The Person Who Doesn’t Get a Nickel Extra but Who Fixes the Computers”? CompTIA A+ certification gives these people a universally recognized way to prove their PC technical proficiency to employers or clients (and to seek due compensation for their skills).
+(2)What Is CompTIA A+ Certification?
+CompTIA A+ certification is an industry-wide, vendor-neutral certification program developed and sponsored by the Computing Technology Industry Association (CompTIA). The CompTIA A+ certification shows that you have a basic competence in supporting microcomputers. You achieve this certification by taking two computer-based, multiple-choice exams. The tests cover what technicians should know after 12 months of hands-on work on PCs, either from a job or as a student in the lab. CompTIA A+ certification enjoys wide recognition throughout the computer industry. To date, more than 800,000 technicians have become CompTIA A+ certified, making it the most popular of all IT certifications.
+(2)Who Is CompTIA?
+CompTIA is a nonprofit industry trade association based in Oakbrook Terrace, Illinois. It consists of over 20,000 members in 102 countries. You’ll find CompTIA offices in such diverse locales as Amsterdam, Dubai, Johannesburg, Tokyo, and São Paulo.
+Note Portuguese accented ã in sentence above.
+CompTIA provides a forum for people in these industries to network (as in meeting people), represents the interests of its members to the government, and provides certifications for many aspects of the computer industry. CompTIA sponsors CompTIA A+, CompTIA Network+, CompTIA Security+, and other certifications. CompTIA works hard to watch the IT industry and constantly looks to provide new certifications to meet the ongoing demand from its membership. Check out the CompTIA Web site at www.comptia.org for details on the other certifications you can obtain from CompTIA.
+Virtually every company of consequence in the IT industry is a member of CompTIA. Here are a few of the biggies:
+Prod: No heads on this table; format as 4-column list.
+Adobe Systems
+	AMD
+	Best Buy
+	Brother International
+	Canon
+	Cisco Systems
+	CompUSA
+	Fujitsu
+	Gateway
+	Hewlett-Packard
+	IBM
+	Intel
+	Kyocera
+	McAfee
+	Microsoft
+	NCR
+	Novell 
+	Panasonic
+	Sharp Electronics
+	Siemens
+	Symantec
+	Toshiba
+	Total Seminars, LLC (that’s my company)
+	Plus many thousands more
+	CompTIA began offering CompTIA A+ certification back in 1993. When it debuted, the IT industry largely ignored CompTIA A+ certification. Since that initial stutter, however, the CompTIA A+ certification has grown to become the de facto requirement for entrance into the PC industry. Many companies require CompTIA A+ certification for all of their PC support technicians, and the CompTIA A+ certification is widely recognized both in the United States and internationally. Additionally, many other certifications recognize CompTIA A+ certification and use it as credit toward their certifications.
+(2)The Path to Other Certifications
+Most IT companies—big and small—see CompTIA A+ certification as the entry point to IT. From CompTIA A+, you have a number of certification options, depending on whether you want to focus more on hardware and operating systems or move into network administration (although these aren’t mutually exclusive goals). The following three certifications are worth serious consideration:
+1. CompTIA Network+ certification
+2. Microsoft technical certifications
+3. Cisco certifications
+Note: CompTIA A+ is the entry point to IT, though definitely not the only route for learning about computers and having certifications to prove that knowledge. Several certifications cover computer literacy or digital literacy, the phrase that means “what every person needs to know about computers to survive in the 21st century.” The most popular computer literacy certification is Certiport’s IC3 certification that tests on general computer knowledge; office productivity applications, such as Word and PowerPoint; and Internet applications such as Web browsers and e-mail clients.
+CompTIA has a pre–CompTIA A+ exam (not a certification), called the CompTIA Strata IT Fundamentals exam, that’s geared a bit more to a user preparing to become a tech. It’s designed to check basic knowledge levels for people getting into IT.
+Note superscript 3 in Note. Fill in the name of the certification above with the correct name as we go to print.
+(3)CompTIA Network+ Certification
+If you haven’t already achieved CompTIA Network+ certification, make it your next certification goal after CompTIA A+ certification. Just as CompTIA A+ certification shows that you have solid competency as a PC technician, CompTIA Network+ certification demonstrates your skills as a network technician, including your understanding of network hardware, installation, and troubleshooting. CompTIA’s Network+ certification is a natural step for continuing toward your Microsoft or Cisco certifications. Take the CompTIA Network+: it’s your obvious next certification.
+(3)Microsoft Technical Certifications
+Microsoft operating systems control a huge portion of all installed networks, and those networks need qualified support people to make them run. Pursuing Microsoft’s series of certifications for networking professionals is a natural next step after completing the CompTIA certifications. They offer a whole slew of tracks and exams, ranging from simple specializations in Windows 7 to numerous Microsoft Certified IT Professional (MCITP) certifications and beyond. You can find more details on Microsoft Learning Web site at www.microsoft.com/learning/en/us/certification/cert-overview.aspx.
+(3)Cisco Certification
+Let’s face it: Cisco routers pretty much run the Internet and most intranets in the world. A router is a networking device that controls and directs the flow of information over networks, such as e-mail messages, Web browsing, and so on. Cisco provides five levels of IT certification for folks who want to show their skills at handling Cisco products, such as the Cisco Certified Network Associate (CCNA), plus numerous specialty certifications. See the Cisco IT Certification Web site here for more details: www.cisco.com/web/learning/le3/learning_career_certifications_and_learning_paths_home.html.
+(1)How Do I Become CompTIA A+ Certified?
+You become CompTIA A+ certified, in the simplest sense, by taking and passing two computer-based, multiple-choice exams. No prerequisites are required for taking the CompTIA A+ certification exams (although there’s an assumption of computer literacy, whether or not you have one of the computer literacy certifications). There is no required training course and no training materials to buy. You do have to pay a testing fee for each of the two exams. You pay your testing fees, go to a local testing center, and take the tests. You immediately know whether you have passed or failed. By passing both exams, you become CompTIA A+ certified. 
+(2)What’s the Deal with “No More Lifetime Certification?”
+In early 2010, CompTIA announced that, effective January 1, 2011, CompTIA A+, CompTIA Network+, and CompTIA Security+ certifications would no longer be considered “certified for life.” If you passed any of these exams before the deadline, you’re still certified for life for those exams. For any exams that you pass on or after January 1, 2011, to stay certified, every three years you’ll need to either retake the exam or perform sufficient continuing education as specified by CompTIA. 
+Retaking the exams isn’t that hard to understand, but the continuing education requirement is a bit more complex. Instead of trying to explain it all here, please review CompTIA’s documentation at http://certification.comptia.org/Libraries/Certification_Documents/ceu_faq.sflb.ashx. 
+Most importantly, if you pursue the continuing education path, you’ll need to earn 20 continuing education units (CEUs) each three-year period to renew your CompTIA A+ certification. How do you earn these CEUs? You can participate in industry events and seminars, complete a presentation, participate in IT training, teach a course, or earn another higher-level certification. The number of CEUs that you earn by completing each of these requirements varies, and each requires that you submit documentation to CompTIA for their review. 
+Personally, I think this is a long-overdue feature. Someone who took the CompTIA A+ exam in 2010 had no way to distinguish himself from a person who took the exam in 1997, and that wasn’t fair. By no longer awarding “certified for life” status, CompTIA’s certifications are now in line with Microsoft, Cisco, and other industry certifications.
+(2)The Basic Exam Structure
+The two exams introduced by CompTIA in 2012 are CompTIA A+ 220-801 (Hardware) and CompTIA A+ 220-802 (Operating Systems). The terms “Hardware” and “Operating Systems” are not officially part of the exam names, but I’ve included them here because they’re commonly used to reference the exams. It’s also common to refer to these two exams as the “2012” exams to differentiate them from older CompTIA exams. Although you may take either of the two exams first, I recommend taking 220-801 followed by 220-802. The 220-801 exam concentrates on understanding terminology and technology, how to do fundamental tasks such as upgrading RAM, and basic network and laptop support. The 220-802 exam builds on the first exam, concentrating on Windows support, advanced configuration, and troubleshooting scenarios.
+Both of the exams are extremely practical, with little or no interest in history. All questions are multiple-choice, simulation, or “click on the right part of the picture” questions. The following is an example of the type of questions you will see on the exams:
+Your laser printer is printing blank pages. Which item should you check first?
+1. Printer drivers
+2. Toner cartridge
+3. Printer settings
+4. Paper feed
+The correct answer is B, the toner cartridge. You can make an argument for any of the others, but common sense (and skill as a PC technician) tells you to check the simplest possibility first.
+The 2012 exams use a regular test format in which you answer a set number of questions and are scored based on how many correct answers you give. These exams have no more than 100 questions each. (Both exams have 100 questions each at the time of this writing.)
+Be aware that CompTIA may add new questions to the exams at any time to keep the content fresh. The subject matter covered by the exams won’t change, but new questions may be added periodically at random intervals. This policy puts strong emphasis on understanding concepts and having solid PC-tech knowledge rather than on trying to memorize specific questions and answers that may have been on the tests in the past. No book or Web resource will have all the “right answers” because those answers change constantly. Luckily for you, however, this book not only teaches you what steps to follow in a particular case, but also explains how to be a knowledgeable tech who understands why you’re doing those steps. That way when you encounter a new problem (or test question), you can work out the answer. This will help you not only to pass the exams but also to be a better PC tech!
+To keep up to date, we monitor the CompTIA A+ exams for new content and update the special Tech Files section of the Total Seminars Web site (www.totalsem.com) with new articles covering subjects we believe may appear on future versions of the exams.
+(3)Windows-Centric
+The CompTIA A+ exams focus on the Microsoft Windows operating systems you would expect to find on a PC at a workstation or in a home. There are no Linux questions. There are no Mac OS X questions. The 802 exam will ask you about the common mobile device operating systems, iOS and Android, but the vast majority of operating system questions on both exams address Windows. Objectives in the exams cover the following operating systems:
+1. Windows XP Home, Windows XP Professional, Windows XP Media Center, Windows XP 64-bit Professional
+2. Windows Vista Home Basic, Windows Vista Home Premium, Windows Vista Business, Windows Vista Ultimate, Windows Vista Enterprise 
+3. Windows 7 Starter, Windows 7 Home Premium, Windows 7 Professional, Windows 7 Ultimate, Windows 7 Enterprise 
+(3)Windows 8
+CompTIA has the darnedest luck when it comes to the timing of new CompTIA A+ exams compared to releases of new Windows versions. In 2006, CompTIA released an update to the CompTIA A+ exams about four months before Microsoft released Windows Vista. In 2009, CompTIA missed Windows 7 by about one month (though CompTIA released a Windows 7 update to the exams in late 2009). 
+It seems that CompTIA will once again run into what I’m going to call the “CompTIA Windows Curse.” As the new 220-801 and 220-802 exams come out in early 2012, there’s a good chance that Windows 8 will come out a few month later. Assuming CompTIA stays true to form, there’s a very good chance that you’ll see a Windows 8 update on the exams within a year or two of the Windows 8 rollout. Be sure to check the CompTIA Web site or contact me directly at michaelm@totalsem.com to see if any Windows 8 updates have taken place.
+(3)Exam 220–801
+The questions on the CompTIA A+ 220-801 exam fit into one of five domains. The number of questions for each domain is based on the percentages shown in Table 1.1. 
+Domain
+	Percentage
+	1.0 PC Hardware
+	40%
+	2.0 Networking
+	27%
+	3.0 Laptops
+	11%
+	4.0 Printers
+	11%
+	5.0 Operational Procedures 
+	11%
+	Table 1: 220-801 Exam Domains and Percentages
+The 220-801 exam tests your knowledge of computer components, expecting you to be able to identify just about every common device on PCs, including variations within device types. Here’s a list:
+Format bullets as two or three column list
+1. Floppy drives
+2. Hard drives
+3. Optical drives
+1. Solid state drives
+2. Motherboards
+3. Power supplies
+4. CPUs
+5. RAM
+6. Monitors
+7. Input devices, such as keyboards, mice, and touchscreens
+8. Video and multimedia cards
+9. Network and modem cards
+10. Cables and connectors
+11. Heat sinks, fans, and liquid cooling systems
+12. Laptops and portable devices
+13. Printers
+14. Scanners
+15. Network switches, cabling, and wireless adapters
+16. Biometric devices
+The 220-801 exam tests your ability to install, configure, and maintain all the hardware technology involved in a personal computer. You need to be able to install and set up a hard drive, for example, and configure devices in Windows XP, Windows Vista, and Windows 7. You have to understand device drivers. Additionally, this exam puts a lot of emphasis on operational procedures, such as safety and environmental issues, communication, and professionalism. You need to understand how to avoid hazardous situations. The exam tests your ability to communicate effectively with customers and coworkers. You need to understand professional behavior and demonstrate that you have tact, discretion, and respect for others and their property.
+(3)Exam 220-802
+The CompTIA A+ 220-802 exam covers four domains. Table 1.2 lists the domains and the percentage of questions dedicated to each domain.
+Domain 
+	Percentage
+	1.0 Operating Systems
+	33%
+	2.0 Security
+	22%
+	3.0 Mobile Devices
+	9%
+	4.0 Troubleshooting
+	36%
+	Table 2: Exam 220-802 Domains and Percentages
+The 220-802 exam covers the configuration, repair, and troubleshooting of the Windows operating system. You have to know your way around Windows and understand the tasks involved in updating, upgrading, and installing Windows XP, Windows Vista, and Windows 7. You need to know the standard diagnostic tools available in Windows so that you can fix problems and work with higher-level techs. Make sure you know Windows; 33% of the 220-802 questions are going to challenge you on this.
+The biggest part of the 220-802 exam is dedicated to troubleshooting. Think in terms of a hands-on approach to determining the appropriate technology for a situation—running diagnostics and troubleshooting—rather than identification of hardware or operating system utilities. You need to understand how all the technology should work, know the proper steps to figure out why something doesn’t work, and then know how to fix it.
+The 220-802 exam adds mobile devices to the objectives, a new topic for 2012. While the smartphone and tablet market covers an impossibly wide array of hardware and software, the 220-802 exam focuses on Apple iOS and Google Android devices. You’ll need to know how to interact with the hardware and software, as well as configure personal settings, such as those for e-mail clients and security.
+Security is a big topic on the 220-802 exam. You need to know quite a bit about computer security, from physical security (door locks to retinal scanners), to knowledge of security threats (malware and viruses), to the ways in which to secure an individual computer. This also includes coverage of how to recycle and dispose of computer gear properly.
+You’ll also be tested on methods of securing networks. You’ll need to know how to access a small office/home office (SOHO) router or wireless access point and configure that device to protect your network.
+(2)How Do I Take the Exams?
+Pearson VUE administers the CompTIA A+ testing at over 5000 testing centers in 165 countries. You may take the exams at any testing center. You can select the closest training center and schedule your exams right from the comfort of your favorite Web browser by going to the Pearson VUE Web site:
+www.vue.com
+Alternatively, in the United States and Canada, call Pearson VUE at 877-551-PLUS (7587) to schedule the exams and to locate the nearest testing center. International customers can find a list of Pearson VUE international contact numbers for various regions of the world on CompTIA’s Web site at www.comptia.org.
+You must pay for the exam when you call to schedule. Be prepared to sit on hold for a while. Have your Social Security number (or international equivalent) and a credit card ready when you call. Pearson VUE will be glad to invoice you, but you won’t be able to take the exam until they receive full payment.
+Pearson VUE will accommodate any special needs, although this may limit your selection of testing locations.
+(2)How Much Does the Exam Cost?
+The cost of the exam depends on whether you work for a CompTIA member or not. At this writing, the cost for non-CompTIA members is $178 (U.S.) for each exam. International prices vary, but you can check the CompTIA Web site for international pricing. Of course, the prices are subject to change without notice, so always check the CompTIA Web site for current pricing.
+Very few people pay full price for the exam. Virtually every organization that provides CompTIA A+ training and testing also offers discount vouchers. You buy a discount voucher and then use the voucher number instead of a credit card when you schedule the exam. Vouchers are sold per exam, so you’ll need two vouchers to take the two CompTIA A+ exams. Total Seminars is one place to get discount vouchers. You can call Total Seminars at 800-446-6004 or 281-922-4166, or get vouchers via the Web site: www.totalsem.com. No one should ever pay full price for CompTIA A+ exams.
+(2)How to Pass the CompTIA A+ Exams
+The single most important thing to remember about the CompTIA A+ certification exams is that CompTIA designed the exams to test the knowledge of a technician with only 12 months of experience, so keep it simple! The exams aren’t interested in your ability to overclock DDR3 CAS timings in CMOS or whether you can explain the exact difference between the Intel ICH10 and the AMD 790 southbridges. Think in terms of practical knowledge and standards. Read this book, do whatever works for you to memorize the key concepts and procedures, take the practice exams on the media accompanying this book, review any topics you miss, and you should pass with no problem.
+Note: Those of you who just want more knowledge in managing and troubleshooting PCs can follow the same strategy as certification-seekers. Think in practical terms and work with the PC as you go through each chapter.
+Some of you may be in or just out of school, so studying for exams is nothing novel. But if you haven’t had to study for and take an exam in a while, or if you think maybe you could use some tips, you may find the next section valuable. It lays out a proven strategy for preparing to take and pass the CompTIA A+ exams. Try it. It works.
+(3)Obligate Yourself
+The very first step you should take is to schedule yourself for the exams. Have you ever heard the old adage, “Heat and pressure make diamonds?” Well, if you don’t give yourself a little “heat,” you’ll end up procrastinating and delay taking the exams, possibly forever. Do yourself a favor. Using the following information, determine how much time you’ll need to study for the exams, and then call Pearson VUE and schedule the exams accordingly. Knowing the exams are coming up makes it much easier to turn off the television and crack open the book. You can schedule an exam as little as a few weeks in advance, but if you schedule an exam and can’t take it at the scheduled time, you must reschedule at least a day in advance or you’ll lose your money.
+(3)Set Aside the Right Amount of Study Time
+After helping thousands of techs get their CompTIA A+ certification, we at Total Seminars have developed a pretty good feel for the amount of study time needed to pass the CompTIA A+ certification exams. The following table provides an estimate to help you plan how much study time you must commit to the CompTIA A+ certification exams. Keep in mind that these are averages. If you’re not a great student or if you’re a little on the nervous side, add 10 percent; if you’re a fast learner or have a good bit of computer experience, you may want to reduce the figures.
+Remember to change to hyphen for the All-In-One book.
+To use Table 1.3, just circle the values that are most accurate for you and add them up to get your estimated total hours of study time.
+Production: Note in the following 5-column table that the heading “Amount of Experience” in the first row should span the right 4 columns as a super-heading. See p. 13 of the Guide To previous edition.
+
+
+	
+
+	Amount of Experience
+	
+
+	
+
+	Tech Task
+	None
+	Once or Twice
+	Every Now and Then
+	Quite a Bit
+	Installing an adapter card
+	6
+	4
+	2
+	1
+	Installing and configuring hard drives
+	12
+	10
+	8
+	2
+	Installing modems and NICs
+	8
+	6
+	6
+	3
+	Connecting a computer to the Internet
+	16
+	10
+	8
+	4
+	Installing printers and scanners
+	16
+	8
+	4
+	2
+	Installing RAM
+	8
+	6
+	4
+	2
+	Installing CPUs
+	8
+	7
+	5
+	3
+	Repairing printers
+	6
+	5
+	4
+	3
+	Repairing boot problems
+	8
+	7
+	7
+	5
+	Repairing portable computers
+	8
+	6
+	4
+	2
+	Configuring mobile devices
+	4
+	3
+	2
+	1
+	Building complete systems
+	12
+	10
+	8
+	6
+	Using the command line
+	8
+	8
+	6
+	4
+	Installing and optimizing Windows 
+	10
+	8
+	6
+	4
+	Using Windows XP
+	6
+	6
+	4
+	2
+	Using Windows Vista
+	8
+	6
+	4
+	2
+	Using Windows 7
+	8
+	6
+	4
+	2
+	Configuring NTFS, Users, and Groups
+	6
+	4
+	3
+	2
+	Configuring a wireless network
+	6
+	5
+	3
+	2
+	Configuring a software firewall
+	6
+	4
+	2
+	1
+	Configuring sound 
+	2
+	2
+	1
+	0
+	Removing malware
+	4
+	3
+	2
+	0
+	Using OS diagnostic tools
+	8
+	8
+	6
+	4
+	Using a multimeter
+	4
+	3
+	2
+	1
+	Table 3: Analyzing Skill Levels
+To that value, add hours based on the number of months of direct, professional experience you have had supporting PCs, as shown in Table 1.4.
+Months of Direct, Professional Experience…
+	Hours to Add to Your Study Time…
+	0
+	50 
+	Up to 6
+	30 
+	6 to 12
+	10 
+	Over 12
+	0 
+	Table 4: Adding Up Your Study Time
+A total neophyte often needs roughly 240 hours of study time. An experienced tech shouldn’t need more than 60 hours.
+Total hours for you to study: _____________.
+(3)A Strategy for Study
+Now that you have a feel for how long it’s going to take to prepare for the exams, you’re ready to develop a study strategy. I’d like to suggest a strategy that has worked for others who’ve come before you, whether they were experienced techs or total newbies. 
+This book is designed to accommodate the different study agendas of these two groups of students. The first group is experienced techs who already have strong PC experience but need to be sure they’re ready to be tested on the specific subjects covered by the CompTIA A+ exams. The second group is those with little or no background in the computer field. These techs can benefit from a more detailed understanding of the history and concepts that underlie modern PC technology, to help them remember the specific subject matter information they must know for the exams. I’ll use the shorthand terms Old Techs and New Techs for these two groups. If you’re not sure which group you fall into, pick a few chapters and go through some end-of-chapter questions. If you score less than 70%, go the New Tech route.
+I have broken most of the chapters into four distinct parts:
+1. Historical/ConceptualTopics that are not on the CompTIA A+ exams but will help you understand more clearly what is on the CompTIA A+ exams
+2. 801Topics that clearly fit under the CompTIA A+ 220-801 exam domains
+3. 802Topics that clearly fit under the CompTIA A+ 220-802 exam domains
+4. Beyond A+More advanced issues that probably will not be on the CompTIA A+ exams—yet
+Note: Not all chapters have all four parts.
+The beginning of each of these parts is clearly marked with a large banner that looks like this:
+Begin Superhead
+(1)Historical/Conceptual
+End superhead
+Those of you who fall into the Old Tech group may want to skip everything except the 801 and 802 parts in each chapter. After reading the sections in those parts, jump immediately to the questions at the end of the chapter. The end-of-chapter questions concentrate on information in the 801 and 802 sections. If you run into problems, review the Historical/Conceptual sections in that chapter. Note that you may need to skip back to previous chapters to get the Historical/Conceptual information you need for later chapters.
+After going through every chapter as described, Old Techs can move directly to testing their knowledge by using the free practice exams on the media that accompanies the book. Once you start scoring above 90%, you’re ready to take the exams. If you’re a New Tech—or if you’re an Old Tech who wants the full learning experience this book can offer—start by reading the book, the whole book, as though you were reading a novel, from page one to the end without skipping around. Because so many computer terms and concepts build on each other, skipping around greatly increases the odds that you will become confused and end up closing the book and firing up your favorite PC game. Not that I have anything against PC games, but unfortunately that skill is not useful for the CompTIA A+ exams!
+Your goal on this first read is to understand concepts, the whys behind the hows. Having a PC nearby as you read is helpful so you can stop and inspect the PC to see a piece of hardware or how a particular concept manifests in the real world. As you read about hard drives, for example, inspect the cables. Do they look like the ones in the book? Is there a variation? Why? It is imperative that you understand why you are doing something, not just how to do it on one particular system under one specific set of conditions. Neither the exams nor real life as a PC tech works that way.
+If you’re reading this book as part of a managing and troubleshooting PCs class rather than a certification-prep course, I highly recommend going the New Tech route, even if you have a decent amount of experience. The book contains a lot of details that can trip you up if you focus only on the test-specific sections of the chapters. Plus, your program might stress historical and conceptual knowledge as well as practical, hands-on skills.
+The CompTIA A+ certification exams assume that you have basic user skills. The exams really try to trick you with questions on processes that you may do every day and not think much about. Here’s a classic: “To move a file from the C:\DATA folder to the D:\ drive using Windows Explorer, what key must you hold down while dragging the file?” If you can answer that without going to your keyboard and trying a few likely keys, you’re better than most techs! In the real world, you can try a few wrong answers before you hit on the right one, but for the exams, you have to know it. Whether Old Tech or New Tech, make sure you are proficient at user-level Windows skills, including the following:
+1. Recognizing all the components of the standard Windows desktop (Start menu, notification area, etc.)
+2. Manipulating windows—resizing, moving, and so on
+3. Creating, deleting, renaming, moving, and copying files and folders within Windows
+4. Understanding file extensions and their relationship with program associations
+5. Using common keyboard shortcuts/hotkeys
+6. Installing, running, and closing a Windows application
+Any PC technician who has been around a while will tell you that one of the great secrets in the computer business is that there’s almost never anything completely new in the world of computer technology. Faster, cleverer, smaller, wider—absolutely—but the underlying technology, the core of what makes your PC and its various peripheral devices operate, has changed remarkably little since PCs came into widespread use a few decades ago. When you do your initial read-through, you may be tempted to skip the Historical/Conceptual sections—don’t! Understanding the history and technological developments behind today’s PCs helps you understand why they work—or don’t work—the way they do. Basically, I’m passing on to you the kind of knowledge you might get by apprenticing yourself to an older, experienced PC tech.
+After you’ve completed the first read-through, go through the book again, this time in textbook mode. If you’re an Old Tech, start your studying here. Try to cover one chapter at a sitting. Concentrate on the 801 and 802 sections. Get a highlighter and mark the phrases and sentences that bring out major points. Be sure you understand how the pictures and illustrations relate to the concepts being discussed.
+Once you feel you have a good grasp of the material in the book, you can check your knowledge by using the practice exams included on the media accompanying this book. You can take these in Practice mode or Final mode. In Practice mode, you can use the Assistance window to get a helpful hint for the current questions, use the Reference feature to find the chapter that covers the question, check your answer for the question, and see an explanation of the correct answer. In Final mode, you answer all the questions and receive an exam score at the end, just like the real thing. You can also adjust the number of questions on a Practice or Final mode exam with the Customize option.
+Both modes show you an overall grade, expressed as a percentage, as well as a breakdown of how well you did on each exam domain. The Review Questions feature lets you see which questions you missed and what the correct answers are. Use these results to guide further studying. Continue reviewing the topics you miss and taking additional exams until you are consistently scoring in the 90% range. When you get there, you are ready to pass the CompTIA A+ certification exams.
+(3)Study Tactics
+Perhaps it’s been a while since you had to study for a test. Or perhaps it hasn’t, but you’ve done your best since then to block the whole experience from your mind. Either way, savvy test-takers know that certain techniques make studying for tests more efficient and effective.
+Here’s a trick used by students in law and medical schools who have to memorize reams of information: write it down. The act of writing something down (not typing, writing) in and of itself helps you to remember it, even if you never look at what you wrote again. Try taking separate notes on the material and re-creating diagrams by hand to help solidify the information in your mind.
+Another oldie but goodie: Make yourself flash cards with questions and answers on topics you find difficult. A third trick: Take your notes to bed and read them just before you go to sleep. Many people find they really do learn while they sleep!
+(3)Contact
+If you have any problems, any questions, or if you just want to argue about something, feel free to send an e-mail to the author—michaelm@totalsem.com—or to the editorscottj@totalsem.com.
+For any other information you might need, contact CompTIA directly at their Web site: www.comptia.org.
+Begin textbook EOC
+(1)Chapter 1 Review
+(2)Chapter Summary
+After reading this chapter and completing the exercises, you should understand the following about the path of the PC tech.
+(3)Explain the importance of skill in managing and troubleshooting PCs
+1. The IT workforce designs, builds, and maintains computers, computer programs, and networks. PC techs take care of personal computers, thus representing an essential component in that workforce. As PCs become more complex, the IT workforce needs specialized PC techs.
+2. Certifications prove to employers that you have the necessary skills to perform the job. If you want a job fixing automobiles in the United States, for example, you get the Automotive Service Excellence (ASE) certification. To become certified, you take and successfully pass exams. Then the organization that created those exams grants you certification. Gaining certification is particularly important for IT workers.
+(3)Explain the importance of CompTIA A+ certification
+1. In the early days of the personal computer, you could get vendor-specific certifications, such as IBM Technician, but nothing general for PC techs. Worse, you often had to have a job at an authorized warranty or repair facility to get the vendor-specific certification. The software and networking side of IT has not suffered from the same lack of certifications. To prove skill in working with Windows, for example, you could become a Microsoft Certified IT Professional (MCITP).
+2. CompTIA A+ certification is an industry-wide, vendor-neutral certification program that shows that you have a basic competence in supporting microcomputers. You achieve this certification by taking two computer-based, multiple-choice exams. The tests cover what technicians should know after 12 months of hands-on work on PCs, either from a job or as a student in the lab. CompTIA A+ certification enjoys wide recognition throughout the computer industry.
+3. CompTIA is a nonprofit, industry trade association based in Oakbrook Terrace, Illinois. It consists of over 20,000 members in 102 countries. CompTIA provides a forum for people in these industries to network, represents the interests of its members to the government, and provides certifications for many aspects of the computer industry. CompTIA sponsors CompTIA A+, CompTIA Network+, CompTIA Security+, and other certifications.
+4. The CompTIA A+ certification is the de facto entry point to IT. From CompTIA A+, you have a number of certification options, depending on whether you want to focus more on hardware and operating systems or move into network administration. You can get CompTIA Network+ certification, for example, or go on to get Microsoft or Cisco certified. CompTIA Network+ certification is the most obvious certification to get after becoming CompTIA A+ certified.
+(3)Describe how to become CompTIA A+ certified
+1. You become CompTIA A+ certified, in the simplest sense, by taking and passing two computer-based, multiple-choice exams. No prerequisites are required for taking the CompTIA A+ certification exams. There is no required training course and no training materials to buy. You do have to pay a testing fee for each of the two exams. To stay current, you need to retest every three years or gain continuing education credits. 
+2. The CompTIA exams introduced in 2012 are 220-801 and 220-802. It’s common to refer to these two exams as the 2012 exams to differentiate them from older CompTIA exams. Although you may take either of the two exams first, I recommend taking the 220-801 followed by the 220-802.
+3. Both of the exams are extremely practical, with little or no interest in theory. All questions are multiple-choice, simulation, or “click on the right part of the picture” questions. CompTIA may add new questions to the exams at any time to keep the content fresh, although the subject matter covered by the exams won’t change.
+4. The Pearson VUE company administers the CompTIA A+ exams. You can schedule the exam times and location via the Pearson VUE Web site at www.vue.com. Check CompTIA’s Web site for international links.
+5. To achieve success with the CompTIA A+ certification exams, think in terms of practical knowledge. Read the book. Work through the problems. Work with computers. Take the practice exams. You should obligate yourself by scheduling your exams. This keeps you focused on study.
+6. Read the book all the way through once. Experienced techs (“Old Techs”) should then concentrate on the test-specific sections to prepare for the exams. Less experienced techs (“New Techs”) should read the book all the way through again until everything makes sense.
+7. If you’re reading this book as part of a managing and troubleshooting PCs class rather than a certification-prep course, I highly recommend going the New Tech route, even if you have a decent amount of experience. The book contains a lot of details that can trip you up if you focus only on the test-specific sections of the chapters.
+(2)Key Terms
+certification ()
+Cisco Certified Network Associate (CCNA) ()
+CompTIA A+ 220-801 ()
+CompTIA A+ 220-802 ()
+CompTIA A+ certification ()
+CompTIA Network+ certification ()
+Computing Technology Industry Association (CompTIA) ()
+Information Technology (IT) ()
+Microsoft Certified IT Professional (MCITP) ()
+network ()
+PC tech ()
+Pearson VUE ()
+voucher ()
+www.comptia.org ()
+(2)Key Term Quiz
+Use the Key Terms list to complete the sentences that follow. Not all terms will be used.
+1. You can lump together all the folks who design, build, program, and fix computers into the __________________ workforce.
+2. You become CompTIA A+ certified by passing the __________________ and CompTIA A+ 220-802 exams.
+3. A(n) __________________ gives clients and employers a level of confidence that you can do what you say you can do.
+4. A casual term for a person who builds and maintains computers is __________________.
+5. The __________________ company administers the CompTIA A+ certification exams.
+6. You can use a(n) __________________ when you schedule your exam to save some money.
+7. Persons desiring to work in Windows-based networking should pursue __________________ certification after completing their CompTIA certifications.
+8. You can find the latest information about the CompTIA A+ certification exams here: __________________.
+9. Typically, techs who attain CompTIA A+ certification then pursue __________________ to add to their computer credentials.
+10. A grouping of computers that enables people to share resources is called a(n) __________________.
+(2)Multiple-Choice Quiz
+1. Which of the following is a vendor-specific certification? (Select all that apply.)
+1. Cisco Certified Network Associate
+2. CompTIA A+
+3. CompTIA Network+
+4. Microsoft Certified IT Professional
+1. Which of the following certifications is the de facto requirement for entrance into the PC industry?
+1. Certified Cisco Network Associate
+2. CompTIA A+
+3. CompTIA Network+
+4. Microsoft Certified IT Professional
+1. John loves the Internet and wants a career working on the machines that make the Internet work. He has completed both CompTIA A+ and CompTIA Network+ certifications. Which of the following certifications would make a good next step?
+1. Cisco Certified Network Associate
+2. Certified Cisco Network Professional
+3. CompTIA Security+
+4. Microsoft Certified IT Professional
+1. Which of the following exams focuses on installing, configuring, and maintaining all the standard technology involved in a personal computer?
+1. Certified Cisco Network Associate
+2. CompTIA A+ 220-801 
+3. CompTIA A+ 220-802 
+4. Microsoft Certified IT Professional
+1. At which of the following Web sites can you register to take the CompTIA A+ certification exams?
+1. www.comptia.org
+2. www.microsoft.com
+3. www.totalsem.com
+4. www.vue.com
+1. How many exams must you pass to become CompTIA A+ certified?
+1. One
+2. Two
+3. Three
+4. Four
+1. How much practical IT experience do you need to become CompTIA A+ certified?
+1. Six months
+2. One year
+3. Two years
+4. None
+1. How many questions should you expect on the 220-802 exam?
+1. 25
+2. 50
+3. 100
+4. The number of questions varies because the exams are adaptive.
+1. The CompTIA A+ certification covers which of the following operating systems? (Select two.)
+1. Linux
+2. Mac OS X
+3. Windows XP Media Center
+4. Windows 7
+1. What percentage of questions should you expect on operating systems in the 220-802 exam?
+1. 15%
+2. 22%
+3. 30%
+4. 33%
+1. What percentage of questions should you expect on networking in the 220-801 exam?
+1. 10%
+2. 17%
+3. 25%
+4. 27%
+1. How much does it cost to take each exam (at the time of this book’s publication)?
+1. $100 each
+2. $138 each
+3. $178 each
+4. $150 each
+1. What percentage of questions should you expect on Windows 8 in the 220-802 exam?
+1. 10%
+2. 13%
+3. 20%
+4. 0%
+1. The 220-801 exam will not test you on which of the following computer components?
+1. Biometric devices
+2. Keyboards
+3. Printers
+4. Zip drives
+1. If you skip the continuing education path to recertify, how often do you need to take the CompTIA A+ exams to retain your status as a CompTIA A+ certified technician?
+1. Every year
+2. Every three years
+3. Every ten years
+4. Never
+(2)Essay Quiz
+1. Write a short essay on the benefits of certification in the field of computers. Include discussion on how the CompTIA certifications function within the broader category of computer certification. Why do you suppose people get certifications rather than (or in addition to) two- and four-year college degrees in IT?
+(2)Lab Project
+(3)Lab Project 1.1
+If you have access to the Internet, do some searching on computer certifications. Make a personal certification tree or pathway that maps out a series of certifications to pursue that might interest you. Which certifications would be useful if you want to be a graphics designer, for example? What if you want to create computer games?
+Begin solutions; remove before page layout. 
+(2)Key Term Quiz Answers
+1. You can lump together all the folks who design, build, program, and fix computers into the Information Technology (IT) workforce.
+2. You become CompTIA A+ certified by passing the CompTIA 220-801 and CompTIA A+ 220-802 exams. 
+3. A certification gives clients and employers a level of confidence that you can do what you say you can do.
+4. A casual term for a person who builds and maintains computers is PC tech.
+5. The Pearson VUE company administers the CompTIA A+ certification exams.
+6. You can use a voucher when you schedule your exam to save some money.
+7. Persons desiring to work in Windows-based networking should pursue Microsoft Certified IT Professional (MCITP) certification after completing their CompTIA certifications.
+8. You can find the latest information about the CompTIA A+ certification exams here: www.comptia.org.
+9. Typically, techs who attain CompTIA A+ certification then pursue CompTIA Network+ certification to add to their computer credentials.
+10. A grouping of computers that enables people to share resources is called a network.
+(2)Multiple-Choice Quiz Answers
+1. Which of the following is a vendor-specific certification? (Select all that apply.)
+1. Cisco Certified Network Associate
+2. CompTIA A+
+3. CompTIA Network+
+4. Microsoft Certified IT Professional
+Answer: A, D
+1. Which of the following certifications is the de facto requirement for entrance into the PC industry?
+1. Certified Cisco Network Associate
+2. CompTIA A+
+3. CompTIA Network+
+4. Microsoft Certified IT Professional
+Answer: B
+1. John loves the Internet and wants a career working on the machines that make the Internet work. He has completed both CompTIA A+ and Network+ certifications. Which of the following certifications would make a good next step?
+1. Cisco Certified Network Associate
+2. Certified Cisco Network Professional
+3. CompTIA Security+
+4. Microsoft Certified IT Professional
+Answer: A
+1. Which of the following exams focuses on installing, configuring, and maintaining all the standard technology involved in a personal computer?
+1. Certified Cisco Network Associate
+2. CompTIA A+ 220-801 
+3. CompTIA A+ 220-802 
+4. Microsoft Certified IT Professional
+Answer: B
+1. At which of the following Web sites can you register to take the CompTIA A+ certification exams?
+1. www.comptia.org
+2. www.microsoft.com
+3. www.totalsem.com
+4. www.vue.com
+Answer: D
+1. How many exams must you pass to become CompTIA A+ certified?
+1. One
+2. Two
+3. Three
+4. Four
+Answer: B
+1. How much practical IT experience do you need to become CompTIA A+ certified?
+1. Six months
+2. One year
+3. Two years
+4. None
+Answer: D
+1. How many questions should you expect on the 220-802 exam?
+1. 25
+2. 50
+3. 100
+4. The number of questions varies because the exams are adaptive.
+Answer: C
+1. The CompTIA A+ certification covers which of the following operating systems? (Select two.)
+1. Linux
+2. Mac OS X
+3. Windows XP Media Center
+4. Windows 7
+Answer: C, D
+1. What percentage of questions should you expect on operating systems in the 220-802 exam?
+1. 15%
+2. 22%
+3. 30%
+4. 33%
+Answer: D
+1. What percentage of questions should you expect on networking in the 220-801 exam?
+1. 10%
+2. 17%
+3. 25%
+4. 27%
+Answer: D
+1. How much does it cost to take each exam (at the time of this book’s publication)?
+1. $100 each
+2. $138 each
+3. $168 each
+4. $150 each
+Answer: C
+1. What percentage of questions should you expect on Windows 8 in the 220-802 exam?
+1. 10%
+2. 13%
+3. 20%
+4. 0%
+Answer: D
+1. The 220-801 exam will not test you on which of the following computer components?
+1. Biometric devices
+2. Keyboards
+3. Printers
+4. Zip drives
+Answer: D
+1. If you skip the continuing education path to recertify, how often do you need to take the CompTIA A+ exams to retain your status as a CompTIA A+ certified technician?
+1. Every year
+2. Every three years
+3. Every ten years
+4. Never
+Answer: B
+(2)Essay Quiz Answer
+1. Write a short essay on the benefits of certification in the field of computers. Include discussion on how the CompTIA certifications function within the broader category of computer certification. Why do you suppose people get certifications rather than (or in addition to) two- and four-year college degrees in IT?
+Answer: Possible answers might include discussion about showing competency in a specific specialty and being so dedicated to your profession or desired profession to get a certification. A good answer would also include CompTIA exams as the specific stepping stones into higher-level certifications from Microsoft or Cisco.
+Begin Trade EOC.
+(1)Chapter Review 
+(2)Questions
+1. What is the primary CompTIA Web site?
+1. www.comptia.com
+2. www.comptia.edu
+3. www.comptia.net
+4. www.comptia.org
+1. Which certification is considered required for entrance into the IT industry?
+1. Certified Cisco Network Associate
+2. CompTIA A+ certification
+3. CompTIA Network+ certification
+4. Microsoft Certified IT Professional
+1. How many exams do you need to pass to become CompTIA A+ certified?
+1. One
+2. Two
+3. Three
+4. Four
+1. Which domain receives the most coverage in the 220-802 exam?
+1. Operating systems
+2. Security
+3. Mobile devices
+4. Troubleshooting
+1. Which version of Windows is not tested on the 2012 versions of the CompTIA A+ exams?
+1. Windows XP Professional
+2. Windows 2000
+3. Windows 7 Ultimate
+4. Windows Vista Business
+1. What company administers the CompTIA A+ certification exams? 
+1. CompTIA
+2. Microsoft
+3. Pearson VUE
+4. Total Seminars
+1. What pass rate should you strive for on the practice questions?
+1. 75%
+2. 80%
+3. 90%
+4. 95%
+1. How many study hours to pass the CompTIA A+ exams does Mike recommend to a person just starting out learning PC repair?
+1. Roughly 140
+2. Roughly 240
+3. Roughly 340
+4. Roughly 440
+1. What is the very first step you should take to pass the CompTIA A+ exams?
+1. Buy more practice exams.
+2. Buy two vouchers.
+3. Read this book like a novel.
+4. Schedule the exams.
+1. After becoming CompTIA A+ certified, what’s the next certification you should attain?
+1. CompTIA Network+
+2. CompTIA Security+
+3. Microsoft Certified IT Professional
+4. Certified Cisco Network Associate
+(2)Answers
+1. D. The primary CompTIA Web site is www.comptia.org (although the .COM and .NET addresses will redirect you to the main site).
+2. B. The CompTIA A+ certification is considered required for entrance into the PC industry.
+3. B. You need to pass two exams to become CompTIA A+ certified.
+4. D. The 220-802 exam dedicates 36% of the questions to troubleshooting.
+5. B. No versions of Windows 2000 are on the CompTIA A+ exams.
+6. C. Pearson VUE administers the CompTIA A+ certification exams.
+7. C. You should not take either exam until you are consistently getting at least 90% on the practice exams.
+8. B. Mike recommends about 240 study hours for a person new to PC repair.
+9. D. Schedule the exams for some point in the future.
+10. A. The typical certification path goes from CompTIA A+ to CompTIA Network+, so you have all the basics before you choose to specialize in Microsoft or Cisco products.
+End Trade EOC
+Page  of

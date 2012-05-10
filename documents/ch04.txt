@@ -1,0 +1,945 @@
+﻿591_04ce                3/23/12
+Production: All art in this chapter is new, there are no pick ups. I renumbered the files to get rid of the extra leading 0 after the hyphen and changed the references to match.
+(cn)Chapter 4
+(ct)Visible Windows
+Begin Quotes
+“Hard-working, Easy-going Software Everyone Will Use”
+—TAGLINE FOR MICROSOFT BOB, AN OPERATING SYSTEM INTERFACE
+End Quotes
+In this chapter, you will learn how to
+1. Relate the history of Microsoft Windows
+2. Explain the Windows interface
+3. Identify the operating system folders of Windows XP, Windows Vista, and Windows 7
+4. Describe the utilities in Windows that are essential to techs
+As a PC tech, you need to understand Windows at a level beyond that of regular users. Not only must techs run through the standard Windows features that everyone uses every day (Start button, Recycle Bin, and so on), they must also be comfortable drilling down underneath that user-friendly surface to get their hands a little dirty.
+This chapter begins by introducing and organizing the many variations of Windows on the market today and helping you appreciate the difference between, for example, Windows XP Professional and Windows 7 Ultimate. The chapter then takes you through the Windows interface in detail. The third section looks more closely at the techie aspects of Windows, including the structure of the operating system. The fourth section provides an overview of the many utilities for techs available in Windows. The chapter closes in the “Beyond A+” section with a discussion of the versions of Windows not on the current CompTIA A+ exams, such as Windows 8 and non-desktop versions of Windows. Let’s get started!
+Begin superhead
+(1)Historical/Conceptual
+End superhead
+(1)A Brief History of Microsoft Windows
+Many users think of Windows as a monolithic thing, as the operating system (OS) for the PC (as opposed to the Mac), but as a tech you need to understand that Microsoft produces many varieties of the OS, each with specific tools, utilities, file structures, and interfaces. And you need to be able to navigate through any modern version of Windows fluidly.
+Microsoft currently supports many versions of Windows, of which three concern the CompTIA A+ certified technician: Windows XP, Windows Vista, and Windows 7. Within each of these versions, Windows comes in multiple editions. Table 4.1 presents a list for the three versions you need to know for the exams.
+Production: In the following table, please replace each * with a bullet as in previous edition.
+Windows Version 
+	Editions (32-bit)
+	Editions (64-bit)
+	Windows XP
+	Windows XP Home
+Windows XP Professional
+Windows Media Center
+	Windows XP 64-bit Edition
+Windows XP Professional x64 Edition
+	Windows Vista1
+	Windows Vista Home Basic
+Windows Vista Home Premium
+Windows Vista Business
+Windows Vista Ultimate
+Windows Vista Enterprise
+	Windows Vista Home Basic
+Windows Vista Home Premium
+Windows Vista Business
+Windows Vista Ultimate
+Windows Vista Enterprise
+	Windows 71
+	Windows 7 Starter
+Windows 7 Home Premium
+Windows 7 Professional
+Windows 7 Ultimate
+Windows 7 Enterprise
+	Windows 7 Home Premium
+Windows 7 Professional
+Windows 7 Ultimate
+Windows 7 Enterprise
+	Table 1: Versions of Windows on the CompTIA A+ Exams
+1. Microsoft has also released Windows Vista Starter Edition and Windows 7 Home Basic. These are simplified editions of the operating system designed for the developing world and are not sold in developed countries. 
+Prod: Please set the above paragraph as table footnote. Also, note superscript in table.
+The problem of variety is compounded the minute you start working with older computers or talking with users or techs who’ve been working with computers for several years. You’ll hear about old versions of Windows such as Windows 98 or Windows 2000. Huh? What are these versions (see Figure 4.1)? How do they fit in the picture?
+Figure 1: Lots of Windows!
+This section outlines the history of Microsoft Windows and then takes an in-depth look at the differences among the many versions of Microsoft’s flagship operating system. That way you can sort out the essentials for today’s techs from the many varieties you’ll hear about.
+Microsoft entered the operating system game in the early 1980s with a command-line OS called Microsoft Disk Operating System, or MS-DOS. With a command-line OS, you interacted with the computer to run programs, save files, and perform all the other computing functions by typing and then pressing the enter key on your keyboard. This whole typing thing worked for people who could memorize commands and such, but alternative operating systems, such as Apple’s Mac OS, offered a visual interface, where you could interact with the computer by clicking on pictures. The time came for Microsoft to step up its game and produce a graphical user interface (GUI) where users could use a mouse to point and click.
+(2)Early Windows
+The earliest version of Windows, Microsoft Windows 1.0, arrived in 1985 and was little more than a graphical overlay of the DOS command-line operating system. This overlay version of Windows went through a number of updates, ending with the first truly popular version of Windows, Windows for Workgroups version 3.1 (see Figure 4.2).
+Figure 2: Windows for Workgroups
+Note: Microsoft released several editions of Windows 3.1, with minor differences in name. Techs call the editions collectively Windows 3.x.
+In 1989, Microsoft offered a completely separate version of Windows called Windows NT. Windows NT was a true graphical operating system and was dramatically more powerful than the Windows overlay versions. Windows NT went through a number of editions, culminating with Windows NT 4.0 in 1996 (see Figure 4.3).
+Figure 3: Windows NT 4.0
+Windows NT had so many features that showing them all could take days, but one is important. NT came with a new way to organize hard drives and files, called the NT File System (NTFS). Before NTFS, all versions of Windows used an ancient file system called the file allocation table (FAT). NTFS took care of a number of problems, the biggest of which was security. FAT had no file security, meaning it had no user accounts, passwords, or permissions to enable people to control access to files. NTFS was built from the ground up with security in mind. We’ll cover both FAT and NTFS later in the book; for now, just appreciate that NTFS began with Windows NT.
+It wasn’t until 1995 that Microsoft dumped the overlay concept and introduced Windows 95, the first version of Windows for the standard user that was also a full-blown operating system (see Figure 4.4). Windows 95 offered many improvements over Windows 3.x, and eventually Microsoft released several upgraded versions as well, such as Windows 98, Windows 98 SE, and Windows Me. 
+Figure 4: Windows 95—the Windows of your forefathers
+Note: When we describe Windows 95, 98, 98 SE, and Me from a historical standpoint, we lump them all together, using the term “Windows 9x.”
+The arrival of Windows 2000 in 2001 changed things. Throughout most of the 1990s, Windows was in a bit of a mess. Microsoft had two totally different operating systemseach called Windowsthat it sold for two different markets. Microsoft sold the Windows 9x series for the home user and small office, and it sold the much more powerful Windows NT series for corporate environments.
+Windows 2000 was the first step toward changing this mess. It was based on Windows NT (including support for NTFS), but it included a great interface, provided support for nearly any program, and was substantially easier to use than Windows NT. Microsoft originally presented Windows 2000 as a replacement for Windows NT, but its stability and ease of use motivated many knowledgeable Windows 9x users to upgrade to Windows 2000 as well. Windows 2000 started to appear as “the single Windows to replace all the other versions.”
+Note: Windows 2000 was the last version of Windows to come in both Server and Professional editions. After the release of Windows XP, Microsoft introduced the next version of Windows Server as Server 2003. Windows Server 2008 R2 is the latest edition of Windows Server. As of this writing, Microsoft’s newest server product, codenamed Windows Server 8 (WS8), is right around the corner, so keep your eyes peeled!
+(2)Modern Windows
+The vast majority of computers in the field today run one of the three modern versions of Windows, so the CompTIA A+ certification focuses on those: Windows XP, Windows Vista, and Windows 7. But as you know from Table 4.1 at the beginning of this chapter, just saying the name of a Windows version doesn’t do justice to the editions within that version. The trick is to organize these editions in a way that enables you to discover their similarities and differences. In this section, we’ll look at editions of Windows XP, Vista and 7, as well as a few other versions of Windows, and see the differences in detail.
+Begin superhead
+(1)802
+End superhead
+(2)Windows XP
+Windows XP came hot on the heels of Windows 2000. Under the hood, XP was basically the same as Windows 2000, but it added a dramatically improved interface and a number of new features, such as a built-in CD writer. Microsoft also broke with the beauty of 2000’s “one OS for everyone” idea. Microsoft visualized three types of users—professionals, home users, and media junkies—so Windows XP came in three editions: Windows XP Professional, Windows XP Home, and Windows XP Media Center.
+(3)Windows XP Professional
+Microsoft Windows XP Professional is, in many people’s opinions, the most versatile and therefore the most mainstream edition of Windows XP. Microsoft tuned Windows XP Professional for office environments with many users sharing lots of data and multiple users sharing single computers. Windows XP Professional provides full-blown data security, and it is the only edition of Windows XP with the capability of logging onto a special Windows Server–controlled network called a domain.
+A Windows domain is a group of networked computers all under the control of a single computer running some edition of Windows Server. Users on a domain can use a single logon with their computer that defines everything they can do on every other computer on the domain. (See Chapter 22 for all the details of the amazing Windows domain.) Figure 4.5 shows a typical Windows XP Professional desktop.
+Figure 5: Windows XP Professional
+(3)Windows XP Home
+As its name implies, Windows XP Home is designed for the home and small-office user. Windows XP Home is a stripped-down edition of Windows XP Professional. The best way to describe Windows XP Home is to list the Windows XP Professional features that Windows XP Home lacks. Windows XP Home does not have
+1. The ability to log on to a Windows domainA Windows Home PC may log on to any single Windows server, but you must have a user name and password on every single server. With a domain, you can have one user name and password that works on all computers that are members of the domain.
+2. Encrypting file systemWith Windows XP Professional, you can encrypt a file or a folder so that only you can read it. Windows XP Home lacks this feature.
+3. Support for multiple processorsWindows XP Home does not support more than one physical CPU. Windows XP Professional supports two separate CPUs.
+Note: CPU support is based on physical CPUs, not the number of cores in a single CPU. See Chapter 6 for details on multi-core CPUs.
+1. Support for Remote DesktopA Windows XP Professional PC may be remotely accessed from another computer by using Remote Desktop (see Figure 4.6). You cannot access a Windows XP Home system in this fashion.
+Figure 6: Remote Desktop
+1. Support for NTFS Access ControlThe NTFS file system is capable of powerful controls on what users may do to a file or folder. Windows XP Home doesn’t give you the ability to control these NTFS permissions individually. When you look at the properties of a file or folder in Windows XP Home, you’ll notice that there is no Security tab. Instead, Windows XP Home’s Sharing tab (see Figure 4.7) shows that only one folder, the Shared Documents folder, is open for sharingvery different from XP Professional.
+Figure 7: Windows XP Home Sharing tab
+1. Support for group policiesDo you need to keep users from using a certain program? Do you want to prevent them from changing the screensaver? What do you want to do if they try to log in three times unsuccessfully? That’s the job of group polices. Well, if you want this level of control on your system, get Windows XP Professional, because XP Home doesn’t support them. Group policies are discussed in Chapter 29.
+A few more differences exist between Windows XP Professional and XP Home, but the preceding are the ones you’re most likely to run into. Basically, if you want serious control of the folders, files, users, and network, you need XP Professional.
+(3)Windows XP Media Center
+Windows XP Media Center is a specialized XP edition that includes the very handy Windows Media Center program (see Figure 4.8). Media Center is a Personal Video Recorder (PVR) program that enables you to watch and record television (you’ll need a TV tuner card) and organize all of your media, from photos to music.
+Figure 8: Windows XP Media Center
+Other than the Media Center program, Windows XP Media Center’s capabilities are identical to those of Windows XP Home.
+(2)Windows Vista
+In January of 2007, Microsoft announced Windows Vista. Vista introduced a new interface as well as some very different underpinnings, which we will discuss both in this chapter and later chapters. These changes created some serious teething problems that Microsoft fixed over time, though not fast enough to protect Vista from a nasty “bad operating system” opinion that lasts to this day. Love it or hate it, the CompTIA A+ exams expect you to know Vista. 
+Microsoft carried on the concept of different editions of Windows for different markets. Let’s look at the most common editions of Vista.
+(3)Windows Vista Home Basic
+Windows Vista Home Basic is roughly equivalent to Windows XP Home. Microsoft gears it to home users not needing more advanced multimedia support.
+(3)Windows Vista Home Premium
+Windows Vista Home Premium is the same as Windows Vista Home Basic, but it adds an upgraded Windows Media Center PVR application, similar to the one found in Windows XP Media Center (see Figure 4.9).
+Figure 9: Vista Home Premium Media Center
+(3)Windows Vista Business
+Windows Vista Business is the basic business edition and has all the security, file-sharing, and access controls seen in Windows XP Professional.
+(3)Windows Vista Ultimate
+Windows Vista Ultimate combines all of the features of every other Vista edition and includes some other features, such as a game performance tweaker and DVD ripping capability (see Figure 4.10).
+Figure 10: Vista Ultimate
+(3)Windows Vista Enterprise
+Windows Vista Enterprise is an enhanced edition of Windows Vista Business and includes extra features like BitLocker Drive Encryption and support for two physical CPUs. This edition cannot be purchased through normal stores. You’ll have to go through Microsoft directly to purchase it.
+Exam Tip: You can determine your Windows version by right-clicking My Computer in Windows XP, or Computer in Vista and Windows 7, and selecting Properties.
+(2)Windows 7
+Comparing the look and feel of Windows Vista to Windows 7 might make you think that the two operating systems are far more alike than different—and you’d be right. So if Windows Vista and Windows 7 look and act so much alike, why didn’t Microsoft just call Windows 7 “Windows Vista: The Fixed Version?” By the time Microsoft “fixed” Windows Vista, nobody wanted anything to do with it—people were reinstalling Windows XP! Microsoft didn’t have a choice; it had to call this “fixed” Vista something new. Enter Windows 7 (see Figure 4.11).
+Figure 11: The Windows 7 desktop
+Microsoft created several editions of Windows 7, closely following Windows Vista’s release model. Let’s look at each edition of Windows 7 and see how they compare.
+(3)Windows 7 Starter
+Around the time of Windows 7’s release, netbooks (super-lightweight laptops, mostly used for Web browsing) were incredibly popular. Windows 7 Starter is a stripped-down edition of the OS designed to complement the limited role of the netbook. Windows 7 Starter lacks many of the advanced networking, media, and graphics capabilities of other versions of Windows, focusing instead on easy Internet access.
+(3)Windows 7 Home Premium
+Windows 7 Home Premium is the most basic and most widely released edition of Windows 7. Roughly comparable to Windows Vista Home Premium, this edition of Windows 7 includes a lot of media functionality and some advanced network functions.
+(3)Windows 7 Professional
+Stepping up from Windows 7 Home Premium, Windows 7 Professional adds support for joining domains, as well as support for powerful features like Windows XP Mode (enabling you to run Windows XP programs inside Windows 7) and Remote Desktop Connection (enabling you to connect to another computer over a network and see that computer’s desktop as if it were your own).
+Exam Tip: You should know which tools are available in the various editions of Windows for the CompTIA exam. For example, Windows XP Mode works only with Windows 7 Professional, Ultimate, and Enterprise. It comes as a separate download and requires virtualization software such as Windows Virtual PC.
+(3)Windows 7 Ultimate
+Windows 7 Ultimate includes, as the name implies, everything that Windows 7 has to offer. You’ll find advanced networking, backup, and security tools to complete your ultimate OS experience.
+(3)Windows 7 Enterprise
+Windows 7 Enterprise is very similar to Windows Vista Enterprise and can only be purchased directly from Microsoft. Based on Windows 7 Professional, Enterprise includes extra features designed for large businesses, such as enhanced network searches, increased application security, and data protection using BitLocker.
+(2)Enter 64-bit Windows
+From roughly 1986 to around 2001, all CPUs were 32-bit. While we will save the big discussion of what 32-bit means for Chapter 6, for now let’s keep it simple: a 32-bit CPU can only use a maximum of 4 gigabytes (232 bytes = 4,294,967,296 bytes) of RAM. Starting in 2001, we began to see 64-bit CPUs that could accept more than 4 gigabytes. 64-bit-capable CPUs are now the norm, while 32-bit-only CPUs are mostly relegated to netbooks and smartphones. 
+Note: CPUs and 32- and 64-bit processing are covered in much greater detail in Chapter 6.
+The leap from 32-bit to 64-bit processing has a number of advantages. The really big compelling reason to go from 32- to 64-bit is that 64-bit CPUs support more than 4 GB of RAM. The more RAM you have, the more programs—and the bigger the programs—your system can run. Until fairly recently, not too many of us cared to go above 4 GB of RAM. We didn’t need the extra RAM, and we didn’t have a CPU that could run at 64 bits. My, how things have changed over the past few years!
+Exam Tip: Remember for the exams that 32-bit CPUs can support up to 4 GB of RAM. In concept, 64-bit CPUs can support up to 16 terabytes of memory. No one has made a CPU that supports the full 64-bit amount, however, and you certainly won’t find that much memory in the typical PC.
+The 64-bit CPUs first showed up with the Intel Itanium back in 2001. At that time the only folks interested in 64-bit processing were large data centers and a few organizations that needed to crunch big numbers. To run a computer with an Itanium, you needed an operating system that worked with a 64-bit processor. Up to that point, every version of Windows ran only at 32-bit. Microsoft answered the call by creating special 64-bit editions of Windows 2000 and XP, but these 64-bit editions were very rare and ran only on the Itanium.
+In 2003, Advanced Micro Devices (AMD) started to ship the popular Athlon 64 CPU. This CPU could run in either 32-bit or 64-bit mode, making 64-bit a realistic option for most of us. Intel followed AMD around 2004 with Pentium 4 CPUs also capable of 32-bit or 64-bit processing. Since then, almost every CPU sold by Intel or AMD has the ability to run in either 32-bit or 64-bit mode. Moving from 32-bit to 64-bit is easy, but only if you have a edition of Windows to support 64-bit. Microsoft has multiple editions of Windows designed to support 64-bit CPUs.
+Begin Tech Tip Box
+This should be a Note in All-in-One version.
+(5)Tech Tip
+(6)Four-Gigabyte Limit
+All 32-bit editions of Windows support a maximum of 4 GB of RAM. If your PC has more than 4 GB and you’re not running 64-bit Windows, you might as well remove any RAM above 4 GB—you’re wasting it!
+End Tech Tip Box
+(3)Windows XP 64-bit Edition
+The 64-bit-only edition of Windows XP was called Windows XP 64-bit Edition (apparently Microsoft decided not to get cute when naming that one). Given that it worked only on Intel Itanium processors, the chance of your seeing this operating system is pretty small unless you decide to work in a place with powerful server needs. The Windows XP Professional x64 Edition is a little more common, as it runs on any AMD or Intel processor that supports both 32 and 64 bits (see Figure 4.12).
+Figure 12: Windows XP Professional x64 Edition
+Windows XP 64-bit editions have had some impact, as they were the first stable Windows editions that truly supported 64-bit processing, but it was the introduction of Microsoft Vista that really started the move into 64-bit computing.
+(3)Windows Vista and Windows 7 64-bit Editions
+Each of the previously listed Vista and Windows 7 editions comes in both 32-bit and 64-bit editions (except for Windows 7 Starter). As we move into PCs with more than 4 GB of RAM, it’s important to make sure your edition of Windows is a 64-bit edition (see Figure 4.13).
+Figure 13: 64-bit Vista
+Prod: Please set callout circle as in F04-13_ref.tif.
+Note: Every installation DVD of Windows 7 comes with both 32-bit and 64-bit editions on the same disc.
+(3)Transitioning to 64-bit Windows
+Techs use “x86” or “x64” to describe a particular computer architecture, implying that there is some compatibility within that architecture. This matters because people need to know that the software they purchase will work properly with the computer they have. The transition from 32-bit editions of Windows to 64-bit editions of Windows requires a certain update in terminology.
+(4)x86 versus x64
+Intel originally used numbers to name its CPUs, such as 8086, 80286, 80386, and so on. To talk about them collectively, the industry replaced the leading numbers with an x and kept the numbers that stayed consistent for all the processors, thus x86 describes the Intel CPU architecture for PCs. All the 32-bit editions of Windows were designed to run on x86 architecture.
+The move to 64-bit CPUs and, equally importantly, to 64-bit editions of Windows required some sort of change in terminology. Microsoft and others picked up the x86 terminology and changed it to market 64-bit-only editions of their software, branding the 64-bit software as x64. A consumer, therefore, could look at a product such as Windows XP Professional x64 Edition and very quickly know that the software was designed for 64-bit CPUs rather than 32-bit CPUs.
+(4)Software Compatibility
+Transitions to updated architecture, such as the change from x86 to x64, create concern among users, because they fear that their old programs won’t run or will run poorly, or that they’ll have problems with compatibility down the road. Techs need to allay those fears by educating users properly. Here’s the scoop.
+Most of the 64-bit processors run either 32-bit or 64-bit editions of Windows without missing a beat. The 64-bit editions of Windows require a 64-bit CPU; they snicker at 32-bit processors and refuse to play. Many companies have produced 64-bit editions of applications that only work with 64-bit Windows running with a 64-bit CPU. Great, right? But what about all those 32-bit applications out there working for a living? It gets interesting.
+Windows Vista and Windows 7 64-bit editions support most 32-bit applications, sometimes without any user intervention and sometimes through explicit use of the Windows compatibility mode options. (Just for the record, you sometimes need to use Windows compatibility mode options to run older programs on Windows 32-bit editions, so it’s not just a function of 64-bit support for 32-bit applications.) Windows can try to emulate previous versions of Windows if an application balks at loading.
+To run a program in an emulated version of Windows, you need to access the primary executable file that, when double-clicked, makes the program run. We’ll go through where to find the program files in the various versions of Windows later in this chapter, but a quick example should suffice here. A user has a custom program—called “Widgets for XP”—designed to take advantage of particular features in Windows XP Professional with Service Pack 2 installed and it doesn’t work in Windows Vista or 7. Open Computer and go to C:\Program Files\Widgets for XP and look for a file with the type listed as Application, such as WidgetsXP.exe (see Figure 4.14). Right-click and select Properties.
+Figure 14: Finding an executable file
+Note: Microsoft regularly patches Windows to fix problems. That’s what the “with Service Pack 2” means in the example here. Chapter 17 covers updating Windows in detail. 
+On the Compatibility tab, you can select the checkbox next to Run this program in compatibility mode for: and select the OS of choice (see Figure 4.15). In this case, you would select Windows XP (Service Pack 2) to provide optimal compatibility for the application. Windows saves the configuration change and tries to open the program in compatibility mode each time the program loads.
+Figure 15: Compatibility mode options
+(1)The Windows Interface
+All versions of Windows share certain characteristics, configuration files, and general look and feel. Here’s some good news: You’ll find the same, or nearly the same, utilities in almost all versions of Windows, and once you master one version—both GUI and command-line interface—you’ll pretty much have them all covered. This section covers the essentials: where to find things, how to maneuver, and what common utilities are available. Where versions of Windows differ in concept or detail, I’ll point that out along the way. You’ll get to the underlying structure of Windows in the subsequent two sections of this chapter. For now, let’s look at the common user interface.
+(2)User Interface
+Windows offers a set of utilities, or interfaces, that every user should know about—both how and why to access them. And since every user should know about them, certainly every CompTIA A+ certified tech should as well! Let’s take a quick tour of the typical Windows GUI.
+Begin Tech Tip Box
+This should be a Note in All-in-One version.
+(5)Tech Tip
+(6)Knowledge Is Power
+Odds are pretty good you already know the Windows interface—but do you know what the CompTIA A+ calls all these parts? Don’t skip this section!
+End Tech Tip Box
+(3)Logon        
+Logging onto a Windows computer is something we all do, but few of us take time to appreciate the process. Your user name and password define what you can do on your computer. Every version of Windows supports multiple users on a single machine, so the starting point for any tour of the Windows user interface starts with the logon screen. Figure 4.16 shows the Windows XP logon screen.
+Figure 16: Windows XP logon screen
+Windows XP introduced a new type of logon called the Welcome screen (see Figure 4.17). If you’re using Windows XP Home or Media Center, this is the only logon screen you will see. Windows XP Professional also has the Welcome screen, but if you connect to a domain, you’ll see a more classic logon screen harkening back to the days of Windows 2000 (see Figure 4.18).
+Figure 17: Windows XP Welcome screen
+Figure 18: Windows XP domain logon screen
+All editions of Windows Vista and Windows 7 use an improved version of Windows XP’s Welcome screen (see Figure 4.19).
+Figure 19: Windows 7 Welcome screen
+(3)Desktop
+The Windows desktop is your primary interface to the computer. The desktop is always there, underneath whatever applications you have open. The desktop analogy appeals to most people—we’re used to sitting down at a desk to get work done. Figure 4.20 shows a nice, clean Windows XP desktop; note the icons on the left and the various graphical elements across the bottom. You can add folders and files to the desktop and customize the background to change its color or add a picture. Most people like to do so—certainly, I do! As an example, Figure 4.21 shows the desktop from my home system—a Windows 7 Ultimate PC.
+Figure 20: Windows XP desktop
+Figure 21: Mike’s messy desktop
+Begin Tech Tip Box
+This should be a Note in All-in-One version.
+(5)Tech Tip
+(6)Your Desktop Is a Folder
+Your desktop is actually a folder in your computer. Whatever is in that folder shows up on your desktop. It’s critical that you know how to get to that folder in every version of Windows covered on the CompTIA A+ exam. 
+End Tech Tip Box
+Clearly the Windows Vista and Windows 7 desktops differ a lot compared to the Windows XP desktop. What you’re seeing is something called the Aero desktop. The Aero desktop adds a number of impressive aesthetic features to your desktop that Microsoft claims makes the user experience more enjoyable and productive. I’m not going to get into an argument on the value of the Aero desktop, but it is an important part of the modern Windows interface. Most of the Aero features are more about looks than adding functionality, but the end result is a smoother desktop with a few noteworthy features. Transparency, as the name implies, gives an adjustable amount of transparency to the edges of your windowed programs, as you can see in Figure 4.22.
+Figure 22: Transparency
+Exam Tip: Windows Vista Home Basic and Windows 7 Starter do not support the Aero desktop.
+Flip 3D enables you to view and select all of your open windows in a 3D format, as shown in Figure 4.23.
+Figure 23: Flip 3D
+Flip 3D is fun to use. Press the windows key followed by the tab key to start it. Keep pressing tab to cycle through the windows. When the window you want is in the front, release both keys, and that window will become the active window. Try windows key-tab-shift to scroll through your windows in the opposite direction.
+To use the Aero desktop, you must have a video card that supports it. We’ll save the in-depth discussion for Chapter 21, but for now here’s what Microsoft says you need:
+1. DirectX 9 capability or better
+2. At least 128 megabytes of video RAM
+3. Windows Display Driver Model (WDDM) driver
+4. Pixel Shader version 2.0
+When you install Windows Vista or Windows 7, the installer checks your video to determine if it can support Aero. If your video card is capable, Aero turns on automatically. To check, press the windows key-tab combination. If Flip 3D appears, you have Aero. If it doesn’t, Aero is not active.
+To turn on Aero in Windows Vista, right-click on your desktop and select the Personalize menu option. Next, select Window Color and Appearance. If you see a screen that looks like Figure 4.24, you already have Aero running. If you see a screen that looks like Figure 4.25, select the Windows Aero color scheme to activate the Aero desktop.
+Figure 24: You’ve got Aero!
+Figure 25: The lack of transparency and the flat window with no drop shadow show that Aero is not activated.
+Begin Tech Tip Box
+This should be a Note in All-in-One version.
+(5)Tech Tip
+(6)Upgrade Time!
+If you can’t run on the Aero desktop, you need to upgrade your system to meet the minimum requirements. This usually means a new video card or updated video card drivers. See Chapter 21 for details.
+End Tech Tip Box
+If you’re running Aero, note that the Window Color and Appearance screen shown in Figure 4.25 has a slider to adjust the transparency settings and a checkbox to turn transparency off completely.
+Windows 7 makes activating Aero even easier. Right-click on your Desktop and select Personalize. If you see any Aero themes, as shown in Figure 4.26, you can select one to activate the Aero desktop.
+Figure 26: Select one of the Aero themes to activate the Aero Desktop in Windows 7.
+There are a number of other features that, although not on the CompTIA A+ certification exams, you really should try. The windows key-t combination gives a preview of all minimized windows. alt-tab gives a preview of all running windows. Pressing windows key-left arrow or windows key-right arrow will fill the respective half of your screen with the active window. Try Aero. It may not be the productivity tool Microsoft promises it to be, but it sure is fun.
+(3)Taskbar and Start Menu
+The taskbar runs along the bottom of all Windows desktops and includes up to four sections (depending on the version of Windows and your configuration). Starting at the left side, these are the Start button, the Quick Launch toolbar (in Windows XP and Windows Vista), the running programs area, and the notification area. Although the taskbar sits at the bottom of the desktop by default, you can move it to either side or to the top of the screen.
+The taskbar contains the Start button, probably the most clicked button on all Windows systems. You can find the Start button on the far left end of the taskbar. Figure 4.27 shows the Start buttons for Windows XP, Windows Vista, and Windows 7 (in order). Click the Start button to open the Start menu, where you can see the applications installed on the system and start them. 
+Try moving your cursor onto the All Programs menu item. When the All Programs menu appears, move the cursor to Accessories. Locate the Notepad program and click it. By default, Windows XP hides lesser-used menu options, so if you don’t see Notepad, click the double down-arrows at the bottom of the Accessories menu to make Notepad appear.
+Figure 27: Three different Windows Start buttons
+Prod: Please note, bullets included in the following Note.
+Note: You have a lot of clicking to do in this chapter, so take a moment to reflect on what I call the General Rules of Clicking. With a few exceptions, these rules always apply, and they really help in manipulating the Windows interface to do whatever you need done:
+1. Click menu items once to use them.
+2. Click icons once to select them.
+3. Click icons twice to use them.
+4. Right-click anything and select Properties to see its properties.
+End note
+Great! If you opened Notepad properly, you should see something like Figure 4.28, with Notepad displaying an untitled text page. Notice how Notepad shows up on the taskbar at the bottom of your screen. Most running programs appear on the taskbar in this way. Close the Notepad program by clicking on the button with the X in the upper-right corner of the Notepad window. Look again at the taskbar to see that Notepad no longer appears there.
+Figure 28: Notepad application (note the buttons in the upper-right corner)
+Now look all the way to the right end of the taskbar. This part of the taskbar is known officially as the notification area, though many techs and the CompTIA A+ certification exams call it the system tray. You will at a minimum see the current time displayed in the system tray, and on most Windows systems you’ll also see a number of small icons there. Figure 4.29 shows the system tray on a Windows Vista PC.
+Figure 29: System tray showing several icons and the time
+Exam Tip: Microsoft calls the area at the far right of the taskbar the notification area, but you might see it referred to on the CompTIA A+ certification exams as the system tray.
+These icons show programs running in the background. Most programs run in a window. Background programs function like any other program except they do not use a window, simply because the nature of their particular jobs makes a window unnecessary. Thousands of programs like to run in the system tray: network status, volume controls, battery state (on laptops), and removable device status are just a few examples. What shows up on yours depends on your version of Windows, what hardware you use, and what background programs you have installed. Some of the icons in Figure 4.29, for example, include virtual machine software, a monitor calibration program, and my e-mail program.
+On Windows XP and Vista systems, you’ll find the Quick Launch toolbar near the left end of the taskbar (see Figure 4.30). Here, you can place often-used programs and open them with a single click. On Windows XP systems, the Quick Launch toolbar is not displayed on the taskbar by default, so before you can use this convenient feature, you must right-click the taskbar, select Properties, and check Show Quick Launch. To change the contents of the Quick Launch toolbar, simply drag icons onto or off of it.
+Figure 30: Quick Launch toolbar
+Windows 7 takes the Quick Launch toolbar and marries it to the running program area thumbnails, creating pinned applications (see Figure 4.31). You can pin application icons directly onto the running application area. When you open one of these pinned applications, its icon changes to show that it is now open. If you open an application that isn’t pinned to the taskbar, its icon still shows up, but will disappear when you close it. If you’ve ever used the Apple OS X dock (perish the thought!), then you’ve used this type of feature.
+Figure 31: Pinned applications
+Microsoft introduced the Jump List with Windows 7  to show you context-sensitive information about whatever is on your taskbar (see Figure 4.32). If you look at the Jump List for Microsoft Word, for example, you’ll see recently opened documents. The Jump List for iTunes enables you to skip forward and backward through the songs in your playlist. To open a Jump List, click and drag upward on the icon in the taskbar or right-click on the icon. 
+Figure 32: A Jump List
+(3)The Many Faces of Windows Explorer
+Windows Explorer enables you to manipulate files and folders stored on all the drives in or connected to your computer. Microsoft presents the tool in a variety of ways to help you focus quickly on what you want to accomplish. If you want to see the contents of an optical disc, for example, you can open My Computer (Windows XP) or Computer (Windows Vista/7) by double-clicking the icon on the desktop or selecting the icon from the Start menu to have Windows Explorer open with the drives displayed (see Figure 4.33). To display the contents of a drive or folder, double-click it.
+Figure 33: Windows Explorer in Windows XP displaying the drives installed, as well as common tasks on the left
+Windows Explorer in Windows XP offers a series of common tasks in a bar along the left side of the screen, as you can see in Figure 4.34. Windows Vista and Windows 7 also offer tasks, but the options display in a bar below the location bar, near the top of the window (see Figure 4.34).
+Figure 34: Windows Explorer in Windows 7 displaying the drives installed and showing tasks
+When you access My Documents (Windows XP) or Documents (Windows Vista/7) by double-clicking the icon on the desktop or selecting it from the Start menu, Windows opens Windows Explorer with your user folders displayed. Because your My Documents/Documents folder is stored (by default) on the C: hard drive, Windows Explorer shows the contents of that drive, drilled down specifically to your folders.
+The fact that one way to open Windows Explorer is to double-click My Computer or Computer, and another way to open Windows Explorer is to double-click My Documents or Documents—and the two methods show different contents initially—leads many users to assume that they have two distinct tools. That’s simply not the case. Windows Explorer changes what’s displayed to suit specific tasks preset by Microsoft, but it’s a single tool that can point to different locations on your computer.
+Even better, you can change the look of Windows Explorer by clicking a button. The Folders button in Windows XP toggles the Folders list on or off on the left (see Figure 4.35). The Folders list is a tree menu that enables you to move the focus of Windows Explorer to different folders or drives. The Folders list replaces the common tasks bar in Windows XP. Note that the Folders list is enabled by default in Windows Vista and Windows 7 no matter whether you open the tool through Computer or Documents.
+Figure 35: Windows Explorer in Windows XP with the Folders list toggled on
+Prod: Please set callout circle in position as shown in F04-35ref.tif, but make it match other circle-labels, it shouldn’t be this large.
+In Windows Vista and Windows 7, you can alter the view of Windows Explorer in several ways. On the taskbar, you can click the down arrow next to the Change your view button to change the size of the icons, the details displayed, and more. You can turn off the Folders list (known in Vista and 7 as the Navigation pane) if desired by clicking the down arrow next to Organize, selecting Layout from the menu options, and then deselecting Navigation pane.
+The Folders list view makes copying and moving files and folders from one location to another very easy. The steps differ slightly when you copy to a folder on the same drive versus when you copy to a folder on a different drive, although the first step is the same: select a folder in the Folders list, and the contents of that folder appear in the main pane on the right.
+To move or copy a file from one folder to another folder on the same drive, click and hold a file or folder in the main pane and then drag the cursor over to any folder in the Folders list. A → symbol will appear (in Windows Vista and 7, although not in Windows XP). Release the mouse button, and you move that file or folder to the new folder. If you want to copy a file or folder rather than move it, press the ctrl key on your keyboard and then click and drag into the desired folder. The → symbol (if any) changes to a +; release the mouse button to copy the file or folder.
+Prod: Please note right-arrow symbol in above paragraph x2.
+To copy or move a file from one folder to another folder on a different drive, click and hold a file or folder in the main pane and then drag the cursor over to any folder in the Folders list, and a + symbol will appear. Release the mouse button, and you’ll make a copy of that file or folder in the new folder. If you want to move a file or folder rather than just copy it, press the shift key on your keyboard and then click and drag into the desired folder. The + symbol changes to a → in Windows Vista/7 or just goes away in Windows XP; release the mouse button to move the file or folder.
+Notice the differences in the icons displayed in Windows Explorer? Windows assigns different icons to different types of files, based on their extensions, the set of characters at the end of a filename, such as .EXE, .TXT, or .JPG. The oldest extensions, starting from back in the DOS era, are usually three characters, but current programs may use two-character extensions, such as .JS (JavaScript) or .AU (audio), or even four-character extensions, such as the ubiquitous .HTML for Web pages. In rare cases, a filename might actually have no extension.
+Begin Try This! Box
+(5)Try This!
+(6)Practice Moving and Copying
+If the Folders list option is new to you and you haven’t done a lot of moving or copying files or folders, try this.
+1. Open My Computer or Computer and double-click on the C: drive.
+2. Right-click in a blank spot and select New | Folder from the context menu. This will create a new folder named New Folder by default. The name of the New Folder is highlighted for changing when you first create it. If you click elsewhere, the folder keeps the default New Folder name.
+3. Select the folder and press F2 or right-click and select Rename from the options. Change the name to something other than New Folder, such as temp, tmp, practice, etc. The rest of this exercise assumes you named the new folder “temp.”
+4. Click the Folders button in Windows XP or select Organize | Layout | Navigation Pane in Windows Vista/7 if necessary to display the Folders list on the left part of the Windows Explorer screen.
+5. In the Folders list, select the temp folder. The contents of that folder should be blank in the main pane.
+6. Select any other folder in the Folders list to change the focus of the main pane.
+7. Hold down the ctrl key and then click and drag a file or folder from that new folder so that the cursor hovers over the temp folder and you see the + symbol. Release the mouse button and then select the temp folder to see the file or folder you just copied. Note that if you don’t hold the ctrl key down, you’ll move rather than copy the file.
+8. Try this a few more times to increase your comfort level with copying.
+9. Now move a file or folder from one folder to the temp folder and then back, verifying that you moved rather than just copied the file. Do not do this with any files or folders in the C:\ Windows folder! When you move a file in Windows Vista/7, you’ll see the + appear before you release the mouse button. In Windows XP you won’t see any symbol at all.
+End Try This! Box
+As you look at these icons on your own screen, some of you might say, “But I don’t see any extensions!” That’s because Windows hides them by default. To see the extensions in Windows XP, select Tools | Folder Options to open the Folder Options dialog box. Click the View tab and uncheck Hide extensions for known file types. In Windows Vista/7, select Organize | Folder and search options and then click the View tab to see the same dialog box, which has the same checkbox to uncheck (see Figure 4.36).
+Figure 36: Folder Options dialog box
+There are two other very handy settings under the View tab, but to see the results well, you need to be in the C: drive of Computer, as shown in Figure 4.37.
+Figure 37: Default Computer view where many things are hidden
+Go back into the View tab of the Folder Options dialog box, click the Show hidden files and folders radio button (named Show hidden files, folders, and drives in Windows Vista/7), and then uncheck Hide protected operating system files. Click the Apply to Folders button in Windows Vista/7 or the Apply to All Folders button in Windows XP. Your C: drive should look like Figure 4.38 when you are finished. As before, when you return to examining the folder contents, you will see the file extensions, and possibly some previously hidden files. You can tell which ones are hidden because they appear somewhat faded or ghostly compared to the non-hidden folders and files. 
+Figure 38: Computer displaying hidden files and folders
+Now that those files are visible, you have the awesome responsibility of keeping them safe. In general, the less you handle your vital system files, the better. You’ll learn some ways to do useful things with files that were previously hidden, but unless you really know what you’re doing, it’s best to leave them alone. Before you turn a PC over to someone who isn’t a trained PC tech, you’ll probably want to hide those system files again.
+Exam Tip: There are many scenarios where you’d want to see hidden files extensions and hidden files as well. What if you need to run a program from its executable file, for example, and there are four files in the same folder all named “setup”? Which one do you double click? Turn the file extensions visible, see which one is setup.exe, and double-click that one. Viewing hidden and system files, on the other hand, enable them to show up in a search. That’s very handy for techs. The CompTIA A+ exams quiz you on these topics.  
+Microsoft has tried to help users organize their files and folders through various user folders and subfolders that you access through Windows Explorer. The different operating systems offer different choices, so let’s look at My Documents (Windows XP), the User’s Files (Windows Vista/7), and Windows 7’s libraries.
+(4)My Documents, My [Whatever]
+All versions of Windows provide a special folder structure for each user account so users have their own places to store personal data. This folder grouping is called My Documents in Windows XP. Many Windows programs take advantage of My Documents and by default store their files in the folder or in a subfolder.
+Windows XP installations do not show My Documents on the desktop by default. On Windows XP, you can access it through the Start menu, or you can add it to your desktop. Right-click the desktop and select Properties to open the Display Properties dialog box. Select the Desktop tab, and then click on the Customize Desktop button to open the Desktop Items dialog box (see Figure 4.39). On the General tab, select the checkbox next to My Documents, My Computer, or both, and then click OK to close the dialog box and make any selected icons appear on the desktop.
+Figure 39: Windows XP Desktop Items dialog box
+Note: As with most tools in Windows, Microsoft gives you more than one way to accomplish tasks. In Windows XP and Vista, try right-clicking the Start menu icon, selecting Properties, and choosing the Classic Start Menu radio button.
+Windows XP’s My Documents folder includes several subfolders: My Pictures (which offers filmstrip and thumbnail views of pictures you store there), My Music (which will fire up Media Player to play any file), My Videos (which, again, starts Media Player), and more. Figure 4.40 shows My Pictures, using the thumbnail view. Many applications have since jumped on the bandwagon and added their own My [Whatever] folders in My Documents. Before I retired my Windows XP machine, for example, I had My eBooks, My Web Sites, My Received Files, My Virtual Machines…My Goodness!
+Figure 40: My Pictures subfolder in My Documents
+(4)User’s Files
+Windows Vista and Windows 7 take the equivalent of My Documents to a whole new level with the User’s Files. (Although a Documents folder is available, it’s designed literally for documents, such as text files.) Click on the Start menu and you’ll see a folder option with the user name of the account that’s currently logged into the computer. With that option, not only do you get all of the folders you get in Windows XP, but Windows Vista/7 also add a number of other folders as well as interesting but important data such as your Internet Explorer favorites and copies of recent searches.
+Just as with Windows XP, the user’s folder does not appear on the desktop by default. To see this folder, right-click on the desktop, select Personalize, and then click Change desktop icons on the left of the Personalization window. You’ll see a Desktop Icon Setting dialog box where you can select the User’s Files option to display the personal files of the logged-in user account. Figure 4.41 shows the User’s Files folder for my editor, with the Desktop Icon Settings dialog box in the background.
+Figure 41: Typical user accounts folder in Windows Vista
+(4)Windows 7 Libraries
+Windows 7 introduced only one new—but very useful—feature to Windows Explorer: libraries. The idea behind libraries is based on two fairly straightforward assumptions:
+1. People tend to need the same data over and over.
+2. The data you need for one job/project/function/whatever is rarely stored in a single folder.
+Libraries aggregate folders from multiple locations and place them in a single, easy-to-find spot in Windows Explorer. The files and folders don’t actually move. The library just creates links to them (see Figure 4.42).
+Figure 42: Libraries in Windows Explorer
+By default, every user has at least four libraries: Documents, Music, Pictures, and Videos. These libraries consist of two folders: the user’s My Whatever folder for that type of data plus the Public Whatever folder under C:\Users\Public. (You’ll learn more about these a little later in the chapter.) Let’s clarify this subtle but critical concept.
+Libraries are not folders but collections of existing folders. Let’s say you keep some digital photos in your My Photos folder, but you also have a separate stash of photos on an external hard drive in a folder called “Vacation Pictures.” Instead of flipping back and forth between these folders to see all of your photos, you could use a library to link them.
+When you open a library, you see the contents of every folder in the library together, as if they were all in the same folder (but they aren’t). Your photos in My Photos and Vacation Pictures will appear side by side. 
+You can create a library from any instance of Windows Explorer. Right-click Libraries in the navigation pane, select New | Library, and give the library a name. Ta-da! You’ve just made your first library.
+Now you need to add folders to your library. You can add folders from your system or from shares on other systems. To add a folder to a library, right-click the folder in Windows Explorer, select Include in library, and then click the library you want to use in the fly-out menu. You can also right-click a library, select Properties, and use the Include a folder button to add folders.
+Remember two important items:
+1. Only folders can populate a library—no individual files, no printers, etc.
+2. Don’t try to remove a folder from a library by deleting it. If you do, you will delete the actual folder. Instead, right-click the folder name under the library name on the Navigation pane and select Remove location from library.
+Exam Tip: Make sure you can name the four default libraries in Windows 7.
+Begin Cross Check Box
+(5)Cross Check
+(6)The Computing Process
+While you’re reading about the various interface features of Windows, now would be a good time to review the section “How the PC Works” in Chapter 3 and put things in context. What are the four functions of computing? With which function does the operating system interact? Why is that a trick question?
+End Cross Check Box
+(3)Recycle Bin
+In Windows, a file is not erased when you delete it. Windows adds a level of protection in the form of a special folder called the Recycle Bin. When you delete a file in Windows, the file moves into the Recycle Bin. It stays there until you empty the Recycle Bin or restore the file, or until the Recycle Bin reaches a preset size and starts erasing its oldest contents.
+To access the Recycle Bin’s properties, right-click the icon on the desktop and select Properties. (You’ll find the icon usually in the top left corner of the desktop.) The Recycle Bin’s properties look different in different versions of Windows, but they all work basically the same. Figure 4.43 shows the properties of a typical Windows 7 Recycle Bin. Windows will set aside a certain percentage by default (it changes according the size of the drive), but you can specify the amount of drive space to use for the Recycle Bin as well. If a hard drive starts to run low on space, this is one of the first places to check.
+Figure 43: Windows 7 Recycle Bin Properties
+(3)My Network Places/Network
+Systems tied to a network, either via a network cable or by a modem, have a folder called My Network Places in Windows XP or simply Network in Windows Vista/7 (see Figure 4.44). This folder shows all the current network connections available to you. You’ll learn about My Network Places/Network in Chapter 22.
+Figure 44: Network in Windows Vista
+(3)Windows Sidebar
+Windows Vista comes with a GUI feature called the Windows Sidebar, a tool that sits on one side of the desktop and enables small helper applications—called Microsoft Gadgets—to run. You can display a clock, for example, or a dynamic weather update. Vista comes with a handful of Gadgets, but developers have gone crazy with them, enabling you to add all sorts of useful tools, such as the Twitter feed and World of Warcraft search and realm status Gadgets in Figure 4.45.
+Windows 7 also includes Gadgets, but removes the Sidebar concept. You can place Windows 7 Gadgets anywhere on your desktop.
+Figure 45: Windows Sidebar in action
+Note: The background application running Gadgets in Windows 7 is called Sidebar.exe, just like in Windows Vista, so you could argue that Windows 7 includes Windows Sidebar.
+(2)Hot Keys
+In Windows, you can use key combinations to go directly to various programs and places. Here’s a reasonably extensive list of general-purpose commands for Windows. Be aware that some applications may change the use of these commands.
+(3)Function Keys
+1. f1Help
+2. f2Rename
+3. f3Search menu
+4. f5Refresh the current window
+5. f6Move among selections in current windows
+(3)Popular Hot Keys
+1. ctrl-escOpen Start menu
+2. alt-tabSwitch between open programs
+3. alt-f4Quit program
+4. ctrl-zUndo the last command
+5. ctrl-aSelect all the items in the current window
+6. shift-deleteDelete item permanently
+7. shift-f10Open a shortcut menu for the selected item (this is the same as right-clicking an object)
+8. shiftBypass the automatic-run feature for optical media (by pressing and holding down the shift key while you insert optical media)
+9. alt-spaceDisplay the main window’s System menu (from this menu you can restore, move, resize, minimize, maximize, or close the window)
+10. alt-enterOpen the properties for the selected object
+(3)Working with Text
+1. ctrl-cCopy
+2. ctrl-xCut
+3. ctrl-vPaste
+4. ctrl-zUndo
+(3)Windows Key Shortcuts
+These shortcuts use the special Windows key:
+1. windows keyStart menu
+2. windows key-dShow desktop
+3. windows key-eWindows Explorer
+4. windows key-lLock the computer
+5. windows key-tabCycle through taskbar buttons (or Flip 3D with Windows Aero in Vista/7)
+1. windows key-pause/breakOpen the System Properties dialog box
+Note: I’ve covered only the most basic parts of the Windows desktop in this chapter. The typical Windows desktop includes many other parts, but for techs and for the CompTIA A+ certification exams, what you’ve learned here about the desktop is more than enough.
+(1)Operating System Folders
+The modern versions of Windows organize essential files and folders in a relatively similar fashion. All have a primary system folder for storing most Windows internal tools and files. All have a set of folders for programs and user files. Yet once you start to get into details, you’ll find some very large differences. It’s very important for you to know in some detail the location and function of many common folders and their contents.
+Exam Tip: The CompTIA A+ exams love to ask detailed questions about the locations of certain folders. Make sure you know this section!
+(2)System Folder
+SystemRoot is the tech name given to the folder in which Windows has been installed. Windows XP, Vista, and 7 all use C:\Windows as the default SystemRoot. Be warned: this is the default folder, but you can change where Windows is installed during the installation process.
+It’s handy to know about SystemRoot. You’ll find it cropping up in many other tech publications, and you can specify it when adjusting certain Windows settings to make sure they work under all circumstances. When used as part of a Windows configuration setting, add percent signs (%) to the beginning and end like so: %SystemRoot%.
+Begin Try This! Box
+(5)Try This!
+(6)Getting to a Command Prompt
+Each version of Windows gives you several ways to access a command prompt, so depending on your version, try the steps below.
+1. In Windows XP, go to Start | Run to open the Run dialog box.
+2. Type cmd and press enter to open a command prompt.
+3. Alternatively, go to Start | All Programs | Accessories | System Tools and select Command Prompt.
+1. In Windows Vista and Windows 7, go to Start and type cmd into the Search bar. Press enter to open a command prompt.
+Note: Windows Vista labels the Search bar as Start Search. Windows 7 labels it as Search programs and files. Techs just call it the Search bar because it functions the same in both versions of Windows. 
+1. Alternatively, go to Start | All Programs | Accessories and select Command Prompt.
+End Try This! Box
+If you don’t know where Windows is installed on a particular system, here’s a handy trick. Get to a command prompt, type cd %systemroot%, and press enter. The prompt changes to the directory in which the Windows OS files are stored. Slick! See Chapter 18 for details on how to use the command prompt in Windows.
+The system folder contains many subfolders, too numerous to mention here, but CompTIA wants you to know the names of a number of these subfolders as well as what goes in them. Let’s run through the subfolders you should recognize and define (these folders are in all versions of Windows):
+1. %SystemRoot%\FontsAll of the fonts installed in Windows live here.
+2. %SystemRoot%\Offline Files (Offline Web Pages in Windows 7)When you tell your Web browser to save Web pages for offline viewing, they are stored in this folder. This is another folder that Windows automatically deletes if it needs the space.
+3. %SystemRoot%\System32This is the real Windows! All of the most critical programs that make Windows run are stored here. 64-bit editions of Windows also store critical files in %SystemRoot%\SysWOW64.
+4. %SystemRoot%\TempAnytime Windows or an application running on Windows needs to create temporary files, they are placed here. Windows deletes these files automatically as needed, so never place an important file in this folder.
+(2)Program and Personal Document Folders
+Windows has a number of important folders that help organize your programs and documents. They sit in the root directory at the same level as the system folder, and of course they have variations in name depending on the version of Windows. We’ll assume that your computer is using a C: drive—a pretty safe assumption, although there actually is a way to install all of Windows on a second hard-drive partition.
+(3)C:\Program Files (All Versions)
+By default, most programs install some or all of their essential files into a subfolder of the Program Files folder. If you installed a program, it should have its own folder in here. Individual companies decide how to label their subfolders. Installing Photoshop made by Adobe, for example, creates the Adobe subfolder and then an Adobe Photoshop subfolder within it. Installing Silverlight from Microsoft, on the other hand, only creates a Microsoft Silverlight folder with the program files within it. (Some programmers choose to create a folder at the root of the C: drive, bypassing Program Files altogether, but that’s becoming increasingly rare.)
+(3)C:\Program Files (x86)
+The 64-bit editions of Windows Vista and Windows 7 create two directory structures for program files. The 64-bit applications go into the C:\Program Files folder, whereas the 32-bit applications go into the C:\Program Files (x86) folder. The separation makes it easy to find the proper version of whatever application you seek.
+(3)Personal Documents
+As you might expect, given the differences among the desktop names for personal document locations outlined earlier in the chapter, the personal folders for Windows XP, Windows Vista, and Windows 7 differ in location and name. Windows XP places personal folders in the Documents and Settings folder, whereas Windows Vista and Windows 7 use the Users folder. From there, they differ even more.
+(4)C:\Documents and Settings (Windows XP)
+All of the personal settings for each user are stored here. All users have their own subfolders in Documents and Settings. In each user folder, you’ll find another level of folders with familiar names such as Desktop, My Documents, and Start Menu. These folders hold the actual contents of these items. Let’s dive through these to see the ones you need to know for the CompTIA A+ exams.
+1. \Documents and Settings\Default User (hidden)All of the default settings for a user. This folder is a template that Windows copies and customizes when a new user logs on for the first time.  
+2. \Documents and Settings\All UsersYou can make settings for anyone who uses the computer. This is especially handy for applications: some applications are installed so that all users may use them and some applications might be restricted to certain users. This folder stores information for any setting or application that’s defined for all users on the PC.
+3. \Documents and Settings\Shared DocumentsIf you’re using Windows XP’s Simple File Sharing, this is the only folder on the computer that’s shared.
+4. \Documents and Settings\<User Name>This folder stores all settings defined for a particular user (see Figure 4.46).
+Figure 46: Contents of a typical \Documents and Settings folder in Windows XP
+Opening any user’s folder reveals a number of even lower folders. Each of these stores very specific information about the user.
+1. \Documents and Settings\<User Name>\DesktopThis folder stores the files on the user’s desktop. If you delete this folder, you delete all the files placed on the desktop.
+2. \Documents and Settings\<User Name>\<User name’s> DocumentsThis is the My Documents folder for that user.
+3. \Documents and Settings\<User Name>\Application Data (hidden)This folder stores information and settings used by various programs that the user has installed. 
+4. \Documents and Settings\<User Name>\Start MenuThis folder stores any customizations the user made to the Start menu.
+Note: When you’re looking at your own account folders, you’ll see My Documents rather than <User name’s> Documents in the \Documents and Settings\<User Name> folder.
+(4)C:\Users (Windows Vista/7)
+Windows Vista and Windows 7 dump the old Documents and Settings folder for the Users folder. Functionally similar to Documents and Settings, there are a number of subfolders here that you need to know to pass the CompTIA A+ exams.
+Let’s repeat the process, locating the same functions in their new locations.
+1. \Users\Default (hidden), \Users\All Users, and \Users\<User Name>All of these folders retain the same functions as in Windows XP.
+1. \Users\<User Name>The big change takes place under each of the \Users\<User Name> folders. This folder still stores all settings defined for a particular user; however, this folder contains more subfolders in Vista/7 than in XP (see Figure 4.47). Luckily, you only need to know a few folders for the exams.
+Figure 47: Contents of a typical \Users\<User Name>\ folder in Vista
+1. \Users\<User Name>\DesktopSame as in Windows XP.
+2. \Users\<User Name>\DocumentsThis is the Documents folder for that user. Note that in Vista, it’s simply known as “Documents,” while in Windows 7, it is once again “My Documents.”
+1. \Users\<User Name>\DownloadsMicrosoft’s preferred download folder for applications to use. Most applications do use this folder, but some do not.
+2. \Users\<User Name>\Start MenuSame as in Windows XP.
+Note: Vista and 7 make a special hidden folder called “Default User” that points to the User folder to support older applications.
+Any good tech knows the name and function of all the folders just listed. As a tech, you will find yourself manually drilling into these folders for a number of reasons. Users rarely go directly into any of these folders with Windows Explorer. As a tech, you know that’s a good thing, since you appreciate how dangerous it is for them to do so. Imagine a user going into a \Users\<User Name>\Desktop folder and wiping out someone’s desktop folders. Luckily, Windows protects these folders by using NTFS permissions, making it very difficult for users to destroy anything other than their own work.
+Exam Tip: Be very careful here. Some of the folder name differences between XP and Vista/7 are subtle. Make sure you know the difference.
+(1)Tech Utilities
+Windows offers a huge number of utilities that enable techs to configure the OS, optimize and tweak settings, install hardware, and more. The trick is to know where to go to find them. This section shows the most common locations in Windows where you can access utilities: right-click, Control Panel, Device Manager, System Tools, command line, Microsoft Management Console, Administrative Tools, and the Action Center. Note that these are locations for tools, not tools themselves, and you can access many tools from more than one of these locations.You’ll see some of the same utilities in many of these locations. Stay sharp in this section, as you’ll need to access utilities to understand the inner workings of Windows.
+(2)Right-Click
+Windows, being a graphical user interface OS, covers your monitor with windows, menus, icons, file listsall kinds of pretty things you click on to do work. Any single thing you see on your desktop is called an object. If you want to open any object in Windows, you double-click on it. If you want to change something about an object, you right-click on it.
+Right-clicking on an object brings up a small menu called the context menu, and it works on everything in Windows. In fact, try to place your mouse somewhere in Windows where right-clicking does not bring up a menu (there are a few places, but they’re not easy to find). What you see on the little menu when you right-click varies dramatically depending on the item you decide to right-click. If you right-click a running program in the running program area on the taskbar, you’ll see items that relate to a window. Windows XP and Vista will present options such as Move, Size, and so on (see Figure 4.48). Windows 7 gives you the Jump List, as we discussed earlier. If you right-click on your desktop, you get options for changing the appearance of the desktop and more (see Figure 4.49). Even different types of files show different results when you right-click on them. Right-clicking is something techs do often.
+Figure 48: Right-clicking on a running program in Windows XP
+Figure 49: Right-clicking on the desktop in Windows 7 offers numerous settings
+Please use figure F04-49r
+One menu item you’ll see almost anywhere you right-click is Properties. Every object in Windows has properties. When you right-click on something and can’t find what you’re looking for, select Properties. Figure 4.50 shows the results of right-clicking on Computer in the Start menunot very exciting. But if you select Properties, you’ll get a dialog box like the one shown in Figure 4.51.
+Figure 50: Right-clicking on Computer
+Please use figure F04-50r
+Figure 51: Computer properties
+Production, please use F04-51r.tif
+(2)Control Panel
+The Control Panel handles most of the maintenance, upgrade, and configuration aspects of Windows. As such, the Control Panel is the first set of tools for every tech to explore. You can find the Control Panel by clicking the Start button and choosing Control Panel from the Start menu.
+Windows XP, Vista, and 7 open in the Control Panel’s Category view by default, which displays the icons in groups like “Printers and Other Hardware.” The categories change between each edition of Windows. This view requires an additional click (and sometimes a guess about which category includes the icon you need), so many techs use a more classic view. 
+The CompTIA A+ exams assume specifically classic view with large icons, so do what every tech does: switch from category view to classic view. In Windows XP, select Switch to Classic View. In Windows Vista, choose Classic View. In Windows 7, select Large icons or Small icons from the View by drop-down list for a similar effect. Figure 4.52 shows the Windows XP Control Panel in both Category and Classic views.
+Figure 52: Windows XP Control Panel in two views: Category (left) and Classic (right)
+A large number of programs, called applets, populate the Control Panel. The names and selection of applets vary depending on the version of Windows and whether any installed programs have added applets. But all versions of Windows have applets that enable you to control specific aspects of Windows, such as the appearance, installed applications, and system settings. Windows XP has Display and Windows Vista/7 have Personalization that enable you to make changes to the look and feel of your Windows desktop and tweak your video settings. Add or Remove Programs (Windows XP) and Programs and Features (Windows Vista/7) enable you to add or remove programs. The System applet (all versions) gives you access to essential system information and tools, such as Device Manager, although Microsoft wisely added Device Manager right on the Control Panel starting with Vista.
+Every icon you see in the Control Panel is actually a file with the extension .CPL. Any time you get an error opening the Control Panel, you can bet you have a corrupted CPL file. These are a pain to fix. You have to rename all of your CPL files with another extension (I use .CPB) and then rename them back to .CPL one at a time, each time reopening the Control Panel, until you find the CPL file that’s causing the lockup.
+Exam Tip: Even these common applets vary slightly among Windows versions. The CompTIA A+ certification exams do not test you on every little variance among the same applets in different versions—just know what each applet does.
+You can use the Control Panel applets to do an amazing array of things to a Windows system, and each applet displays text that helps explain its functions. The Add Hardware applet in Windows XP, for example, says quite clearly, “Installs and troubleshoots hardware” (see Figure 4.53). They are all like that. Figure 4.54 shows the User Accounts applet. Can you determine its use? (If not, don’t sweat it. I’ll cover users in Chapter 16.) Don’t bother trying to memorize all these applets. Each Control Panel applet relevant to the CompTIA A+ exams is discussed in detail in the relevant chapter throughout the rest of the book. For now, just make sure you can get to the Control Panel and appreciate why it exists.
+Figure 53: Add Hardware Wizard of the Add Hardware applet
+Please use figure F04-53r
+Figure 54: User Accounts window of the User Accounts applet
+(2)Device Manager
+With Device Manager, you can examine and configure all of the hardware and drivers in a Windows PC. As you might suspect from that description, every tech spends a lot of time with this tool! You’ll work with Device Manager many more times during the course of this book and your career as a PC tech.
+There are many ways to get to Device Manager—make sure you know all of them! The first way is to open the Control Panel and double-click the System applet icon. This brings up the System Properties dialog box in Windows XP and the System dialog box in Windows Vista/7. In Windows XP, you access Device Manager by selecting the Hardware tab and then clicking the Device Manager button. Figure 4.55 shows the Hardware tab of the System Properties dialog box in Windows XP. In Windows Vista/7, the System dialog box has a direct connection to Device Manager (see Figure 4.56).
+Figure 55: Windows XP System applet with the Hardware tab selected
+Figure 56: Windows Vista System applet with the Device Manager menu option circled
+Prod: Please add callout as in F04-56 ref.tif.
+You can also get to the System Properties/System dialog box in all versions of Windows by right-clicking My Computer/Computer and selecting Properties. From there, the path to Device Manager is the same as when you access this dialog box from the Control Panel.
+Note: Holding down the windows key and pressing pause/break is yet another way to get to the System Properties/System dialog box. Keyboard shortcuts are cool!
+The second (and more streamlined) method is to right-click My Computer/Computer and select Manage. This opens a window called Computer Management, where you’ll see Device Manager listed on the left side of the screen, under System Tools. Just click on Device Manager and it opens. You can also access Computer Management by opening the Administrative Tools applet in the Control Panel and then selecting Computer Management (see Figure 4.57).
+Figure 57: Device Manager in Computer Management
+Why are there so many ways to open Device Manager? Well, remember that we’re only looking at locations in Windows from which to open utilities, not at the actual utilities themselves. Microsoft wants you to get to the tools you need when you need them, and it’s better to have multiple paths to a utility rather than just one.
+Exam Tip: The CompTIA A+ exams want you to know multiple ways to open Device Manager.
+Device Manager displays every device that Windows recognizes, organized in special groups called types. All devices of the same type are grouped under the same type heading. To see the devices of a particular type, you must open that type’s group. Figure 4.57 shows a Windows Vista Device Manager screen with all installed devices in good orderwhich makes us techs happy. If Windows detects a problem, the device has a down arrow, a red X, or a black exclamation point on a yellow field, as in the case of the Digital Still Camera device in Figure 4.58.
+Figure 58: Problem device
+Note: There is one other “problem” icon you might see on a device in Device Managera blue i on a white field. According to Microsoft, this means you turned off automatic configuration for a device.
+A down arrow in Windows Vista/7 or a red X in Windows XP means Windows (or you) disabled the device—right-click on the device to enable it (see Figure 5.59). With a black exclamation point, right-click on the device and select Properties. Read the error code and explanation in the Device Status pane (see Figure 4.60). If necessary, look up a Microsoft Knowledge Base article that matches the number to see what to do. There are around 40 different errors—nobody bothers to memorize them! 
+Figure 59: Enabling a disabled device
+Please use figure F04-59r
+Figure 60: Problem device properties
+Please use figure F04-60r
+Device Manager isn’t just for dealing with problems. It also enables you to update drivers with a simple click of the mouse (assuming you have a replacement driver on your computer). Right-click a device and select Update Driver Software from the menu to get the process started. Figure 4.61 shows the options in Windows Vista.
+Figure 61: Selecting Update Driver Software in Windows Vista Device Manager
+Make sure you can get to Device Manager! You will come back to it again and again in subsequent chapters, because it is the first tool you should access when you have a hardware problem.
+(2)System Tools
+The Start menu offers a variety of tech utilities collected in one place: System Tools. In the System Tools menu, you’ll find commonly accessed tools such as System Information and Disk Defragmenter (see Figure 4.62).
+Figure 62: System Tools menu options
+Many techs overlook memorizing how to find the appropriate Windows tool to diagnose problems, but nothing hurts your credibility with a client like fumbling around, clicking a variety of menus and applets, while mumbling, “I know it’s around here somewhere.” The CompTIA A+ certification exams therefore test you on a variety of paths to appropriate tools. 
+To access System Tools in all three versions of Windows, go to Start | All Programs | Accessories | System Tools. Each version of Windows shares many of the same tools, but each includes its own utilities as well. I’ll note which version of Windows uses each particular system tool.
+(3)Activate Windows (All)
+Windows XP unveiled a copy-protection scheme called activation. Activation is a process where your computer sends Microsoft a unique code generated on your machine based on the Install CD/DVD’s product key and a number of hardware features, such as the amount of RAM, the CPU processor model, and other ones and zeros in your PC. Normally, activation is done at install time, but if you choose not to activate at install or if you make “substantial” changes to the hardware, you’ll need to use the Activate Windows utility (see Figure 4.63). With the Activate Windows utility, you can activate over the Internet or over the telephone.
+Figure 63: Activate Windows
+Note: Once you’ve activated Windows, this applet goes away.
+(3)Backup (Windows XP)
+The Backup utility enables you to back up selected files and folders to removable media such as tape drives. Backing up is an important function that’s covered in detail in Chapters 16 and 29.
+Note: Neither Windows XP Home nor Windows XP Media Center includes Backup during installation. You must install the Backup program from the Windows installation CD by running the \Valueadd\MSFT\Ntbackup\NTbackup.msi program.
+(3)Backup Status and Configuration (Windows Vista)
+Vista does not enable you to back up files on your computer selectively. You can only back up personal data with the Backup Status and Configuration Tool or, if you have Vista Business, Ultimate, or Enterprise, perform a complete PC backup by using Windows Complete PC Backup. If you want to pick and choose the file to back up, you need to buy a third-party tool. Also, this tool only allows you to back up to optical media, a hard drive, or a networked drive.
+Note: Windows 7 has a more powerful backup utility than Windows Vista has, but you won’t find it in the System Tools folder. Check out Chapter 29 for more information on Windows 7’s backup tools.
+(3)Character Map (All)
+Ever been using a program only to discover you need to enter a strange character such as the euro character (€) but your word processor doesn’t support it? That’s when you need the Character Map. It enables you to copy any Unicode character into the Clipboard (see Figure 4.64).
+Figure 64: Character Map
+Note: Windows 7 includes the Private Character Editor tool, enabling you to create your own characters and symbols for use with the Character Map.
+(3)Disk Cleanup (All)
+Disk Cleanup looks for unneeded files on your computer, which is handy when your hard drive starts to get full and you need space. Every version of Windows since XP starts this program whenever your hard drive gets below 200 MB of free disk space.
+(3)Disk Defragmenter (All)
+You use Disk Defragmenter to make your hard drive run faster—you’ll see more details on this handy tool in Chapter 12. You can access this utility in the same way you access Device Manager; you also find Disk Defragmenter in the Computer Management Console. A simpler method is to select Start | All Programs | Accessories | System Tools—you’ll find Disk Defragmenter listed there. You can also right-click on any drive in My Computer or Computer, select Properties, and click the Tools tab, where you’ll find a convenient Defragment Now button.
+(3)Files and Settings Transfer Wizard (Windows XP)
+Suppose you have an old computer full of files and settings, and you just bought yourself a brand new computer. You want to copy everything from your old computer onto your new computerwhat to do? Microsoft touts the Files and Settings Transfer Wizard as just the tool you need (see Figure 4.65). This utility copies your desktop files and folders and, most conveniently, your settings from Internet Explorer and Outlook Express; however, it won’t copy over your programs, not even the Microsoft ones, and it won’t copy settings for any programs other than Internet Explorer and Outlook Express. If you need to copy everything from an old computer to a new one, you’ll probably want to use a disk-imaging tool such as Norton Ghost.
+Figure 65: Files and Settings Transfer Wizard
+(3)Windows Easy Transfer (Windows Vista/7)
+Windows Easy Transfer is an aggressively updated version of the Files and Settings Transfer Wizard. It does everything the older version does and adds the capability to copy user accounts and other settings (see Figure 4.66).
+Exam Tip: Microsoft provides a data transfer tool called the User State Migration Tool (USMT) for advanced users. It’s functionally is similar to Windows Easy Transfer, but it uses a scripting language to provide more power and flexibility. CompTIA also lists “User Data Migration Tool (UDMT)” on the objectives, but that tool hasn’t existed since Windows NT and thus won’t be covered on the exams.
+Figure 66: Windows Easy Transfer
+(3)Scheduled Tasks (All)
+With the Scheduled Tasks utility, you can schedule any program to start and stop any time you wish. The only trick to this utility is that you must enter the program you want to run as a command on the command line, with all the proper switches. Figure 4.67 shows the configuration line for running the Disk Defragmenter program.
+Figure 67: Task Scheduler
+(3)Security Center (Windows XP)
+Security Center is a one-stop location for configuring many security features on your computer. This tool is also in the Control Panel. Windows Vista and Windows 7 remove Security Center from System Tools. Windows Vista retains the Control Panel applet, but Windows 7 has a beefed up applet called the Action Center (discussed later in this chapter). All of these security features, and many more, are discussed in detail in their related chapters.
+(3)System Information (All)
+System Information is one of those tools that everyone (including the CompTIA A+ exams) likes to talk about, but it’s uncommon to meet techs who say they actually use this tool. System Information shows tons of information about the hardware and software on your PC (see Figure 4.68). 
+Figure 68: System Information
+(3)System Restore (All)
+System Restore is arguably the most important single utility you’ll ever use in Windows when it comes to fixing a broken system. This handy tool enables you to take a “snapshot”a copy of a number of critical files and settingsand return to that state later (see Figure 4.69). System Restore holds multiple snapshots, any of which you may restore to in the future.
+Figure 69: System Restore
+Imagine you’re installing some new device in your PC, or maybe a piece of software. Before you actually install, you take a snapshot and call it “Before Install.” You install the device, and now something starts acting weird. You go back into System Restore and reload the previous Before Install snapshot, and the problem goes away.
+System Restore isn’t perfect, but it’s usually the first thing to try when something goes wrongassuming, of course, you made a snapshot!
+Begin Tech Tip Box
+This should be a Note in textbook version.
+(5)Tech Tip
+(6)System Restore on a Non-Booting PC
+If your system won’t boot and you are unable to run System Restore from within Windows, you can access System Restore by booting from the Windows Installation CD or DVD and accessing System Restore from the System Recovery Options menu. 
+End Tech Tip Box
+(3)Resource Monitor (Windows 7)
+Resource Monitor tracks CPU, memory, disk, and network usage on your computer and displays that information across a dizzying number of charts and graphs. Resource Monitor can help you track down any pesky program or service that you think is hogging all of your system resources and slowing down your PC. If you’ve seen the Windows Task Manager before, think of this as the supercharged version with extra bells and more whistles.
+Note: Windows Vista has a tool that offers features similar to Resource Monitor called Reliability and Performance Monitor. You can find it in the Control Panel applet called Administrative Tools. (More on the latter a little bit later in the chapter.)
+(2)Command Line
+The Windows command-line interface is a throwback to how Microsoft operating systems worked a long, long time ago when text commands were entered at a command prompt. Figure 4.70 shows the command prompt from DOS, the first operating system commonly used in PCs.
+Figure 70: DOS command prompt
+DOS is dead, but the command-line interface is alive and well in every version of Windowsincluding Windows 7. Every good tech knows how to access and use the command-line interface. It is a lifesaver when the graphical part of Windows doesn’t work, and it is often faster than using a mouse if you’re skilled at using it. An entire chapter (Chapter 18) is devoted to the command line, but let’s look at one example of what the command line can do. First, you need to get there. In Windows XP, select Start | Run, and type cmd in the dialog box. Click OK and you get to a command prompt. In Windows Vista/7, you do the same thing in the Start | Search dialog box. Figure 4.71 shows a command prompt in Windows Vista.
+Figure 71: Command prompt in Windows Vista
+Once at a command prompt, type dir and press enter on your keyboard. This command displays all the files and folders in a specific directory—probably your user folder for this exercise—and gives sizes and other information. DIR is just one of many useful command-line tools you’ll learn about in this book.
+(2)Microsoft Management Console
+One of the biggest complaints about earlier versions of Windows was the wide dispersal of the many utilities needed for administration and troubleshooting. Despite years of research, Microsoft could never find a place for all the utilities that would please even a small minority of support people. In a moment of sheer genius, Microsoft determined that the ultimate utility was one that the support people made for themselves! This brought on the creation of the amazing Microsoft Management Console.
+The Microsoft Management Console (MMC) is simply a shell program in Windows that holds individual utilities called snap-ins. To start an MMC, select Start | Run in Windows XP, or use the Start Search bar in Windows Vista/7. Type mmc and press enter to get a blank MMC. Blank MMCs aren’t much to look at (see Figure 4.72).
+Figure 72: Blank MMC
+You make a blank MMC console useful by adding snap-ins, which include most of the utilities you use in Windows. Even good old Device Manager is a snap-in. You can add as many snap-ins as you like, and you have many to choose from. Many companies sell third-party utilities as MMC snap-ins.
+For example, to add the Device Manager snap-in, in the blank MMC, select File | Add/Remove Snap-ins. In the Add or Remove Snap-ins dialog box, you will see a list of available snap-ins in Windows Vista/7 (see Figure 4.73); click the Add button in Windows XP to open a similar screen. Select Device Manager in the list, and click the Add button to open a Device Manager dialog box that prompts you to choose the local or a remote PC for the snap-in to work with. Choose Local computer for this exercise, and click the Finish button. Click the Close button to close the Add Standalone Snap-in dialog box, and then click OK to close the Add or Remove Snap-ins dialog box.
+Figure 73: Available snap-ins
+You should see Device Manager listed in the console. Click it. Hey, that looks kind of familiar, doesn’t it (see Figure 4.74)?
+Figure 74: Device Manager as a snap-in
+Once you’ve added the snap-ins you want, just save the console under any name, anywhere you want. I’ll save this console as Device Manager, for example, and drop it on my desktop (see Figure 4.75). I’m now just a double-click away from Device Manager.
+Figure 75: The Device Manager shortcut on the desktop
+(2)Administrative Tools
+Windows combines the most popular snap-ins into an applet in the Control Panel called Administrative Tools. Open the Control Panel and open Administrative Tools (see Figure 4.76).
+Figure 76: Administrative Tools
+Administrative Tools is really just a folder that stores a number of premade consoles. As you poke through these, notice that many of the consoles share some of the same snap-ins—nothing wrong with that. Of the consoles in a standard Administrative Tools collection, the ones you’ll spend the most time with are Computer Management, Event Viewer, Performance Monitor (Reliability and Performance Monitor in Windows Vista), and Services.
+Exam Tip: The CompTIA A+ certification exams have little interest in some of these snap-ins, so this book won’t cover them all. If I don’t mention it, it’s almost certainly not on the test!
+(3)Computer Management
+The Computer Management applet is a tech’s best buddy, or at least a place where you’ll spend a lot of time when building or maintaining a system (see Figure 4.77). You’ve already spent considerable time with two of its components: System Tools and Storage. Depending on the version of Windows, System Tools also offers Event Viewer, Performance, Device Manager, and more. Storage is where you’ll find Disk Management.
+Figure 77: Computer Management applet
+(3)Event Viewer
+Event Viewer shows you at a glance what has happened in the last day, week, or more, including when people logged in and when the PC had problems (see Figure 4.78). You’ll see more of Event Viewer in Chapter 28.
+Figure 78: Event Viewer reporting system errors
+(3)Performance (Windows XP)
+The Performance console consists of two snap-ins: System Monitor and Performance Logs and Alerts. You can use these for reading logs—files that record information over time. System Monitor can also monitor real-time data (see Figure 4.79).
+Figure 79: System Monitor in action
+Suppose you are adding a new cable modem and you want to know just how fast you can download data. Click the plus sign (+) on the toolbar to add a counter. Click the Use local computer counters radio button, and then choose Network Interface from the Performance Object pull-down menu. In the Add Counters dialog box, make sure the Select counters from list radio button is selected. Last, select Bytes Received/sec. The dialog box should look like Figure 4.80.
+Figure 80: Setting up a throughput test
+Click Add, and then click Close; probably not much is happening. Go to a Web site, preferably one where you can download a huge file. Start downloading and watch the chart jump; that’s the real throughput (see Figure 4.81).
+Figure 81: Downloading with blazing speed
+Note: You’ll learn more about the Performance console in Chapter 17.
+(3)Reliability and Performance Monitor/Performance Monitor (Windows Vista/7)
+Reliability and Performance Monitor in Windows Vista offers just about everything you can find in the Performance applet of older versions of Windows—although everything is monitored by default, so there’s no need to add anything. In addition, it includes Reliability Monitor. Reliability Monitor enables you to see at a glance what’s been done to the computer over a period of time, including software installations and uninstallations, failures of hardware or applications, and general uptime (see Figure 4.82). It’s a nice starting tool for checking a Vista machine that’s new to you.
+Windows 7 drops Reliability Monitor from this tool and calls it Performance Monitor, but everything else is the same. You can still find Reliability Monitor in Windows 7 by searching for it in the Search bar.
+Figure 82: Reliability and Performance Monitor open to the Reliability Monitor screen in Vista
+Note: You’ll learn more about Reliability and Performance Monitor/Performance Monitor in Chapter 17.
+(3)Services
+Windows runs a large number of separate programs called services. The best way to visualize a service is to think of it as something that runs, yet is invisible. Windows comes with about 100 services by default, and they handle a huge number of tasks, from application support to network functions. You can use the Services applet to see the status of all services on the system, including services that are not running (see Figure 4.83).
+Figure 83: Services applet
+Right-click a service and select Properties to modify its settings. Figure 4.84 shows the properties for the Bluetooth Support Service. See the Startup type pull-down menu? It shows three options: Automatic, Manual, and Disabled. Automatic means it starts when the system starts, Manual means you have to come to this tab to start it, and Disabled prevents anything from starting it. Make sure you know these three settings, and also make sure you understand how to start, stop, pause, and resume services (note the four buttons below Startup Type).
+Figure 84: Bluetooth Support Service properties
+Exam Tip: The CompTIA A+ certification exams are not interested in having you memorize all of these services—just make sure you can manipulate them.
+(2)Action Center (Unique to Windows 7)
+Sometimes, you just want to glance at your system and know that nothing has gone terribly wrong. Previous versions of Windows lacked a single “peephole” to view the status of your computer. Action Center fills that gap, providing a one-page aggregation of event messages, warnings, and maintenance messages that, for many techs, might quickly replace Event Viewer as the first place to look for problems. Unlike Event Viewer, Action Center separates issues into two sections, Security and Maintenance, making it easier to scan a system quickly (see Figure 4.85).
+Figure 85: Action Center
+Action Center only compiles the information, taking data from well-known utilities such as Event Viewer, Windows Update, Windows Firewall, and User Account Control (UAC) and placing it into an easy-to-read format. If you wish, you can tell Action Center where to look for information by selecting Change Action Center settings (see Figure 4.86).
+Figure 86: Change Action Center settings
+If you see a problem, Action Center includes plenty of links to get you to the utility you need. From the Action Center applet, you get direct links to
+1. UAC settings
+2. Performance Information and Tools
+3. Backup and Restore
+4. Windows Update
+5. Troubleshooting Wizard
+6. System Restore
+Although Action Center does little more than reproduce information from other utilities, it makes finding problems quick and easy. Combined with quick links to most of the utilities you’ll need, Action Center should become your base of operations when something goes wrong on a Windows 7 PC.
+Begin superhead
+(1)Beyond A+
+End superhead
+(2)Windows 8
+Windows 8 will launch sometime in 2012 (according to Microsoft), but it’s not covered on the 220-801 and 220-802 exams. While the differences between Windows Vista and Windows 7 were minor enough that you could know a lot about 7 if you knew about Vista, Windows 8 looks to reimagine how we interface with our PCs.
+The biggest idea behind Windows 8 is to unify Microsoft’s multiple platforms: PCs, tablets, phones—even the Xbox 360 now has an interface very similar to Windows 8’s “Metro” user interface (see Figure 4.87). You’ll be able to use touch-enabled monitors to slide, drag, pinch, and zoom your way around apps specifically designed for the new look. Don’t worry, though—your old desktop is safely hidden behind the Metro Start screen. 
+Figure 87: The Windows 8 Metro UI
+Beyond the interface, Microsoft has said they want to make it easier for developers to quickly program applications for multiple platforms. They’ve also previewed new tools and enhanced utilities from previous versions of Windows. The new Task Manager alone, as shown in Figure 4.88, should be enough to whet your appetite until the final release. 
+Figure 88: Windows 8’s upgraded Task Manager
+(2)Windows Embedded
+The world is filled with PCs in the most unlikely places. Everything from cash registers to the F-22 Raptor fighter plane contains some number of tiny PCs. These aren’t the PCs you’re used to seeing, though. They almost never have mice, monitors, keyboards, and the usual I/O you’d expect to see, but they are truly PCs, with a CPU, RAM, BIOS, and storage.
+These tiny PCs need operating systems just like any other PC, and a number of companies make specialized OSs for embedded PCs. Microsoft makes Windows Embedded just for these specialized embedded PCs.
+(1)Chapter 4 Review
+(2)Chapter Summary
+After reading this chapter and completing the exercises, you should understand the following about Microsoft Windows.
+(3)Relate the history of Microsoft Windows
+1. Microsoft entered the operating system game in the early 1980s with a command-line OS called Microsoft Disk Operating System, or MS-DOS. With a command-line OS, you interacted with the computer to run programs, save files, and do all the other computing functions by typing and pressing the enter key on your keyboard.
+2. The earliest versions of Windows were little more than a graphical overlay of the DOS command-line operating system. This overlay version of Windows went through a number of updates, ending with the first truly popular version of Windows, Windows for Workgroups version 3.1. The last editions are collectively referred to as Windows 3.x.
+3. In 1989, Microsoft offered a completely separate version of Windows called Windows NT, a true graphical operating system that was dramatically more powerful than the Windows overlay versions. It cost a lot more, unfortunately, so it did not see widespread adoption by regular users, only by business users. What set NT apart from other versions of Windows (including later, consumer-oriented products) was its very secure file system, NTFS.
+4. From 1995 through 2000, Microsoft offered consumers an alternative version of Windows that went through several updates, such as Windows 95 and Windows 98. Collectively these versions of Windows are called Windows 9x. All of these versions of Windows used forms of FAT for file systems, not the more secure NTFS.
+5. Three Windows versions concern the CompTIA A+ certified technician: Windows XP, Windows Vista, and Windows 7. All can use the NTFS file system.
+6. Microsoft released several editions of Windows XP, including Windows XP Professional and Windows XP Home. Windows XP Professional provides full-blown data security, and it is the only edition of Windows XP with the capability of logging onto a special Windows Server–controlled domain. Windows XP Home is a stripped-down edition of XP Professional, without some of the important security features, such as no access to the Encrypting File System. Windows XP Media Center offers features for the media junkie, such as a personal video recorder to capture television shows for later viewing.
+7. Windows Vista comes in many flavors, such as Windows Vista Home Premium and Windows Vista Business. Windows Vista Ultimate combines all of the features of every other Vista edition and includes some other features, such as a game performance tweaker and DVD ripping capability.
+8. Microsoft also released several editions of Windows 7, including Windows 7 Home Premium, Windows 7 Professional, and Windows 7 Ultimate. Windows 7 introduced new features including a new taskbar and libraries.
+9. Windows XP, Vista, and 7 come in 64-bit editions to take advantage of the extra computing power and memory capacity available with modern 64-bit processors. A 32-bit operating system is limited to a mere 4 GB of RAM, whereas a 64-bit OS can have gobs more. The 64-bit editions of Windows XP saw some use, but the 64-bit editions of Vista and 7 took the 64-bit OS into the mainstream.
+(3)Explain the Windows interface
+1. Every version of Windows supports multiple users on a single machine, so the starting point for any tour of the Windows user interface starts with the logon screen. Windows XP offers the Welcome screen in addition to the standard logon, where users can click on an icon next to their user name to log in, although this feature is disabled in a domain environment. Windows Vista and 7 use a beefed-up Welcome screen that works in both workgroups and domains.
+2. The Windows desktop is the primary interface to the computer in every version of Windows. Windows Vista and Windows 7 differ from Windows XP with the use of transparencies and other nice features of the Windows Aero interface. Flip 3D enables users to quickly and visually cycle through open programs.
+3. Some of the important items on the desktop are the taskbar, Start button, Quick Launch toolbar (in Windows XP and Vista), and notification area, or system tray. The taskbar shows running programs. The Start button gives you access to the Start menu from which you can run installed applications. The Quick Launch toolbar enables you to select often-used programs with a single click, though it’s not displayed by default in Windows XP. The notification area shows icons for applications running in the background, such as your antivirus software. Windows 7 merges the Quick Launch toolbar to the running program thumbnails, creating pinned applications.
+4. My Computer in Windows XP and Computer in Windows Vista and Windows 7 offer access to the files and folders on mass storage drives on the computer. To view the contents of any device, double-click its icon in My Computer/Computer. You can tell by a file’s icon or extension—if you alter the default folder view to show file extensions—what type of file it is, such as a .JPG picture file.
+5. Windows Explorer is the main tool for observing and manipulating files on a system. The tool differs in some ways among the versions tested on the CompTIA A+ exams. Windows Explorer and My Computer/Computer are two facets of the same application.
+6. When you delete a file in Windows, it moves into the Recycle Bin. It stays there until you empty the Recycle Bin or restore the file, or until the Recycle Bin reaches a preset size and starts erasing its oldest contents.
+7. Windows offers many useful keyboard key combinations for accomplishing common tasks. Some combinations work specifically with the operating system utilities, such as pressing the windows key and the pause/break key to open the System Properties/System dialog box. Other combinations work throughout most applications, such as ctrl-c to copy something and ctrl-v to paste whatever was copied.
+(3)Identify the operating system folders of Windows XP, Windows Vista, and Windows 7
+1. %SystemRoot% is the tech name given to the folder in which Windows has been installed. The default %SystemRoot% in Windows XP, Vista, and 7 is C:\Windows.
+2. Most programs install some or all of their essential files into a subfolder of the Program Files folder. This folder is found almost always in the root of the same drive where you find the Windows system folder. Windows Vista/7 64-bit versions have a separate Program Files (x86) folder for 32-bit applications.
+3. Personal documents are stored by default in the Documents and Settings folder (Windows XP) or the Users folder (Windows Vista/7). Within the folder structure, you’ll find folders for each user account and, within those user account folders, folders such as Desktop, Start Menu, and so on. Just as with Program Files, the Documents and Settings/Users folder will be on the same drive as the Windows system folder.
+4. In Windows 7, you can link folders and create libraries, which show the contents of multiple folders in a single place.
+(3)Describe the utilities in Windows that are essential to techs
+1. Windows offers many utilities that enable techs to configure the operating system, optimize and tweak settings, install hardware, and more. Utilities that techs use frequently are right-click, Control Panel, Device Manager, System Tools, command line, Microsoft Management Console, Administrative Tools, and the Action Center.
+2. Right-clicking an object brings up the context menu for the object so you can act on it. One common right-click option is Properties.
+3. The Control Panel handles most of the maintenance, upgrade, and configuration aspects of Windows. The Control Panel contains many applets that are displayed in categories.
+4. Device Manager enables techs to examine and configure all the hardware and drivers in a Windows PC. Device Manager displays every device that Windows recognizes, organized in special groups called types. You can see resources used by devices and update drivers directly in Device Manager. Device Manager places an icon on top of any hardware device that’s not functioning properly or is manually disabled. Device Manager is the first tool you should access when you have a hardware problem.
+5. The System Tools menu in the Start menu offers techs a one-stop shop for many handy utilities. You’ll find Disk Defragmenter and Disk Cleanup here, for example. The Files and Settings Transfer Wizard in Windows XP or the Windows Easy Transfer tool in Windows Vista and Windows 7 appears in this menu as well.
+6. The command-line interface enables you to type commands to the operating system. This can give you access to utilities and tools that often provide quicker results than graphical tools.
+7. The Microsoft Management Console (MMC) is simply a shell program in Windows that holds individual utilities called snap-ins. These snap-ins enable you to accomplish varying tech tasks. You can create custom MMCs or use ones preconfigured by Microsoft.
+8. The Administrative Tools applet in the Control Panel is a collection of preconfigured MMCs, such as Computer Management and Event Viewer. Users rarely need to access these MMCs, but good techs know their Administrative Tools.
+9. Action Center in Windows 7 enables techs to see at a glance what issues need to be addressed on a PC.
+(2)Key Terms
+%SystemRoot% ()
+activation ()
+Action Center ()
+Administrative Tools ()
+Aero () 
+applets ()
+Computer ()
+Computer Management () 
+context menu ()
+Control Panel () 
+desktop ()
+Device Manager () 
+extension () 
+Flip 3D ()
+Folders list () 
+interface ()
+Jump List ()
+library ()
+logon screen ()
+Microsoft Management Console (MMC) () 
+My Computer ()
+My Documents ()
+My Network Places ()
+Navigation pane ()
+Network ()
+notification area () 
+Performance ()
+Performance Monitor ()
+pinned application ()
+Quick Launch toolbar ()
+Recycle Bin ()
+Reliability and Performance Monitor () 
+service ()
+Start button ()
+System Tools () 
+system tray () 
+taskbar () 
+transparency ()
+User’s Files ()
+Welcome screen ()
+Windows Explorer ()
+Windows Sidebar () 
+x64 () 
+x86 ()
+(2)Key Term Quiz
+Use the Key Terms list to complete the sentences that follow. Not all terms will be used.
+1. You can readily see programs running in the background by looking at the __________________ (also known as the notification area).
+2. A(n) __________________ links folders and displays them together for quick and easy access to your files.
+3. The first place you should look on a PC with malfunctioning hardware is __________________.
+4. Most tech tools in Windows can be found in __________________.
+5. The __________________ in Windows XP offers a great spot for accessing favorite programs without resorting to the Start menu.
+6. Jill accidentally deleted a critical file. Winona the tech assures her that the file is no doubt in the __________________ and not lost forever.
+7. You can place handy Gadgets that display useful information on the __________________.
+8. Windows 7 uses __________________ to enable transparency and Flip 3D.
+9. By default, Windows Vista uses the __________________ for logon.
+10. A file type is defined by its __________________.
+(2)Multiple-Choice Quiz
+1. Which of the following do you not need to use the Aero desktop in Windows 7?
+1. DirectX 9
+2. 128 MB of video RAM
+3. WDDM driver
+4. 64-bit version of Windows 7
+1. Windows XP provides a number of ready-made MMC snap-ins stored in the __________________ applet in the Control Panel.
+1. System
+2. Network
+3. Administrative Tools
+4. MMC
+1. Which of the following are parts of the Windows desktop?
+1. Services, command line, applications
+2. Right-click, drag and drop, point and click
+3. Quick Launch toolbar, system tray, taskbar
+4. CPU, RAM, hard drive
+1. The Microsoft Management Console holds individual utilities called what?
+1. Built-ins
+2. Snap-ins
+3. Applets
+4. MMCs
+1. The folder in which Windows is installed is known generically as what?
+1. %RootFolder%
+2. %WinRoot%
+3. %SystemRoot%
+4. %System32%
+1. Which version of Windows 7 must be purchased directly from Microsoft?
+1. Windows 7 Home Premium
+2. Windows 7 Professional
+3. Windows 7 Ultimate
+4. Windows 7 Enterprise
+1. How do you access a command prompt in Windows 7?
+1. Start | Run, type cmd, and press enter
+2. Start | Run, type dos, and press enter
+3. Start | Search programs and files, type cmd, and press enter
+4. Start | Search programs and files, type dos, and press enter
+1. What copy protection scheme is used in Windows 7?
+1. Activation
+2. BitLocker
+3. Event Viewer
+4. Services
+1. Which of the following operating systems uses the Backup Status and Configuration Tool to back up files and folders?
+1. Windows 2000
+2. Windows XP Home
+3. Windows XP Professional
+4. Windows Vista
+1. Which key combination enables you to switch between loaded programs?
+1. alt-esc
+2. alt-tab
+3. ctrl-c
+4. ctrl-x
+1. What is the benefit of 64-bit Windows over 32-bit Windows?
+1. Supports more hard drives
+2. Fewer lockups
+3. Supports more memory
+4. Supports more monitors
+1. Which version of Windows 7 was designed primarily for netbooks?
+1. Windows 7 Starter
+2. Windows 7 Home Basic
+3. Windows 7 Home Premium
+4. Windows 7 Professional
+1. For a user account called “Ethan,” where would you expect to find the personal documents folder in a Windows Vista computer?
+1. C:\Ethan
+2. C:\Users\Ethan
+3. C:\Documents and Settings\Ethan
+4. C:\Windows\Ethan
+1. Which applet can you use to view the status of all services on a system?
+1. Character Map
+2. Performance Monitor
+3. Services
+4. System Information
+1. What is the primary tool you use to observe and manipulate files on a computer?
+1. Flip 3D
+2. Windows Aero
+3. Windows desktop
+4. Windows Explorer
+(2)Essay Quiz
+1. Your department just added four new interns who will share two PCs running Windows XP. Your boss has decided that you’re the person who should take the newbies under your wing and teach them about Windows. Write a brief essay on some essential Windows folders and interfaces that every user should know.
+2. Your boss just got off the phone with the corporate headquarters and is in somewhat of a panic. She doesn’t know the first thing about the Microsoft Management Console, but now every tech is going to be issued a custom MMC. Write a brief essay explaining the function of the MMC to help allay her worries.
+3. As part of your promotion, it is your responsibility to train the new techs your boss just hired. Write a brief essay describing the tools in the System Tools folder group.
+(2)Lab Projects
+(3)Lab Project 4.1
+Create your own MMC loaded with the snap-ins you use the most, or that you would like to experiment with. Add at least three snap-ins. Save the MMC on your desktop and give it an appropriate name.
+(3)Lab Project 4.2
+In a couple of places in the chapter, you got a taste of working with some of the more complex tools in Windows, such as Event Viewer and the Performance console. Go back through the text and reread those sections, and then do an Internet search for a how-to article. Then work with the tools.
+Begin textbook solutions
+(2)Key Term Quiz Answers
+Use the Key Terms list to complete the sentences that follow. Not all terms will be used.
+1. You can readily see programs running in the background by looking at the system tray (also known as the notification area).
+2. A(n) library links folders and displays them together for quick and easy access to your files.
+3. The first place you should look on a PC with malfunctioning hardware is Device Manager.
+4. Most tech tools in Windows can be found in Administrative Tools.
+5. The Quick Launch toolbar in Windows XP offers a great spot for accessing favorite programs without resorting to the Start menu.
+6. Jill accidentally deleted a critical file. Winona the tech assures her that the file is no doubt in the Recycle Bin and not lost forever.
+7. You can place handy Gadgets that display useful information on the Windows Sidebar.
+8. Windows 7 uses Aero to enable transparency and Flip 3D.
+9. By default, Windows Vista uses the Welcome screen for logon.
+10. A file type is defined by its extension.
+(2)Multiple-Choice Quiz Answers
+1. Which of the following do you not need to use the Aero desktop in Windows 7?
+1. DirectX 9
+2. 128 MB of video RAM
+3. WDDM driver
+4. 64-bit version of Windows 7
+Answer: D
+1. Windows XP provides a number of ready-made MMC snap-ins stored in the __________________ applet in the Control Panel.
+1. System
+2. Network
+3. Administrative Tools
+4. MMC
+Answer: C
+1. Which of the following are parts of the Windows desktop?
+1. Services, command line, applications
+2. Right-click, drag and drop, point and click
+3. Quick Launch toolbar, system tray, taskbar
+4. CPU, RAM, hard drive
+Answer: C
+1. The Microsoft Management Console holds individual utilities called what?
+1. Built-ins
+2. Snap-ins
+3. Applets
+4. MMCs
+Answer: B
+1. The folder in which Windows is installed is known generically as what?
+1. %RootFolder%
+2. %WinRoot%
+3. %SystemRoot%
+4. %System32%
+Answer: C
+1. Which version of Windows 7 must be purchased directly from Microsoft?
+1. Windows 7 Home Premium
+2. Windows 7 Professional
+3. Windows 7 Ultimate
+4. Windows 7 Enterprise
+Answer: D
+1. How do you access a command prompt in Windows Vista?
+1. Start | Run, type cmd, and press enter
+2. Start | Run, type dos, and press enter
+3. Start | Start Search, type cmd, and press enter
+4. Start | Start Search, type dos, and press enter
+Answer: C
+1. What copy protection scheme is used in Windows Vista?
+1. Activation
+2. BitLocker
+3. Event Viewer
+4. Services
+Answer: A
+1. Which of the following operating systems use the Backup Status and Configuration Tool to back up files and folders?
+1. Windows 2000
+2. Windows XP Home
+3. Windows XP Professional
+4. Windows Vista
+Answer: D
+1. Which key combination enables you to switch between loaded programs?
+1. alt-esc
+2. alt-tab
+3. ctrl-c
+4. ctrl-x
+Answer: B
+1. What is the benefit of 64-bit Windows over 32-bit Windows?
+1. Supports more hard drives
+2. Fewer lockups
+3. Supports more memory
+4. Supports more monitors
+Answer: C
+1. Which version of Windows 7 was designed primarily for netbooks?
+1. Windows 7 Starter
+2. Windows 7 Home Basic
+3. Windows 7 Home Premium
+4. Windows 7 Professional
+Answer: A
+1. For a user account called “Ethan,” where would you expect to find the personal documents folder in a Windows Vista computer?
+1. C:\Ethan
+2. C:\Users\Ethan
+3. C:\Documents and Settings\Ethan
+4. C:\Windows\Ethan
+Answer: B
+1. Which applet can you use to view the status of all services on a system?
+1. Character Map
+2. Performance Monitor
+3. Services
+4. System Information
+Answer: C
+1. What is the primary tool you use to observe and manipulate files on a computer?
+1. Registry
+2. Windows Aero
+3. Windows desktop
+4. Windows Explorer
+Answer: D
+(2)Essay Quiz Answers
+1. Your department just added four new interns who will share two PCs running Windows XP. Your boss has decided that you’re the person who should take the newbies under your wing and teach them about Windows. Write a brief essay on some essential Windows folders and interfaces that every user should know.
+Answer: The essay should cover the basics, such as My Computer/Windows Explorer for navigating through files and folders, the Start menu for finding applications, and the Quick Launch toolbar for launching programs. The student should discuss the file structure of Windows XP, particularly My Documents and the Documents and Settings structure that enables multiple users to share a PC without worry. The student will probably talk about the desktop and the Recycle Bin.
+1. Your boss just got off the phone with the corporate headquarters and is in somewhat of a panic. She doesn’t know the first thing about the Microsoft Management Console, but now every tech is going to be issued a custom MMC. Write a brief essay explaining the function of the MMC to help allay her worries.
+Answer: The student should explain that the MMC simply provides a unified interface for many different tech tools in Windows XP/Vista/7. Mention should be made of Administrative Tools, a collection of premade MMCs. The student should discuss how to make a custom MMC to take some of the mystery out of it for the boss.
+1. As part of your promotion, it is your responsibility to train the new techs your boss just hired. Write a brief essay describing the tools in the System Tools folder group.
+Answer: The student should explain the purpose of and the basic use of the tools in the System Tools folder group, including Backup, Character Map, Disk Cleanup, Disk Defragmenter, Files and Settings Transfer Wizard, Windows Easy Transfer, Scheduled Tasks, Security Center, System Information, System Restore, and Resource Monitor. 
+(2)Cross Check Answer
+(3)The Computing Process
+The four functions of computing are input, processing, output, and storage. A savvy student should understand that the operating system is involved in every aspect of the computer, so it interacts with all four functions. The OS provides an interface so you can do input, such as move a mouse cursor and click on something. The OS works with printer hardware to print what your input has created. The OS creates the file system that enables the CPU to access files needed in the computing process. The file system enables the computer to store data, such as applications, properly.
+Begin AIO EOC
+(1)Chapter Review
+(2)Questions
+1. Which of the following is an advantage of running Windows on NTFS as opposed to FAT?
+1. Security
+2. Multiple folders
+3. Long filenames
+4. Speed
+1. Which version of Windows uses the Backup Status and Configuration Tool?
+1. Windows 2000
+2. Windows XP Media Center
+3. Windows XP Professional
+4. Windows Vista Ultimate
+1. What is the proper way to refer to the system root folder??
+1. %System%
+2. &System&
+3. %SystemRoot%
+4. &SystemRoot&
+1. What folder is a central storage location for user files in XP?
+1. Program Files
+2. My Documents
+3. My Files
+4. %SystemRoot%\Users
+1. Which utility is helpful in troubleshooting hardware?
+1. System Properties
+2. Device Manager
+3. Disk Management
+4. Security Center
+1. Which Windows utility backs up critical files and settings and enables you to roll back to a previous state?
+1. Registry
+2. System Restore
+3. System Information
+4. Microsoft Management Console
+1. Many tech tools are grouped together in which location?
+1. Start | All Programs | Tools
+2. Start | All Program | Tools | System Tools
+3. Start | All Programs | System Tools | Accessories
+4. Start | All Programs | Accessories | System Tools
+1. Which utility is missing from the default Windows XP Home installation?
+1. Backup
+2. Character Map
+3. Computer Management
+4. User Accounts
+1. What is displayed in the Computer window?
+1. All the drives on your system
+2. All the Control Panel applets
+3. Installed programs
+4. Performance Monitor
+1. Which feature of Windows 7 enables you to link folders and view their contents together?
+1. Favorites
+2. Shortcuts
+3. Libraries
+4. Windows Explorer
+(2)Answers
+1. A. NTFS offers security. FAT provides no security.
+2. D. The Backup Status and Configuration Tool did not exist before Vista.
+3. C. The system root folder is referred to as %SystemRoot%.
+4. B. Most XP users put their personal files in My Documents.
+5. B. For hardware in general, turn to Device Manager.
+6. B. System Restore does the trick here, enabling you to back up and restore your system.
+7. D. You’ll find many useful tools in Start | All Programs | Accessories | System Tools.
+8. A. Backup is not installed by default in Windows XP Home.
+9. A. Computer shows your drives.
+10. C. Using libraries, you can link folders and view their contents together as if they were one folder.
+End trade EOC
+Page  of

@@ -1,0 +1,619 @@
+﻿CompTIA A+® Guide to Managing and Troubleshooting PCs                 March 23, 2012
+(cn)Chapter 3
+(ct)The Visible PC
+Begin Quotes
+“People who think they know everything really annoy those of us who know we don’t.”
+—BJARNE STROUSTRUP, CREATOR OF THE C++ PROGRAMMING LANGUAGE
+End Quotes
+In this chapter, you will learn how to
+1. Describe how the PC works
+2. Identify all the connectors and devices on a typical PC system unit
+3. Discuss the major internal components of a PC
+Mastering the craft of a PC technician requires you to learn a lot of details about the many pieces of hardware in the typical PC. Even the most basic PC contains hundreds of discrete hardware components, each with its own set of characteristics, shapes, sizes, colors, connections, and so on. By the end of this book, you will be able to discuss all of these components in detail. This chapter takes you on a tour of a typical PC, starting with an overview of how computers work, and then examining both external connectors and internal components.
+Remember the children’s song that goes, “Oh, the leg bone connects to the thigh bone…”? Well, think of the rest of the chapter in that manner, showing you what the parts look like and giving you a rough idea about how they work and connect. In later chapters, you’ll dissect all of these PC “leg bones” and “thigh bones” and reach the level of detail you need to install, configure, maintain, and fix computers. Even if you are an expert, do not skip this chapter! It introduces a large number of terms used throughout the rest of the book. You might know some of these terms already, but reading about them again won’t hurt.
+It is handy, although certainly not required, to have a PC that you can take the lid off of and inspect as you progress. Almost any old PC will help—it doesn’t even need to work. So get thee a screwdriver, grab your PC, and see if you can recognize the various components as you read about them.
+Begin Superhead
+(1)Historical/Conceptual
+End Superhead
+(1)How the PC Works
+You’ve undoubtedly seen a PC in action: a nice, glossy monitor displaying a picture that changes according to the actions of the person sitting in front of it, typing away on a keyboard and clicking on a mouse. Sound pours out of tiny speakers that flank the screen, and a box whirs happily beneath the table. The PC is a computer: a machine that enables you to do work, produce documents, play games, balance your checkbook, and look up the latest sports scores on the Internet.
+Although the computer is certainly a machine, it’s also programming: the commands that tell the computer what to do to get work done. These commands are just ones and zeros that the computer’s hardware understands, enabling it to do amazing actions, such as perform powerful mathematical functions, move data (also ones and zeros), realize the mouse has moved, and put pretty icons on the screen. So a computer is a complex interaction between hardware and computer programming, created by your fellow humans.
+Ever heard of Morse code? Morse code is nothing more than dots and dashes to those who do not understand it, but if you send dots and dashes (in the right order) to someone who understands Morse code, you can tell the recipient a joke. Think of programming as Morse code for the computer (see Figure 3.1). You may not understand those ones and zeros, but your computer certainly does!
+Figure 1: Computer musing that a string of ones and zeros makes perfect sense
+There’s more to the ones and zeros than just programming. All of the data on the computer—the Web pages, your documents, your e-mail—is also stored as ones and zeros. Programs know how to translate these ones and zeros into a form humans understand.
+Programming comes in two forms. First are the applications: the programs that get work done. Word processing programs, Web browsers, and e-mail programs are all considered applications. But applications need a main program to support them. They need a program that enables you to start and stop applications, copy, move, and delete data, talk to the hardware, and perform lots of other jobs. This program is called the operating system (OS). Microsoft Windows is the most popular OS today, but there are other computer operating systems, such as Apple Mac OS X and the popular (and free) Linux (see Figure 3.2). Computer people lump operating systems and applications into the term software to differentiate them from the hardware of the computer.
+Figure 2: Typical Mac OS X (left), Linux (middle), and Windows (right) interfaces
+Understanding the computer at this broad conceptual level—in terms of hardware, OS, and programs—can help you explain things to customers, but good techs have a much more fundamental appreciation and understanding of the complex interplay of all of the software and the individual pieces of hardware. In short, techs need to know the processes going on behind the scenes.
+Note: The CompTIA A+ certification exams only cover the Windows operating system in regard to PCs, so you won’t see much discussion of Mac OS X or Linux in this book. Nevertheless, a good tech should possess a basic understanding of these two excellent operating systems.
+From the CompTIA A+ tech’s perspective, the computer functions through four stages: input, processing, output, and storage. Knowing which parts participate in a particular stage of the computing process enables you to troubleshoot on a fundamental and decisive level.
+To illustrate this four-step process, let’s walk through the steps involved in a fairly common computer task: preparing your taxes. [Insert collective groan here.] February has rolled around and, at least in the United States, millions of people install their favorite tax software, TurboTax from Intuit, onto their computers to help them prepare their taxes. 
+(2)Input
+After starting TurboTax, your first job is to provide the computer with data: essential information, such as your name, where you live, how much you earned, and how many dollars you gave to federal and state governments.
+Various pieces of hardware enable you to input data, the most common of which are the keyboard and mouse. Most PCs won’t react when you say, “Hey you!”—at least not anywhere outside of a Star Trek episode. Although that day will come, you must still use something decidedly more mechanical: a keyboard to type in your data. The OS provides a fundamental service in this process as well. You can bang on a keyboard all day and accomplish nothing unless the OS translates your keystrokes into code that the rest of your computer’s hardware understands.
+Begin Tech Tip – Turn into Note for AIO
+(5)Tech Tip
+(6)Voice Recognition
+Some might argue that voice recognition on the PC, the ability of a computer to understand your voice, has been around for a long time. In my opinion, it doesn’t work well enough to replace my keyboard yet.
+The same is not quite true on the smart phone front, where Apple’s Siri handles a fair number of commands in common English just fine. Siri can find destinations for you, phone numbers, and more. You can send text messages dictated to Siri as well, plus many more things. We’ll look at smart phones in more detail in Ch. 27.
+End Tech Tip
+(2)Processing
+Next, the computer processes your data. After you place information in various appropriate “boxes” in TurboTax, the computer does the math for you. Processing takes place inside the system unit—the box under your desk (see Figure 3.3)—and happens almost completely at a hardware level, although that hardware functions according to rules laid out in the OS. Thus you have another complex interaction between hardware and software.
+Figure 3: Processing takes place somewhere in here!
+The processing portion is the magical part—you can’t see it happen. The first half of this book demystifies this stage, because good techs understand all of the pieces of the process. I won’t go through the specific hardware involved in the processing stage here, because the pieces change according to the type of process.
+(2)Output
+Simply adding up your total tax for the year is useless unless the computer shows you the result. That’s where the third step—output—comes into play (see Figure 3.4). Once the computer finishes processing data, it must put the information somewhere for you to inspect it. Often it places data on the monitor so you can see what you’ve just typed. It might send the data over to the printer if you tell it to, so you can print out copies of your tax return to mail to the Internal Revenue Service (or whatever the Tax Man is called where you live). A hardware device does the actual printing, but the OS controls the printing process. Again, it’s a fundamental interaction of hardware and software.
+Figure 4: Output devices
+Production: please see F03-04 Ref.tif as a reference for callout placement
+Callouts
+Printer
+Speaker 
+Monitor
+(2)Storage
+Once you’ve sent in your tax return, you most likely do not want all that work simply to disappear. What happens if the IRS comes back a couple of months later with a question about your return? Yikes! You need to keep permanent records and a copy of the tax program. The fourth stage in the computing process is storage. A lot of devices are used in the storage process, the most visible of which are the external storage parts, such as a thumb drive or recordable CD discs (see Figure 3.5).
+Figure 5: Typical storage (CD-R discs)
+(1)The Art of the PC Technician
+Using the four stages of the computing process—input, processing, output, and storage—to master how the PC works and, in turn, become a great technician requires that you understand all of the pieces of hardware and software involved and the interactions between them that make up the various stages. You have to know what the parts do, in other words, and how they work together. The best place to start is with a real computer. Let’s go through the process of inspecting a typical, complete PC, including opening up a few important pieces to see the components inside. Hopefully, you have a real computer in front of you right now that you may dismantle a bit. No two computers are exactly the same, so you’ll see differences between your PC and the one in this chapter—and that’s okay. You’ll come to appreciate that all computers have the same main parts that do the same jobs even though they differ in size, shape, and color.
+By the time you reach the end of this book, you’ll have a deeper, more nuanced understanding of the interaction of hardware and software in the four-stage computing process. Just as great artists have mastered fundamental skills of their trade before creating a masterpiece, you’ll have the fundamentals of the art of the computer technician and be on your road to mastery.
+Begin Superhead
+(1)801
+End Superhead
+(1)The Complete PC
+Sometimes I hate the term “personal computer.” That term implies a single device, like a toaster. A typical PC is more than one device, and you need all of the parts (or at least most) to make the PC work. The most important part of the PC is the box that usually sits under your desk: the one that all of the other parts connect to, called the system unit. All of the processing and storage takes place in the system unit. All of the other parts of the PC—the printer, the keyboard, the monitor—connect to the system unit and are known collectively as peripherals. Figure 3.6 shows a typical desktop PC, with the system unit and peripherals as separate pieces.
+Figure 6: Typical desktop computer with peripherals
+Production: please use F03-06ref.png as a reference for callout placement.
+Callouts
+System unit
+Peripherals
+Most computers have a standard set of peripherals to provide input and output. You’ll see some variation in color, bells, and whistles, but here’s the standard set:
+1. MonitorThe big television thing that provides a visual output for the computer.
+2. KeyboardKeypad for providing keyed input. Based on a typewriter.
+3. MousePointing device used to control a graphical pointer on the monitor for input.
+4. Speakers Speakers provide sound output.
+5. PrinterProvides printed paper output.
+A typical PC has all of these peripherals, but no law requires a PC to have them. Plenty of PCs don’t have a printer. Some PCs don’t have speakers, just headphones. Some computers don’t even have a keyboard, mouse, or monitor—but they tend to hide in unlikely places, such as the inside of a jet fighter or next to the engine in an automobile.
+Other PCs may have many more peripherals. Installing four or five printers on a single PC is easy, if you so desire. You’ll also find hundreds of other types of peripherals, such as Web cameras and microphones, on many PCs. You add or remove peripherals depending on what you need from the system. The only limit is the number of available connections. 
+(2)External Connections
+Every peripheral connects to the system unit through one of the many types of ports. The back of a typical system unit (see Figure 3.7) has many cables running from the system unit to the various peripherals. You may even have a few connectors in the front. All of these connectors and ports have their own naming conventions, and a good tech knows all of them. It’s not acceptable to go around saying such things as “That’s a printer port,” or “That’s a little-type keyboard connector.” You need to be comfortable with the more commonly used naming conventions so you can say “That’s a female DB-25,” or “That’s a USB connector.”
+Figure 7: Connections in the back of a PC
+(3)Plugs, Ports, Jacks, and Connectors
+Although PCs use close to 50 different types of connections, almost all fit into one of six major types: DIN, USB, FireWire, DB, RJ, and audio. Read the next paragraphs to get your terminology straight so that you can then jump into the details of the various connectors with gusto.
+No one seems to use the terms plug, port, jack, or connector correctly, so let’s get these terms straight right from the start. To connect one device to another, you need a cable containing the wires that make the connection. On each device, as well as on each end of the connecting cable, you need standardized parts to make that connection. Because these are usually electrical connections, one part needs to fit inside another to make a snug, safe connection.
+A plug is a part with some type of projection that goes into a port. A port is a part that has some type of matching hole or slot that accepts the plug. You never put a port into a plug; it’s always the other way around. The term jack is used as an alternative to port, so you may also put a plug into a jack. The term connector describes either a port (jack) or a plug. As you progress though this chapter and see the various plugs and ports, this will become clearer (see Figure 3.8).
+Figure 8: Plug, port, and jack
+Production: please refer to F03-08 Ref.tif for callout placement 
+Callouts
+Jack
+Port
+Plug
+(3)Mini-DIN Connectors
+Most PCs sport the European-designed mini-DIN connectors. The original Deutsche Industrie Norm (DIN) connector was replaced by mini-DIN a long time ago, so you’ll only see mini-DIN connectors on your PC (see Figure 3.9 bottom). Older-style keyboards and mice plugged into DIN ports (Figure 3.9 top). You’ll hear many older techs refer to a mini-DIN keyboard connector as a PS/2 connector. That’s what IBM called the port when it released the Personal System 2 (PS/2) computer way back in 1987 and the name stuck. 
+The standard mini-DIN connector has six pins and has been used for many devices aside from mice and keyboards. Some ancient video cards used the mini-DIN connector for output to a television, for example, and a lot of speaker sets use it to connect satellites to subwoofer or to a control box. In uses other than keyboard or mouse, the mini-DIN gets yet another name, DIN-6. 
+Figure 9: DIN (top) and mini-DIN (bottom) connectors
+Exam Tip: Remember all three names for the mini-DIN connector: mini-DIN, PS/2, and DIN-6. Why CompTIA thinks you need to know the old names is anybody’s guess.
+(3)USB Connectors
+Universal serial bus (USB) provides the most common general-purpose connection for PCs. You’ll find USB versions of many devices, such as mice, keyboards, scanners, cameras, and printers. USB connections come in three sizes: A, B, and mini-B. The USB A connector’s distinctive rectangular shape makes it easily recognizable (see Figure 3.10).
+Figure 10: USB A connector and port
+You never see a USB B connector on your computer. USB B connecters are for the other end of the USB cable, where it attaches to the USB device (see Figure 3.11).
+Figure 11: USB B connector
+The USB B connector’s relatively large size makes it less than optimal for small devices such as cameras, so the USB folks also make the smaller mini-B–style connector shown in Figure 3.12.
+Figure 12: USB mini-B connector
+USB has a number of features that make it particularly popular on PCs. First, USB devices are hot-swappable, which means you can insert or remove them without restarting your PC. Almost every other type of connector requires you to turn the system off, insert or remove the connector, and then turn the system back on. Hot-swapping completely eliminates this process.
+Second, many USB devices get their electrical power through the USB connection, so they don’t need batteries or a plug for an electrical outlet. You can even recharge some devices, such as cellular phones, by plugging them into a USB port (see Figure 3.13).
+Figure 13: Cell phone charging via a USB connection
+Note: In addition to mini-B, you’ll also see mini-A, micro-A, and micro-B connectors, though they’re much less common.
+Begin Tech Tip
+(5)Tech Tip
+(6)Downstream and Upstream
+You’ll sometimes hear USB ports and plugs described as upstream or downstream, terms that create rather amusing conversation and confusion. It’s all about whether you refer to the plug or the port, so here’s the scoop.
+The USB A plugs go upstream to USB A ports on the host or hub. USB A ports provide downstream output from the host or hub. So the plug is upstream and the port is downstream.
+Just to add more fun to the mix, USB B plugs go downstream to devices. USB B ports provide upstream output from the device to the host or hub. My advice? Stick with A or B and nobody will get confused.
+End Tech Tip
+(3)FireWire Connectors
+FireWire, also known as IEEE 1394, moves data at incredibly high speeds, making it the perfect connection for highly specialized applications such as streaming video from a digital video camera onto a hard drive. FireWire consists of a 6-wire connector, as shown in Figure 3.14, or a 9-wire connector for devices that need more speed and power. A smaller 4-pin version is usually seen on peripherals. Like USB, FireWire devices are hot-swappable.
+Figure 14: FireWire connector and port
+(3)DB Connectors
+Over the years, DB connectors have been used for almost any type of peripheral you can think of, with the exception of keyboards. They have a slight D shape, which allows only one proper way to insert a plug into the socket and makes it easier to remember what they’re called. Technically, they’re known as D-sub or D-subminiature connectors, but most techs call them DBs. CompTIA calls them D-shell connectors, so don’t be surprised by that term either. 
+Each male DB plug has a group of small pins that connect to DB ports. Female DB plugs connect to male DB ports on the system unit. DB connectors in the PC world can have from 9 to 37 pins or sockets, although you rarely see a DB connector with more than 25 pins or sockets. Figure 3.15 shows an example. DB-type connectors are some of the oldest and most common connectors used in the back of PCs.
+Figure 15: DB-25 connector and port
+It wasn’t that long ago that a typical PC used at least three or more different DB connectors. Over the past few years, the PC world has moved away from DB connectors. A typical modern system has only one or two, usually for video.
+Begin Tech Tip
+(5)Tech Tip
+(6)D-Subminiature Naming Scheme
+Each D-sub connector size—called the shell size—has a specific name in the D-sub manufacturing world. A two-row, 9-pin connector, for example, is officially a DE-9 connector rather than a DB-9. The E refers to the 9-pin shell size. Why all of the DA, DB, DC, DD, and DE connectors became DB-x in the world of personal computers is a mystery, but most techs simply call them DB connectors.
+End Tech Tip
+(3)RJ Connectors
+You have more than likely seen an RJ connector, whether or not you knew it by that name. The little plastic plug used to connect your telephone cord to the jack (techs don’t use the word “port” to describe RJ connectors) is a classic example of an RJ plug. Modern PCs use only two types of RJ jacks: the RJ-11 and the RJ-45. The phone jack is an RJ-11. It is used almost exclusively for modems. The slightly wider RJ-45 jack is used for your network connection. Figure 3.16 shows an RJ-11 jack (top) and an RJ-45 jack (bottom).
+Figure 16: RJ-11 (top) and RJ-45 (bottom)
+(3)Audio Connectors
+Speakers and microphones connect to audio jacks on the system unit. The most common type of sound connector in popular use is the 1/8-inch connector, also called a mini-audio connector. These small connectors have been around for years; they’re just like the plug you use to insert headphones into a radio, music player, or similar device (see Figure 3.17). Traditionally, you’d find the audio jacks on the back of the PC, but many newer models sport front audio connections as well.
+Figure 17: Mini-audio jacks and plug
+Note: Keep in mind that the variety of connectors is virtually endless. The preceding types of connectors cover the vast majority, but you’ll find many others on PCs as a tech. No law or standard requires device makers to use a particular connector, especially if they have no interest in making that device interchangeable with similar devices from other manufacturers
+(2)Devices and Their Connectors
+Now that you have a sense of the connectors, let’s turn to the devices common to almost every PC to learn which connectors go with which device.
+Note: Almost all connectors are now color-coordinated to help users plug the right device into the right port. These color codes are not required, and not all PCs and devices use them.
+(3)Cards Versus Onboard
+All of the connectors on the back of the PC are just that: connectors. Behind those connectors are the actual devices that support whatever peripherals plug into those connectors. These devices might be built into the computer, such as a keyboard port. Others might be add-on expansion cards that a tech installed into the PC.
+Most PCs have special expansion slots inside the system unit that enable you to add more devices on expansion cards. Figure 3.18 shows a typical card. If you want some new device that your system unit doesn’t have built into the PC, you just go to the store, buy a card version of that device, and snap it in. Later chapters of the book go into great detail on how to do this, but for now just appreciate that a device might be built in or might come on a card.
+Figure 18: Typical expansion card
+Begin Try This!
+(5)Try This!
+(6)Feeling Your Way Around Connectors
+Given that most PCs tend to sit on the floor under desks, a good PC tech learns to recognize most every PC connector by touch. This is a great exercise to do with a partner.
+1. Look at all of the connectors on the back of any PC’s system unit.
+2. Turn the system unit around so you can no longer see the connections.
+3. Try to identify the connectors by feel.
+End Try This!
+Be careful handling cards. Touch the metal plate with the 90-degree bend and try to avoid touching any of the electronics. As mentioned in Chapter 2, you can protect your cards by keeping them in an anti-static bag when moving them.
+(3)Keyboard
+Today’s keyboards come in many shapes and sizes, but they always connect to your computer by either a mini-DIN port or a USB port. Many keyboards ship with an adapter so you can use either port. Most keyboard plugs and mini-DIN keyboard ports are colored purple (see Figure 3.19).
+Figure 19: Keyboard plug and port
+Production: please use F03-19r.tif
+(3)Monitor
+A monitor connects to the video connector on the system unit. You’ll usually see one of two types of video connectors: the older, 15-pin female DB Video Electronics Standards Association (VESA) connector or the unique digital video interface (DVI) connector. VESA connectors are colored blue, whereas DVI connectors are white. Many video cards have both types of connectors (see Figure 3.20) or two VESA or two DVI connectors. Other video cards also add S-Video, component, or composite ports. Video cards with two connectors support two monitors, a very cool setup to have!
+Figure 20: Video card with (from left to right) S-Video, DVI, and VESA ports
+Note: The DVI connector comes in three flavors, DVD-D (all digital), DVD-A (analog), and DVI-I (both digital and analog). 
+The newest video connector is called High-Definition Multimedia Interface (HDMI), shown in Figure 3.21. HDMI brings a number of enhancements, such as the ability to carry both video and sound on the same cable. Primarily designed for home theaters, computers with HDMI connectors grow more common every year.
+Figure 21: HDMI connector
+Note: There are two smaller versions of HDMI called Mini-HDMI and Micro-HDMI. You’ll find these primarily on high-end cell phones.
+(3)Sound
+The sound device in a computer performs two functions. First, it takes digital information and turns it into sound, outputting the sound through speakers. Second, it takes sound that is input through a microphone or some other audio source and turns it into digital data.
+To play and record sounds, your sound device needs to connect to a set of speakers and a microphone or more. All PCs have at least two miniature audio jacks: one for a microphone and another for stereo speakers. Better cards provide extra miniature audio jacks for surround sound. Figure 3.22 shows a typical onboard sound card with six different 1/8-inch jacks. Four of these are for speakers and two are for input (such as microphones). The color scheme for sound connections is complex, but for now remember one color—green. That’s the one you need to connect a standard pair of stereo speakers.
+Figure 22: Typical bank of 1/8-inch audio jacks
+An older sound card may have a female 15-pin DB port that enables you to attach a musical instrument digital interface (MIDI) device or add a joystick to your PC (see Figure 3.23). These multi-function joystick/MIDI ports are rare today.
+Figure 23: Legacy joystick/MIDI port
+Adding more and more audio jacks to sound cards made the back of a typical sound card a busy place. In an effort to consolidate the various sound signals, the industry invented the Sony/Philips Digital Interface Format (S/PDIF) connection. S/PDIF comes in coaxial and optical versions. Figure 3.24 shows a motherboard with both (the coaxial connection is on the left). One S/PDIF connection replaces all of the mini-audio connections, assuming your surround speaker system also comes with an S/PDIF connection.
+Figure 24: S/PDIF connection
+Production: please refer to F03-24 Ref.tif for callout placement
+Callouts
+S/PDIF
+(3)Network
+Networks are groups of connected PCs that share information. The PCs most commonly connect via some type of cabling that usually looks like an extra-thick phone cable. A modern PC uses an RJ-45 connection to connect to the network. Figure 3.25 shows a typical RJ-45 network connector. Network connectors do not have a standard color.
+Figure 25: Typical network connection
+Note: Modern PCs have built-in network connections, but this is a fairly recent development. For many years, network devices only came on an expansion card, called a network interface card (NIC). The term is so common that even built-in network connections—which most certainly are not cards—are still called NICs.
+(3)Mouse
+Most folks are pretty comfortable with the function of a mouse—it enables you to select graphical items on a graphical screen. A PC mouse has at least two buttons (as opposed to the famous one-button mouse that came with Apple computers until recently), while a better mouse provides a scroll wheel and extra buttons. A mouse uses either a USB port or a dedicated, light-green mini-DIN connector (see Figure 3.26).
+Figure 26: Mouse with mini-DIN connection
+Production: please use F03-26r.tif
+A variation of the mouse is a trackball. A trackball does the same job as a mouse, but instead of pushing it around like a mouse, the trackball stays in one place as you roll a ball with your fingers or thumb (see Figure 3.27).
+Figure 27: Trackball
+(3)Modem
+A modem enables you to connect a PC to a network via a standard telephone line. Modems are another easily identifiable device in PCs as they have one or two RJ-11 jacks. One jack is to connect the modem to the telephone jack on the wall. If the modem has a second RJ-11 jack, it is for an optional telephone so you can use the phone line when the modem is not in use (see Figure 3.28).
+Figure 28: Internal modem
+Begin Tech Tip
+(5)Tech Tip
+(6)Serial Ports
+External modems traditionally connected to a male 9-pin or 25-pin D-sub port on the system unit called a serial port. Although just about every external modem today connects to USB, a few computers still come with a serial port for legacy devices.
+End Tech Tip
+(3)Printer
+For many years, printers only used a special connector called a parallel port. Parallel ports use a 25-pin female DB (DB-25) connector that’s usually colored fuchsia (see Figure 3.29).
+Figure 29: Parallel port
+After almost 30 years of domination by parallel ports, most printers now come with USB, Ethernet, and Wi-Fi 802.11 b/g/n connectivity options. Parallel ports are quickly fading away from the backs of most computers.
+(3)Joystick
+Joysticks weren’t supposed to be used just for games (see Figure 3.30). When the folks at IBM added the two-row, 15-pin female DB joystick connector to PCs, they envisioned joysticks as hard-working input devices, just as the mouse is today. Except in the most rare circumstances, however, the only thing a joystick does today is enable you to turn your PC into a rather expensive game machine. But is there a more gratifying feeling than easing that joystick over, pressing the Fire button, and watching an enemy fighter jet get blasted by a well-placed Sidewinder missile? I think not. Traditional joystick connecters are colored orange, but most joysticks today connect to USB ports.
+Figure 30: Joystick
+(3)eSATA
+More and more PCs are showing up with eSATA ports like the one shown in Figure 3.31. Some external hard drives and optical drives can connect via eSATA.
+Figure 31: eSATA port
+Production: please refer to F03-31.Ref.tif for highlight
+(3)Plenty More!
+Keep in mind that there are lots more devices and connectors out there. This section includes only the most common and the ones you’re most likely to see. As you progress through this book, you’ll see some less common connecters and where they are used.
+(1)Inside the System Unit
+Now that you’ve seen the devices that connect to the PC, it’s time to open up the system unit to inspect the major internal components of a typical PC. A single PC is composed of thousands of discrete components. Although no one can name every tiny bit of electronics in a PC, a good technician should be able to name the major internal components that make up the typical PC. Let’s open and inspect a system unit to see these components and gain at least a concept of what they do. In later chapters, you’ll see all of these components in much more detail.
+(2)Case
+The system unit’s case is both the internal framework of the PC and the external skin that protects the internal components from the environment. Cases come in an amazing variety of styles, sizes, and colors. Figure 3.32 shows the front and back of a typical PC case. The front of the case holds the buttons for turning the system on and off, lights to tell you the status of the system, and doors for accessing removable media drives such as  digital versatile disc (DVD) drives. This system also provides USB, FireWire, and audio connections in the front for easy access if you want to use a device that needs these connections.
+Figure 32: Case—front and back
+Note: You’ll hear the PC case called the enclosure, especially at the more expensive end of the spectrum. Case, enclosure, and system unit are interchangeable terms.
+The back of the case holds the vast majority of the system unit connections. You will also notice the power supply—almost always at the top of the case—distinguished by its cooling fan and power plug. Note that one area of the back, the input/output (I/O) area, holds all of the onboard connections (see Figure 3.33), while another area in the back contains slots for cards. Similarly, the case uses slots to enable access to the external connectors on cards installed in the system unit.
+Figure 33: Onboard connections
+Opening a case is always…interesting. There’s no standard way to open a case, and I’m convinced that the folks making system units enjoy some sick humor inventing new and complex ways to open them. In general, you detach the sides of a case by removing a few screws in the back of the system unit, as shown in Figure 3.34. Use common sense and you won’t have too many problems. Just don’t lose track of your screws or where each one was inserted!
+Figure 34: Opening a system unit
+Begin Tech Tip
+(5)Tech Tip
+(6)Front Connections
+Take a look at the front of your PC and you’ll see all kinds of connectors, from power and reset buttons to USB and audio ports. Front connections are most commonly used for temporary devices, such as headphones. If you have a device you don’t intend to remove very often, you should install it in one of the back connections.
+End Tech Tip
+Once you’ve opened the case, take a look inside. You’ll see metal framework, all kinds of cables, and a number of devices. As you inspect the devices, you may gently push cables to the side to get a better view. Don’t forget to wear an anti-static wrist strap (attaching it to any handy metal part of the case) or touch the metal case occasionally to prevent ESD.
+Begin Cross Check
+(5)Cross Check
+(6)Tools for Opening Cases
+You read about the standard tools for opening cases and working on the inside of a system unit in Chapter 2, so check your memory now. What types of screwdrivers might you use? (Name three.) What tool would you use if you dropped a screw inside a case?
+End Cross Check
+(2)CPU
+The central processing unit (CPU), also called the microprocessor, performs all of the calculations that take place inside a PC. CPUs come in a variety of shapes and sizes, as shown in Figure 3.35.
+Figure 35: Typical CPUs still in protective packaging
+Modern CPUs generate a lot of heat and thus require a cooling fan and heat sink assembly to avoid overheating (see Figure 3.36). A heat sink is a big slab of copper or aluminum that helps draw heat away from the processor. The fan then blows the heat out into the case. You can usually remove this cooling device if you need to replace it, although some CPU manufacturers have sold CPUs with a fan permanently attached.
+Figure 36: CPU with fan
+CPUs have a make and model, just like automobiles do. When talking about a particular car, for example, most people speak in terms of a Ford Taurus or a Toyota Camry. When they talk about CPUs, people say Intel Core i7 or AMD Phenom. Over the years, there have been only a few major CPU manufacturers, just as there are only a few major auto manufacturers. The two most common makes of CPUs used in PCs are AMD and Intel.
+Although only a few manufacturers of CPUs have existed, those manufacturers have made hundreds of models of CPUs. Some of the more common models made over the past few years have names such as Core 2 Duo, Core i5, Core i7, Phenom II, and AMD-FX.
+Finally, CPUs come in a variety of packages. The package defines how the CPU looks physically and how it connects to the computer. Intel CPUs currently use a package type called land grid array (LGA), and AMD likes pin grid array (PGA). Every CPU package type has a number of versions, and each package type is designed to fit into a particular connection called a socket. Sockets have such names as Socket AM3 or Socket B. Figure 3.37 shows a CPU with its matching socket.
+Figure 37: CPU and matching socket
+Chapter 6 goes into great detail on CPUs, but for now remember that every CPU has a make, a model, and a package type.
+Caution: Some parts of your PC are much more sensitive to ESD than others. Your CPU and RAM are very sensitive to ESD. If you touch the metal parts of your CPU or RAM and you have even the tiniest amount of charge, you can destroy them.
+(2)RAM
+Random access memory (RAM) stores programs and data currently being used by the CPU. The maximum amount of programs and data that a piece of RAM can store is measured in units called bytes. Modern PCs have many millions, even billions, of bytes of RAM, so RAM is measured in units called megabytes (MB) or gigabytes (GB). An average PC will have from 1 to 4 GB of RAM, although PCs may have more or less. Each piece of RAM is called a stick. One common type of stick found in today’s PC is called a dual inline memory module (DIMM). Figure 3.38 shows two examples of DIMMs used in PCs.
+Figure 38: Two DIMMs
+Your PC takes only one type of DIMM, and you must know the type so you can add or replace RAM when needed. Chapter 7 covers everything you need to know to work comfortably with RAM.
+(2)Motherboard
+You can compare a motherboard to the chassis of an automobile. In a car, everything connects to the chassis either directly or indirectly. In a PC, everything connects to the motherboard either directly or indirectly. A motherboard is a thin, flat piece of circuit board, usually green or gold, and often slightly larger than a typical piece of notebook paper (see Figure 3.39).
+Figure 39: Typical motherboard
+A motherboard contains a number of special sockets that accept various PC components. The CPU and RAM, for example, plug directly into the motherboard. Other devices, such as floppy drives, hard drives, CD and DVD drives, connect to the motherboard sockets through short cables. Motherboards also provide onboard connectors for external devices such as mice, printers, joysticks, and keyboards.
+All motherboards use multipurpose expansion slots in which you can add adapter cards. Different types of expansion slots exist for different types of cards (see Figure 3.40).
+Figure 40: Placing a card into an expansion slot
+(2)Power Supply
+The power supply, as its name implies, provides the necessary electrical power to make the PC operate. The power supply takes standard electrical power and converts it into power your PC can use. Most power supplies are about the size of a shoebox cut in half and are usually a gray or metallic color (see Figure 3.41).
+Figure 41: Power supply
+A number of connectors lead out of the power supply. Every power supply provides special connectors to power the motherboard and a number of other general-use connectors that provide power to any device that needs electricity. Check out Chapter 10 for more information.
+(2)Floppy Drive
+The floppy drive enables you to access removable floppy disks. The floppy drives used in today’s PCs (and I use the term loosely—you’ll have trouble finding a floppy drive on most modern computers) are 3.5-inch floppy drives. Floppy drives only store a tiny amount of data and have all but disappeared from PCs.
+Floppy drives connect to the computer via a ribbon cable, which in turn connects to the motherboard. The connection to the motherboard is known as the floppy drive controller (see Figure 3.42).
+Figure 42: Floppy drive connected to motherboard
+(2)Hard Drive
+A hard drive stores programs and data that are not currently being used by the CPU. Although RAM storage is measured in megabytes and gigabytes, a PC’s hard drive stores much more data than a typical PC’s RAM—hundreds of gigabytes to terabytes. A terabyte is 1000 gigabytes.
+An average PC has one hard drive, although most PCs accept more. Special PCs that need to store large amounts of data, such as a large corporation’s main file-storage computer, can contain many hard drives—8 to 16 drives in some cases.
+The two most common types of hard drives seen in today’s PCs are the older Parallel Advanced Technology Attachment (PATA) and the more modern Serial Advanced Technology Attachment (SATA). PATA drives use a ribbon cable very similar to the one used by floppy drives, whereas SATA drives use a very narrow cable. Figure 3.43 shows a SATA drive (left) next to a PATA drive (right). Most motherboards only come with SATA connections, but if you look around, you can find one that supports PATA as well.
+Figure 43: SATA and PATA drives showing data connectors
+Optical drives, introduced next, use the same PATA or SATA connections used with hard drives. Figure 3.44 shows a DVD drive sharing a single ribbon cable with a PATA hard drive—a common sight inside a PC.
+Figure 44: Hard drive and DVD drive
+Begin Tech Tip
+(5)Tech Tip
+(6)SCSI
+Very few PCs use small computer system interface (SCSI) drives. SCSI drives are generally faster and more expensive, so they usually show up only in high-end PCs such as network servers or graphics workstations.
+End Tech Tip
+(2)Optical Drives
+Optical drives enable a computer to read one or more types of optical discs, such as CD, DVD, or Blu-ray Disc (see Figure 3.45). CDs store around 700 MB and come in three varieties: CD-ROM (read only memory: you can’t change the data on them), CD-R (recordable: you can change the data once), and CD-RW (rewritable: you can change the data on them over and over). DVDs store much more data—the smallest capacity DVDs store around 4 GB, enough for a Hollywood movie—and come in even more varieties: DVD-ROM, DVD+R, DVD-R, DVD+RW, and DVD-RW, just to name the more famous ones. Blu-ray Discs are popular for high-definition movies, but there are also Blu-ray Discs for storing data with capacities starting at 25 GB.
+Figure 45: Assorted optical discs
+All of these optical discs require an optical drive that knows how to read them. If you want to do anything with a CD-RW disc, for example, you need a CD-RW drive. If you want to use a DVD+R disc, you need a DVD+R drive. Luckily, most optical drives support many different types of discs, and some support every common type of optical disc available. Figure 3.46 shows typical optical drives. Note that some of them advertise what disc types they use. Others give no clue whatsoever.
+Figure 46: Optical drives
+Note: Chapter 13 goes into great detail on the assorted discs and drive types.
+(2)Know Your Parts
+The goal of this chapter was to get you to appreciate the names and functions of the various parts of the PC: peripherals, connectors, and components. By starting with the Big Picture view, you may now begin breaking down the individual components on a chapter-by-chapter basis and truly understand at great depth how each component works and how it interconnects with the PC system as a whole.
+Begin textbook EOC
+(1)Chapter 3 Review
+(2)Chapter Summary
+After reading this chapter and completing the exercises, you should understand the following about the visible PC.
+(3)Describe how the PC works
+1. The two parts of the PC—hardware and software—work intimately together to enable you to do work.
+2. The computer tech knows the four stages of computing: input, processing, output, and storage. Understanding how the various pieces of hardware and software interact in each stage enables you to master the art of the PC tech.
+(3)Identify all the connectors and devices on a typical PC system unit
+1. Most computers have a standard set of peripherals to provide input and output. Typical devices include the monitor, keyboard, mouse, speakers, and printer.
+2. PCs use many kinds of external connectors, but most fit into one of six major types: mini-DIN, USB, FireWire, DB, RJ, and mini-audio. A plug goes into a port or jack. Connectors are often identified by their shape (such as DB connectors that look like a capital D), by their gender (male or female), and by the number of pins. Most PCs have two round mini-DIN connectors, one for the keyboard and the other for the mouse.
+3. Universal serial bus (USB) connectors come in six forms, A, B, mini-A, mini-B, micro-A, and micro-B. Many devices plug into USB ports, including keyboards and cameras. USB is hot-swappable, so you may insert or remove devices without restarting the computer.
+4. Also known as IEEE 1394, the FireWire interface is perfect for high-speed devices such as digital video cameras. FireWire consists of a 6-wire or 9-wire connector. A smaller 4-pin version is usually seen on peripherals.
+5. DB connectors come in a variety of sizes but only one shape. You’ll find only a few DB connectors on modern PCs, primarily for printers and video.
+6. The telephone jack is an RJ connector, called an RJ-11. Most network interface cards have a wider RJ-45 jack.
+7. Speakers and microphones connect to mini-audio jacks. You’ll always find these on the back of the system unit; newer models have connectors on the front as well.
+8. Keyboards connect into either a dedicated mini-DIN keyboard port or a USB port. Monitors connect to VGA or DVI ports. Mice and trackballs use the mini-DIN or USB ports as well. The majority of modern printers connect either to a USB, Ethernet, or Wi-Fi connection. A joystick plugs into either a 15-pin female DB port or a USB port.
+(3)Discuss the major internal components of a PC
+1. Everything fits inside or connects to the case, more technically called a system unit. The system unit provides the framework for buttons, lights, drives, access doors, and so forth. Opening the case is usually a matter of unscrewing screws and pulling one side open.
+2. The central processing unit (CPU), also called the microprocessor or brain of the computer, has a make, a model, and a package type. AMD and Intel are the two most common makers of CPUs. The pin grid array (PGA) is the most common CPU package. A CPU cooling fan or heat sink is essential to dissipate the heat.
+3. Random access memory (RAM) contains the current programs and data that the CPU is using. Most PC memory is installed on sticks called dual inline memory modules (DIMMs). RAM capacity is measured in megabytes (MB) or gigabytes (GB).
+4. The motherboard contains components, expansion slots, and sockets for the CPU, RAM, and other components. Expansion slots are connectors for expansion cards that enable optional devices to communicate with the PC.
+5. A floppy drive uses a ribbon cable to connect to the floppy drive controller on the motherboard. The most common type is the 3.5-inch floppy drive.
+6. Hard drives store programs and data that the CPU is not currently using. An average PC has one hard drive, although most PCs accept more. Most PCs use either PATA or SATA drives, both of which commonly connect to controllers built into the motherboard.
+7. Optical drives enable the computer to access optical discs. Some optical drives can record CDs, such as the compact disc-recordable (CD-R) drive or the compact disc-rewritable (CD-RW) drive. Most PCs now have digital versatile disc (DVD) drives that support capacities large enough for a full-length movie.
+(2)Key Terms
+central processing unit (CPU) () 
+connector ()
+DB connector ()
+digital video interface (DVI) () 
+D-subminiature () 
+eSATA () 
+expansion slot ()
+FireWire ()
+floppy drive ()
+hard drive ()
+High-Definition Multimedia Interface (HDMI) () 
+hot-swappable ()
+IEEE 1394 () 
+jack () 
+joystick () 
+keyboard () 
+microprocessor () 
+mini-audio connector () 
+mini-DIN connector () 
+modem () 
+monitor ()
+motherboard () 
+mouse () 
+network interface card (NIC) () 
+optical drive () 
+parallel port () 
+peripheral () 
+plug () 
+port () 
+power supply () 
+printer () 
+programming () 
+random access memory (RAM) ()
+RJ connector () 
+serial port () 
+software ()
+Sony/Philips Digital Interface Format (S/PDIF) () 
+speakers () 
+system unit () 
+trackball () 
+universal serial bus (USB) ()
+Video Electronics Standards Association (VESA) ()
+(2)Key Term Quiz
+Use the Key Terms list to complete the sentences that follow. Not all terms will be used.
+1. The monitor attaches to the video card with a 15-pin female DB connector called a(n) __________________ connector.
+2. If you install a DIMM stick, your computer will have more __________________.
+3. The __________________ has a make, a model, and a package type.
+4. Two RJ-11 connectors identify the __________________.
+5. When attaching a peripheral, put the plug into the __________________ or jack.
+6. The __________________ takes standard electrical power from a wall outlet and converts it to power your PC can use.
+7. If an expansion card contains an RJ-45 jack, it is a(n) __________________.
+8. A 25-pin female DB connector with a printer attached to it is a(n) __________________.
+9. An internal storage device that typically holds 200 GB or more is a(n) __________________.
+10. The box that all the other components plug into is called the __________________.
+(2)Multiple-Choice Quiz
+1. Which of the following connections can replace all of the mini-audio jacks on a system unit?
+1. FireWire
+2. HDMI
+3. S/PDIF
+4. VESA
+1. A modern keyboard generally connects to which of the following ports? (Select two.)
+1. FireWire
+2. Mini-DIN
+3. USB
+4. VESA
+1. USB connectors come in which of the following sizes? (Select three.)
+1. A
+2. B
+3. Nano-B
+4. Mini-B
+1. Which of the following devices attaches with a ribbon cable?
+1. CPU
+2. CD-ROM drive
+3. RAM
+4. Sound card
+1. Which of the following devices measure(s) storage capacity in megabytes or gigabytes?
+1. Floppy disk and hard drive
+2. NIC
+3. CPU
+4. Modem
+1. Which of the following devices has enough storage capacity to hold a movie?
+1. CD-ROM
+2. CD-R
+3. CD-RW
+4. DVD
+1. Which of the following connector types enable you to plug a device into them and have the device function without your restarting the computer? (Select two.)
+1. FireWire
+2. Mini-DIN
+3. Serial
+4. USB
+1. Which of the following ports would you most likely find built into a motherboard?
+1. Keyboard port
+2. DVI port
+3. HDMI port
+4. RDA port
+1. Which of the following connectors is used mostly for external hard drives?
+1. PATA
+2. eSATA
+3. HDMI
+4. PS/2
+1. Which of the following ports can handle a connection from a monitor?
+1. DVI
+2. FireWire
+3. Mini-DIN
+4. USB
+1. Which of the following ports enables a modern PC to connect to a network?
+1. Mini-audio
+2. Mini-DIN
+3. RJ-13
+4. RJ-45
+1. Which of the following connectors is used for hard drives?
+1. Parallel
+2. SATA
+3. HDMI
+4. TTFN
+1. Of the following, what do USB and FireWire connections have in common?
+1. Both are used for connecting keyboards
+2. Both support dual monitors
+3. Both support hot-swapping devices
+4. Both use D-subminiature connectors
+1. Which devices enable you to select graphical items on a graphical screen? (Select two.)
+1. Modem
+2. Mouse
+3. Touchball
+4. Trackball
+1. Which device traditionally used a two-row, 15-pin DB connector (though current models connect through USB)?
+1. Joystick
+2. Keyboard
+3. Mouse
+4. Printer
+(2)Essay Quiz
+1. Although serial and parallel ports have been around forever, newer and faster ports such as USB and FireWire are available. At the same time, new computers have faster CPUs, more RAM, and larger-capacity hard drives. What factors do you think are driving the PC market for these improvements? Do you feel that you need to have the newest and the greatest PC? Why or why not?
+2. Jason, one of your coworkers who knows nothing about computer hardware, needs to move his computer and will be responsible for reassembling it himself in his new office across town. What advice can you give him about disassembly steps that will help him reassemble the computer successfully? List at least five things Jason should do as he disassembles the computer, transports it, and reassembles it. Do shapes and colors help him?
+3. A floppy drive was a standard component for personal computers from their beginning. Today, most manufacturers build PCs without a floppy drive. Would you want to purchase a PC without a floppy drive? Why or why not? If so, what kinds of alternative devices would you want your computer to have?
+4. Hearing that you are taking a computer hardware course, Aunt Sally approaches you about helping her select a new computer. She wants to use the computer primarily for office applications, to track her budget, to receive and send e-mail, and to surf the Internet. What are you going to tell her about the kind of PC to buy? What peripherals should she purchase? Why?
+(2)Lab Projects
+(3)Lab Project 3.1
+Many personal computers do not normally include the relatively new eSATA port. Check the following three Web sites: www.dell.com, www.hp.com, and www.lenovo.com. Is an eSATA port standard built-in equipment on their new computers? If so, how many eSATA ports are included? If not, do the sites offer eSATA as an optional add-on?
+(3)Lab Project 3.2
+Find an advertisement for a new personal computer in a current newspaper or magazine and examine it to determine the following:
+1. What is the make, model, and package type of the CPU?
+2. How much RAM does it have?
+3. What is the storage capacity of the hard drive?
+4. Does it include a Blu-ray Disc, CD-RW, or DVD drive?
+5. Does it come with a network interface card?
+6. Is a monitor included? If so, what kind and size?
+(2)Key Term Quiz Answers
+1. The monitor attaches to the video card with a 15-pin female DB connector called a(n) Video Electronics Standards Association (VESA) connector.
+2. If you install a DIMM stick, your computer will have more random access memory (RAM).
+3. The central processing unit (CPU) has a make, a model, and a package type.
+4. Two RJ-11 connectors identify the modem.
+5. When attaching a peripheral, put the plug into the port or jack.
+6. The power supply takes standard electrical power from a wall outlet and converts it to power your PC can use.
+7. If an expansion card contains an RJ-45 jack, it is a(n) network interface card (NIC).
+8. A 25-pin female DB connector with a printer attached to it is a(n) parallel port.
+9. An internal storage device that typically holds 200 GB or more is a(n) hard drive.
+10. The box that all the other components plug into is called the system unit.
+(2)Multiple-Choice Quiz Answers
+1. Which of the following connections can replace all of the mini-audio jacks on a system unit?
+1. FireWire
+2. HDMI
+3. S/PDIF
+4. VESA
+Answer: C
+1. A modern keyboard generally connects to which of the following ports? (Select two.)
+1. FireWire
+2. Mini-DIN
+3. USB
+4. VESA
+Answer: B, C
+1. USB connectors come in which of the following sizes? (Select three.)
+1. A
+2. B
+3. Mini-A
+4. Mini-B
+Answer: A, B, D
+1. Which of the following devices attaches with a ribbon cable?
+1. CPU
+2. CD-ROM drive
+3. RAM
+4. Sound card
+Answer: B
+1. Which of the following devices measure(s) storage capacity in megabytes or gigabytes?
+1. Floppy disk and hard drive
+2. NIC
+3. CPU
+4. Modem
+Answer: A
+1. Which of the following devices has enough storage capacity to hold a movie?
+1. CD-ROM
+2. CD-R
+3. CD-RW
+4. DVD
+Answer: D
+1. Which of the following connector types enable you to plug a device into them and have the device function without your restarting the computer? (Select two.)
+1. FireWire
+2. Mini-DIN
+3. Serial
+4. USB
+Answer: A, D
+1. Which of the following ports would you most likely find built into a motherboard?
+1. Keyboard port
+2. DVI port
+3. HDMI port
+4. RDA port
+Answer: A
+1. Which of the following connectors is used mostly for external hard drives?
+1. PATA
+2. eSATA
+3. HDMI
+4. PS/2
+Answer: B
+1. Which of the following ports can handle a connection from a monitor?
+1. DVI
+2. FireWire
+3. Mini-DIN
+4. USB
+Answer: A
+1. Which of the following ports enables a modern PC to connect to a network?
+1. Mini-audio
+2. Mini-DIN
+3. RJ-13
+4. RJ-45
+Answer: D
+1. Which of the following connectors is used for hard drives?
+1. Parallel
+2. SATA
+3. HDMI
+4. TTFN
+Answer: B
+1. Of the following, what do USB and FireWire connections have in common?
+1. Both are used for connecting keyboards
+2. Both support dual monitors
+3. Both support hot-swapping devices
+4. Both use D-subminiature connectors
+Answer: C
+1. Which devices enable you to select graphical items on a graphical screen? (Select two)
+1. Modem
+2. Mouse
+3. Touchball
+4. Trackball
+Answer: B, D
+1. Which device traditionally used a two-row, 15-pin DB connector (though current models connect through USB)?
+1. Joystick
+2. Keyboard
+3. Mouse
+4. Printer
+Answer: A
+(2)Essay Quiz Answers
+1. Although serial and parallel ports have been around forever, newer and faster ports such as USB and FireWire are now available. At the same time, new computers have faster CPUs, more RAM, and larger-capacity hard drives. What factors do you think are driving the PC market for these improvements? Do you feel that you need to have the newest and the greatest PC? Why or why not?
+Answer: Part computer-industry analysis and part self-analysis, the first essay could go all over the place. A good answer would provide a few explanations of the demand for better hardware. Some analysis of the student’s motivation, with examples, should cover the second half of the essay.
+1. Jason, one of your coworkers who knows nothing about computer hardware, needs to move his computer and will be responsible for reassembling it himself in his new office across town. What advice can you give him about disassembly steps that will help him reassemble the computer successfully? List at least five things Jason should do as he disassembles the computer, transports it, and reassembles it. Do shapes and colors help him?
+Answer: A good essay would talk about examining the shapes of the connectors, adding labels to the PC or on the cables, making a list, noting the color coding of the mouse and keyboard connectors; same with the mini-audio connectors.
+1. A floppy drive was a standard component for personal computers from their beginning. Today, most manufacturers build PCs without a floppy drive. Would you want to purchase a PC without a floppy drive? Why or why not? If so, what kinds of alternative devices would you want your computer to have?
+Answer: This one can go either way, for or against a floppy drive on a modern system. A good answer should provide a couple of reasons to back the argument and include discussion of some alternative devices, such as USB thumb drives, LS120 SuperDrives, FireWire drives, and so on.
+1. Hearing that you are taking a computer hardware course, Aunt Sally approaches you about helping her select a new computer. She wants to use the computer primarily for office applications, to track her budget, to receive and send e-mail, and to surf the Internet. What are you going to tell her about the kind of PC to buy? What peripherals should she purchase? Why?
+Answer: A good answer will provide an argument for a decent computer, though probably not a hot rod. The student should list several peripherals with explanations for why Aunt Sally should have them.
+(2)Cross Check Answer
+(3)Tools for Opening Cases 
+Answer: The three types of screwdriver commonly used when working on PCs are Phillips, straight slot, and Torx. The three-prong parts extractor (grabber tool) enables you to pick up dropped screws.
+Begin Trade EOC
+(1)Chapter Review 
+(2)Questions
+1. What do you call the commands that tell the computer what to do?
+1. Data
+2. Morse code
+3. Programming
+4. Output
+1. Which of the following is a proper name for a stick of RAM?
+1. CRIMM
+2. DIMM
+3. BGA
+4. LGA
+1. Where do you connect an anti-static wrist strap? (Select the best answer.)
+1. To an anti-static plate on the computer
+2. To an electrical outlet
+3. To a handy metal part of the case
+4. To a non-static wrist strap
+1. What sort of connector does a typical network interface card have?
+1. DB-9
+2. Mini-DIN
+3. RJ-11
+4. RJ-45
+1. Modern keyboards connect to which of the following ports? (Select all that apply.)
+1. DIN
+2. FireWire
+3. Mini-DIN
+4. USB
+1. Which end of the USB cable plugs into the PC?
+1. A
+2. B
+3. Mini-A
+4. Mini-B
+1. A modern printer usually plugs into which of the following ports?
+1. DB-9
+2. DB-25
+3. Mini-DIN
+4. USB
+1. What do you plug into a three-row, 15-pin port?
+1. Joystick
+2. Keyboard
+3. Monitor
+4. Mouse
+1. What connector was designed to connect your PC to a high-end television set?
+1. DB-HD
+2. HDMI
+3. VESA
+4. VGA
+1. What connector was designed to connect your PC to a high-end audio system?
+1. DB-HA
+2. DVI
+3. Mini-audio
+4. S/PDIF
+(2)Answers
+1. C. The commands that tell the computer what to do are called, collectively, programming.
+2. B. Modern computers use DIMMs for RAM.
+3. C. Connect an anti-static wrist strap to any handy metal part of the computer. The metal plate, by the way, is the section on the strap where you connect the cable from the PC.
+4. D. A typical network interface card sports an RJ-45 port.
+5. C, D. Modern keyboards connect to either mini-DIN or USB ports.
+6. A. Plug the A connector into the PC.
+7. D. A modern printer usually plugs into USB.
+8. C. You plug a monitor into a three-row, 15-pin port.
+9. B. HDMI was designed to connect your PC to a high-end television set.
+10. D. S/PDIF was designed to connect your PC to a high-end audio system.
+End Trade EOC

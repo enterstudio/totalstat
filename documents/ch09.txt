@@ -1,0 +1,780 @@
+﻿CompTIA A+® Guide to Managing and Troubleshooting PCs                 April 13, 2012
+(cn)Chapter 9
+(ct)Motherboards
+Begin Quotes
+“Did anybody hear that?”
+—MICHAEL “MOTHERBOARD” PAMPIN, RAINBOW SIX: VEGAS
+End Quotes
+In this chapter, you will learn how to
+1. Explain how motherboards work
+2. Recognize modern expansion buses
+3. Upgrade and install motherboards
+4. Troubleshoot motherboard problems
+The motherboard provides the foundation for the personal computer. Every piece of hardware, from the CPU to the lowliest expansion card, directly or indirectly plugs into the motherboard. The motherboard contains the wires—called traces—that make up the buses of the system. It holds the vast majority of the ports used by the peripherals, and it distributes the power from the power supply (see Figure 9.1). Without the motherboard, you literally have no PC.
+Figure 1: Traces visible beneath the CPU socket on a motherboard
+Pickup photo art from previous edition F09-01
+This chapter starts with an explanation of how motherboards work, identifying various types or form factors of motherboards, including distinguishing features. The second section examines expansion capabilities on motherboards, specifically the types of expansion slots you’ll run into in the wild and how to install expansion cards. The third section goes through the pragmatic steps of upgrading and installing motherboards. The chapter finishes with techniques for troubleshooting motherboard problems. 
+Begin Tech Tip Box
+(5)Tech Tip
+(6)Layers of the PCB
+Modern motherboards are layered printed circuit boards (PCBs), copper etched onto a nonconductive material and then coated with some sort of epoxy for strength. The layers mask some of their complexity. You can see some of the traces on the board, but every motherboard is four or more layers thick. The layers contain a veritable highway of wires, carrying data and commands back and forth between the CPU, RAM, and peripherals. The layered structure enables multiple wires to send data without their signals interfering with each other. The layered approach allows the manufacturer to add complexity and additional components to the board without extending the overall length and width of the board. Shorter traces also allow signals to travel faster than they would if the wires were longer, as would be necessary if motherboards did not use layers. The multiple layers also add strength to the board itself, so it doesn’t bend easily.
+End Tech Tip Box
+Begin Superhead
+(1)Historical/Conceptual
+End Superhead
+(1)How Motherboards Work
+Three variable and interrelated characteristics define modern motherboards: form factor, chipset, and components. The form factor determines the physical size of the motherboard as well as the general location of components and ports. The chipset defines the type of processor and RAM the motherboard requires and determines to a degree the built-in devices the motherboard supports, including the expansion slots. Finally, the built-in components determine the core functionality of the system.
+Any good tech should be able to make a recommendation to a client about a particular motherboard simply by perusing the specs. Because the motherboard determines function, expansion, and stability for the whole PC, it’s essential that you know your motherboards!
+(2)Form Factors
+Form factors are industry-standardized shapes and layouts that enable motherboards to work with cases and power supplies. A single form factor applies to all three components. All motherboards come in a basic rectangular or square shape but vary in overall size and in the layout of built-in components (see Figure 9.2). You need to install a motherboard in a case designed to fit it, so the ports and slot openings on the back fit correctly.
+Figure 2: Typical motherboard
+The power supply and the motherboard need matching connectors, and different form factors define different connections. Given that the term “form factor” applies to the case, motherboard, and power supply—the three parts of the PC most responsible for moving air around inside the PC—the form factor also defines how the air moves around in the case.
+To perform motherboard upgrades and provide knowledgeable recommendations to clients, techs need to know their form factors. The PC industry has adopted—and dropped—a number of form factors over the years with such names as AT, ATX, and BTX. Let’s start with the granddaddy of all PC form factors, AT.
+Note: All AT motherboards had a split power socket called P8/P9. You can see the white P8/P9 socket near the keyboard port in Figures 9.3 and 9.4.
+(3)AT Form Factor
+The AT form factor (see Figure 9.3), invented by IBM in the early 1980s, was the predominant form factor for motherboards through the mid-1990s. AT is now obsolete.
+Figure 3: AT-style motherboard
+Pickup photo art from previous edition F09-03
+The AT motherboard had a few size variations (see Figure 9.4), ranging from large to very large. The original AT motherboard was huge, around 12 inches wide by 13 inches deep. PC technology was new and needed lots of space for the various chips necessary to run the components of the PC.
+Figure 4: AT motherboard (bottom) and Baby AT motherboard (top)
+Pickup photo art from previous edition F09-04
+The single greatest problem with AT motherboards was the lack of external ports. When PCs were first invented, the only devices plugged into the average PC were a monitor and a keyboard. That’s what the AT was designed to handle—the only dedicated connector on an AT motherboard was the keyboard port (see Figure 9.5).
+Figure 5: Keyboard connector on the back of an AT motherboard
+Pickup photo art from previous edition F09-05
+Over the years, the number of devices plugged into the back of the PC has grown tremendously. Your average PC today has a keyboard, a mouse, a printer, some speakers, a monitor, and—if your system’s like mine—four to six USB devices connected to it at any given time. These added components created a demand for a new type of form factor, one with more dedicated connectors for more devices. Many attempts were made to create a new standard form factor. Invariably, these new form factors integrated dedicated connectors for at least the mouse and printer, and many even added connectors for video, sound, and phone lines.
+One variation from the AT form factor that enjoyed a degree of success was the slimline form factor. The first slimline form factor was known as LPX (defined in some sources as low profile extended, although there’s some disagreement). It was replaced by the NLX form factor. (NLX apparently stands for nothing, by the way. It’s just a cool grouping of letters.) The LPX and NLX form factors met the demands of the slimline market by providing a central riser slot to enable the insertion of a special riser card (see Figure 9.6) or, as it’s sometimes called, a daughterboard. Expansion cards then fit into the riser card horizontally. Combining built-in connections with a riser card enabled manufacturers to produce PCs shorter than 4 inches.
+Figure 6: Riser card on an older motherboard
+Pickup photo art from previous edition F09-06
+The main problem with form factors such as LPX and NLX was their inflexibility. Certainly, no problem occurred with dedicated connections for such devices as mice or printers, but the new form factors also added connectors for such devices as video and sound—devices that were prone to obsolescence, making the motherboard out of date the moment a new type of video or sound card came into popularity.
+(1)801
+(3)ATX Form Factor
+There continued to be a tremendous demand for a new form factor: a form factor that had more standard connectors and also was flexible enough for possible changes in technology. This demand led to the creation of the ATX form factor in 1995 (see Figure 9.7). ATX got off to a slow start, but by around 1998, ATX overtook AT to become the most common form factor, a distinction it holds today.
+Figure 7: Early ATX motherboard
+Pickup photo art from previous edition F09-07 and see page 270 of the previous edition for callout placements. Callouts for Figure 7:
+CPU in socket
+CPU fan power
+External ports
+AGP slot
+PCI slots
+RAM
+Flash BIOS chip 
+Northbridge
+System clock battery
+Front panel connections 
+DIP switches
+Power connector
+Southbridge 
+EIDE ports 
+Floppy port
+ATX is distinct from AT in the lack of an AT keyboard port, replaced with a rear panel that has all necessary ports built in. Note the mini-DIN (PS/2) keyboard and mouse ports at the left of Figure 9.8, until recently, standard features on almost all ATX boards. You recall those from Chapter 3, right?
+Figure 8: ATX ports
+Pickup photo art from previous edition F09-08
+The ATX form factor includes many improvements over AT. The position of the power supply creates better air movement. The CPU and RAM are placed to provide easier access, and the rearrangement of components prevents long expansion cards from colliding with the CPU or Northbridge. Other improvements, such as placing the RAM closer to the Northbridge and CPU than on AT boards, offer users enhanced performance as well. The shorter the wires, the easier to shield them and make them capable of handling double or quadruple the clock speed of the motherboard. Figure 9.9 shows AT and ATX motherboards—note the radical differences in placement of internal connections.
+Figure 9: AT (left) and ATX (right) motherboards for quick visual comparison
+Pickup photo art from previous edition F09-09
+Begin Cross Check Box
+(5)Cross Check
+(6)High-Speed CPUs and RAM
+Modern CPUs incorporate the memory controller on the processor rather than locating it on the Northbridge. This move has facilitated even further increases in the speed at which the processor can fetch data from RAM. Refer to Chapters 6 and 7 and see if you can answer these questions.
+1. What different clock frequencies are supported by DDR2 and DDR3 types of memory?
+2. What processors support DDR3 memory?
+End Cross Check Box
+ATX motherboards come in three variations to accommodate different types of cases. So far, you’ve seen the full-sized ATX form factor, which is 12 by 9.6 inches.
+CE: The official specs. for the motherboards use the mismatched capitalization of microATX and FlexATX. 
+The microATX (μATX) motherboard (see Figure 9.10) floats in at a svelte 9.6 by 9.6 inches (usually), or about 30 percent smaller than standard ATX, yet uses the standard ATX connections. A microATX motherboard fits into a standard ATX case or in the much smaller microATX cases. Note that not all microATX motherboards have the same physical size. You’ll sometimes see microATX motherboards referred to with the Greek symbol for micro, as in μATX.
+Figure 10: A microATX motherboard
+In 1999, Intel created a variant of the microATX called the FlexATX. FlexATX motherboards have maximum dimensions of just 9 by 7.5 inches, which makes them the smallest motherboards in the ATX standard. Although FlexATX motherboards can use a standard ATX power supply, most FlexATX systems use a special FlexATX-only power supply. This diminutive power supply fits into tight FlexATX cases.
+Note: Many techs and Web sites use the term mini-ATX to refer to motherboards smaller than a full ATX board. This is technically incorrect. The specifications for these small boards use only the terms microATX and FlexATX.
+Keep in mind that each main type of form factor requires its own case. AT motherboards go into AT cases, NLX motherboards go into NLX cases, and ATX motherboards go into ATX cases. You cannot replace one form factor with another without purchasing a new case (see Figure 9.11). The exception to this rule is that larger form factor ATX cases can handle any smaller-sized ATX form factor motherboards.
+Figure 11: That’s not going to fit!
+Pickup photo art from previous edition F09-11
+(3)ITX
+Not everyone wants or needs a huge desktop system. From the beginning of PCs, there’s always been a demand for smaller computers. While a number of companies have made proprietary motherboards to support smaller computers, it wasn’t until around 2001 that the chipset maker VIA Technologies started the process to create a small form factor (SFF) motherboard, the ITX. The ITX itself wasn’t a success, but VIA in turn created a number of even smaller form factors that today populate the SFF market: Mini-ITX, Nano-ITX, and Pico-ITX.
+Mini-ITX is the largest and the most popular of the three ITX form factors. At a miniscule 6.7 by 6.7 inches, Mini-ITX competes head to head with the virtually identical microATX (see Figure 9.12).
+Figure 12: Mini-ITX (photo courtesy of VIA Technologies, Inc.)
+Needs permissions
+If you think that’s small, Nano-ITX at 4.7 by 4.7 inches and Pico-ITX at 3.8 by 2.8 inches are even smaller (see Figure 9.13). These tiny motherboard form factors are commonly used for embedded systems and highly specialized devices such as routers.
+Figure 13: Pico-ITX (photo courtesy of VIA Technologies, Inc.)
+One of the great benefits of these SFF motherboards is the tiny amount of power needed to support them. ITX power supplies are quite small compared to a typical power supply. Lower power usage produces less heat, thus enabling passive cooling on many SFF systems. The lack of fan noise makes them ideal for media center PCs. 
+Exam Tip: You need to know the variations of the ATX standard for the CompTIA 220-801 exam, especially microATX. You should also be familiar with the low-power design of ITX boards. 
+(3)Proprietary Form Factors
+Several major PC makers, including Dell and Sony, make motherboards that work only with their cases. These proprietary motherboards enable these companies to create systems that stand out from the generic ones and, not coincidently, push you to get service and upgrades from their authorized dealers. Some of the features you’ll see in proprietary systems are riser boards like you saw with the NLX form factor—part of a motherboard separate from the main one but connected by a cable of some sort—and unique power connections. Proprietary motherboards drive techs crazy because replacement parts tend to cost more and are not readily available.
+Begin Try This Box
+(5)Try This
+(6)Motherboard Varieties
+Motherboards come in a wide variety of form factors. Go to your local computer store and check out what is on display. Note the different features offered by ATX, microATX, and FlexATX (if any) motherboards.
+1. Does the store stock Mini-ITX or proprietary motherboards?
+2. Did the clerk use tech slang and call the motherboards “mobos”? (It’s what most of us call them outside of formal textbooks, after all!)
+End Try This Box
+(2)Chipset
+Every motherboard has a chipset, one or more discrete integrated circuit chips that support the CPU’s interfacing to all the other devices on the motherboard. The chipset determines the type of processor the motherboard accepts, the type and capacity of RAM, and the sort of internal and external devices that the motherboard supports. As you learned in earlier chapters, the chips in a PC’s chipset serve as electronic interfaces through which the CPU, RAM, and input/output devices interact. Chipsets vary in features, performance, and stability, so they factor hugely in the purchase or recommendation of a particular motherboard. Good techs know their chipsets!
+Because the chipset facilitates communication between the CPU and other devices in the system, its component chips are relatively centrally located on the motherboard (see Figure 9.14). For over a decade chipsets were composed of two primary chips: the Northbridge and the Southbridge.
+Figure 14: Northbridge and Southbridge 
+Production: please see F09-14 Ref.tif for callout placement
+The Northbridge chip on traditional Intel-based motherboards helped the CPU work with RAM, as mentioned in earlier chapters. On newer motherboards, however, the CPU has taken on the role of the memory controller so the Northbridge either no longer exists or mainly just provides the communication with the video card. Northbridge chips did a lot and thus got pretty hot, requiring their own heat-sink and fan assembly.
+The Southbridge handles some expansion devices and mass storage drives, such as hard drives. Most Southbridge chips don’t need extra cooling, leaving the chip exposed or passively cooled with only a heat sink. This makes the Southbridge a great place for you to see the manufacturer of the chipset, as the name of the manufacturer is always right on the chip.
+Some motherboards support very old technologies such as floppy drives, infrared connections, parallel ports, and modems. Although supporting these old devices was once part of the Southbridge’s job, hardly any modern chipsets still support these devices. Motherboard manufacturers add a third chip called the Super I/O chip to handle these chores. Figure 9.15 shows a typical Super I/O chip.
+Figure 15: Super I/O chip on ASUS motherboard
+The system ROM chip provides part of the BIOS for the chipset, but only at a barebones, generic level. The chipset still needs support for the rest of the things it can do. So how do expansion devices get BIOS? From software drivers, of course, and the same holds true for modern chipsets. You have to load the proper drivers for the specific OS to support all of the features of today’s chipsets. Without software drivers, you’ll never create a stable, fully functional PC. Most motherboards ship with an optical disc with drivers, support programs, and extra-special goodies such as antivirus software (see Figure 9.16).
+Figure 16: Driver disc for ASUS motherboard
+There are a limited number of chipset makers. The dominant chipset vendors today are Intel and AMD, although several other companies continue to produce chipsets, such as NVIDIA. Motherboard manufacturers incorporate the chipsets into motherboards that match the feature set of the chipset. Chipset companies rise and fall every few years, with one company seeming to hold the hot position for a while until another company comes along to unseat them.
+Note: Super I/O chips work with chipsets, but are not part of the chipset. Motherboard makers purchase them separately from chipsets.
+Chipset makers don’t always use the terms Northbridge and Southbridge. Chipsets for AMD-based motherboards tend to use these terms, but Intel-based motherboards tend to say Memory Controller Hub (MCH) for the Northbridge and I/O Controller Hub (ICH) for the Southbridge. With the launch of the X58 Express Chipset, Intel further refined their terminology, calling the Northbridge simply the I/O Hub (IOH) since the memory controller is located on the CPU. Sometimes Intel refers to the Southbridge as the Legacy I/O Controller Hub. Regardless of the official name, Northbridge and Southbridge are the commonly used terms. Figure 9.17 shows a schematic with typical chipset chores for an Intel X79 chipset.
+Figure 17: Schematic of a modern chipset (courtesy of Intel Corporation)
+Needs permission
+Production: Please use F09-17n.eps
+Note: In an average year, chipset makers collectively produce around 100 new chipset models for the PC market.
+So why do good techs need to know the hot chipsets in detail? The chipset defines almost every motherboard feature short of the CPU itself. Techs love to discuss chipsets and expect a fellow tech to know the differences between one chipset and another. You also need to be able to recommend a motherboard that suits a client’s needs. Chapter 31 covers choosing components and building PCs for specific purposes, such as video editing and gaming. One of the most important choices you’ll make in building a custom rig is selecting a chipset. 
+(2)Motherboard Components
+The connections and capabilities of a motherboard sometimes differ from those of the chipset the motherboard uses. This disparity happens for a couple of reasons. First, a particular chipset may support eight USB ports, but to keep costs down, the manufacturer might include only four ports. Second, a motherboard maker may choose to install extra features—ones not supported by the chipset—by adding additional chips. A common example is a motherboard that supports FireWire. Other technologies you might find are built-in sound, hard drive RAID controllers, and AMR or CNR slots for modems, network cards, and more. Some motherboards have added convenience features, such as case fan power connectors and running lights so you can see what you’re working on. 
+(3)USB/FireWire
+Most chipsets support USB, and many motherboards come with FireWire as well, but it seems no two motherboards offer the same port arrangement. My motherboard supports eight USB ports and two FireWire ports, for example, but if you look on the back of the motherboard, you’ll only see four USB ports and one FireWire port. So, where are the other ports? Well, this motherboard has special connectors for the other ports, and the motherboard comes with the dongles you need to connect them (see Figure 9.18). These dongles typically use an extra slot on the back of the case.
+Figure 18: USB/FireWire dongle
+Pickup photo art from previous edition F09-17
+These dongle connectors are standardized, so many cases have built-in front USB/FireWire ports that have dongles attached. This is very handy for USB or FireWire devices you might want to plug and unplug frequently, such as thumb drives or digital cameras. You can also buy add-on front USB and FireWire devices that go into a 3.5-inch drive bay (see Figure 9.19).
+Figure 19: Front USB and FireWire drive bay device
+Pickup photo art from previous edition F09-18
+(3)Sound
+Quite a few motherboards come with onboard sound chips. These sound chips are usually pretty low quality compared to even a lower-end sound card, but onboard sound is cheap and doesn’t take up a slot. As with USB, a lot of motherboards have a port for connecting to audio jacks on the front of the case. These enable you to plug headphones or microphones into the front rather than the rear of the case, a very convenient feature. These connectors are identical to the ones used on sound cards, so we’ll save more discussion for Chapter 25.
+(3)RAID
+RAID stands for redundant array of independent (or inexpensive) disks and is very common on motherboards. There are many types of RAID, but the RAID found on motherboards usually only supports mirroring (the process of using two drives to hold the same data, which is good for safety, because if one drive dies, the other still has all of the data) or striping (making two drives act as one drive by spreading data across them, which is good for speed). RAID is a very cool but complex topic that’s discussed in detail in Chapter 11.
+(3)AMR/CNR
+The U.S. Federal Communications Commission (FCC) must certify any electronic device to ensure that it does not transmit unwanted electronic signals. This process is a bit expensive, so in the very late 1990s, Intel came up with a special slot called the audio modem riser (AMR), shown in Figure 9.20. An AMR slot was designed to take specialized AMR devices (modems, sound cards, and network cards). An AMR device would get one FCC certification and then be used on as many motherboards as the manufacturer wanted without going through the FCC certification process again. AMR was quickly replaced with the more advanced communications and networking riser (CNR). Many motherboard manufacturers used these slots in the early 2000s, but they’ve lost popularity because most motherboard makers simply use onboard networking and sound.
+Figure 20: AMR slot
+Pickup photo art from previous edition F09-19
+(3)Case Fan Support 
+Every motherboard has a CPU fan power connector, as you’ll recall from Chapter 6 in the CPU installation process, usually a four-wire connector that supports three-wire fans too. Some motherboards offer one or more fan power connectors for case fans. These are almost always only three-wire connectors. The case fans plugged into the motherboard can be monitored and controlled in Windows, unlike case fans connected only to the power supply, so they add a nice feature. 
+(1)Expansion Bus
+Expansion slots have been part of the PC from the very beginning. Way back then, IBM created the PC with an eye to the future; the original IBM PC had slots built into the motherboard—called expansion slots—for adding expansion cards and thus new functions to the PC. The slots and accompanying wires and support chips on the first PC and on the latest and greatest PC are called the expansion bus.
+(2)Structure and Function of the Expansion Bus
+As you’ve learned, every device in the computer—whether soldered to the motherboard or snapped into a socket—connects to the external data bus and the address bus. The expansion slots are no exception. They connect to the rest of the PC through the chipset. Exactly where on the chipset varies depending on the system. On some systems, the expansion slots connect to the Southbridge (see Figure 9.21). On other systems, the expansion slots connect to the Northbridge (see Figure 9.22). Finally, many systems have more than one type of expansion bus, with slots of one type connecting to the Northbridge and slots of another type connecting to the Southbridge (see Figure 9.23).
+Figure 21: Expansion slots connecting to Southbridge
+Please use F09-21n
+Figure 22: Expansion slots connecting to Northbridge
+Please use F09-22n
+Figure 23: Expansion slots connecting to both Northbridge and Southbridge
+Please use F09-23n
+The chipset provides an extension of the address bus and data bus to the expansion slots, and thus to any expansion cards in those slots. If you plug a hard drive controller card into an expansion slot, it functions just as if it were built into the motherboard, albeit with one big difference: speed. As you’ll recall from Chapter 6, the system crystal—the clock—pushes the CPU. The system crystal provides a critical function for the entire PC, acting like a drill sergeant calling a cadence, setting the pace of activity in the computer. Every device soldered to the motherboard is designed to run at the speed of the system crystal. A 133-MHz motherboard, for example, has its chipset chips all timed by a 133-MHz crystal (see Figure 9.24).
+Figure 24: The system crystal sets the speed.
+Please use F09-24n
+Clock crystals aren’t just for CPUs and chipsets. Pretty much every chip in your computer has a CLK wire and needs to be pushed by a clock chip, including the chips on your expansion cards. Suppose you buy a device that did not come with your computer—say, a sound card. The chips on the sound card need to be pushed by a CLK signal from a crystal. If PCs were designed to use the system crystal to push that sound card, sound card manufacturers would need to make sound cards for every possible motherboard speed. You would have to buy a 100-MHz sound card for a 100-MHz system or a 133-MHz sound card for a 133-MHz system.
+That would be ridiculous, and IBM knew it when they designed the PC. They had to make an extension to the external data bus that ran at its own standardized speed. You would use this part of the external data bus to snap new devices into the PC. IBM achieved this goal by adding a different crystal, called the expansion bus crystal, which controlled the part of the external data bus connected to the expansion slots (see Figure 9.25).
+Figure 25: Function of system and expansion bus crystals
+Please use new figure F09-25n
+Author: Change “expansion crystal” to “expansion bus crystal” in the figure (x2)?
+I’ll change this when I update the figure
+Scott: please check this – I still see “expansion crystal” rather than “expansion bus crystal” in the new file, but only 1 instance. Does it need further updating (which I can take care of?) -Molly
+The expansion slots run at a much slower speed than the frontside bus. The chipset acts as the divider between the two buses, compensating for the speed difference with wait states and special buffering (storage) areas. No matter how fast the motherboard runs, the expansion slots run at a standard speed. In the original IBM PC, that speed was about 14.318 MHz ÷ 2, or about 7.16 MHz. Luckily, modern expansion buses run much faster! Let’s start with the oldest of the modern expansion slots, PCI.
+(2)PCI
+Intel introduced the Peripheral Component Interconnect (PCI) bus architecture (see Figure 9.26) in the early 1990s, and the PC expansion bus was never again the same. Intel made many smart moves with PCI, not the least of which was releasing PCI to the public domain to make PCI very attractive to manufacturers. PCI provided a wider, faster, more flexible alternative than any previous expansion bus. The exceptional technology of the new bus, combined with the lack of a price tag, made manufacturers quickly drop older buses and adopt PCI.
+Figure 26: PCI expansion bus slots
+PCI really shook up the PC world with its capabilities. The original PCI bus was 32 bits wide and ran at 33 MHz, which was superb, but these features were expected and not earth-shattering. The coolness of PCI came from its capability to coexist with other expansion buses. When PCI first came out, you could buy a motherboard with both PCI and older slots. This was important because users could keep their old expansion cards and slowly migrate to PCI. Equally impressive was that PCI devices were (and still are) self-configuring, a feature that led to the industry standard that became known as plug and play (PnP). Finally, PCI had a powerful burst-mode feature that enabled very efficient data transfers.
+Note: Before PCI, it was rare to see more than one type of expansion slot on a motherboard. Today this not only is common—it’s expected!
+The original PCI expansion bus has soldiered on in PCs for almost twenty years at the time of this writing. Recently, more advanced forms have begun to appear. Although these new PCI expansion buses are faster than the original PCI, they’re only improvements to PCI, not entirely new expansion buses. The original PCI might be fading away, but PCI in its many new forms is still “King of the Motherboard.”
+Tip: There was a 64-bit version of the original PCI standard, but it was quite rare.
+(2)AGP
+When video started going graphical with the introduction of Windows, the current buses were too slow and graphics looked terrible. PCI certainly improved graphics when it came out, but Intel was thinking ahead. Shortly after Intel invented PCI, they presented a specialized, video-only version of PCI called the Accelerated Graphics Port (AGP). An AGP slot is a PCI slot, but one with a direct connection to the Northbridge. AGP slots are only for video cards—don’t try to snap a sound card or modem into one. You’ll learn much more about this fascinating technology in Chapter 21. Figure 9.27 shows a typical AGP slot.
+Figure 27: AGP slot
+Pickup photo art from previous edition F08-09
+Note: The AGP slot is almost universally brown in color, making it easy to spot.
+(2)PCI-X
+PCI Extended (PCI-X) is a huge enhancement to PCI that is also fully backward compatible in terms of both hardware and software. PCI-X is a 64-bit-wide bus (see Figure 9.28). Its slots will accept regular PCI cards. The real bonus of PCI-X is its much enhanced speed. The PCI-X 2.0 standard features four speed grades (measured in MHz): PCI-X 66, PCI-X 133, PCI-X 266, and PCI-X 533.
+Figure 28: PCI-X slot
+Pickup photo art from previous edition F08-10
+The obvious candidates for PCI-X are businesses using workstations and servers, because they have the “need for speed” and also the need for backward compatibility. Large vendors, especially in the high-end market, are already on board. HP, Dell, and Intel server products, for example, support PCI-X. A quick online shopping trip reveals tons of PCI-X stuff for sale: gigabit NICs, Fibre Channel cards, video adapters, and more.
+(2)Mini-PCI
+PCI has even made it into laptops in the specialty Mini-PCI format (see Figure 9.29). You’ll find Mini-PCI in just about every laptop these days. Mini-PCI is designed to use low power and to lie flat—both good features for a laptop expansion slot. Mini-PCI returns in Chapter 26.
+Figure 29: Tiny card in Mini-PCI slot. See the contacts at the bottom of the picture?
+Pickup photo art from previous edition F08-11
+(2)PCI Express
+PCI Express (PCIe) is the latest, fastest, and most popular expansion bus in use today. As its name implies, PCI Express is still PCI, but it uses a point-to-point serial connection instead of PCI’s shared parallel communication. Consider a single 32-bit chunk of data moving from a device to the CPU. In PCI parallel communication, 32 wires each carry one bit of that chunk of data. In serial communication, only one wire carries those 32 bits. You’d think that 32 wires are better than one, correct? Well, first of all, PCIe doesn’t share the bus. A PCIe device has its own direct connection (a point-to-point connection) to the Northbridge, so it does not wait for other devices. Plus, when you start going really fast (think gigabits per second), getting all 32 bits of data to go from one device to another at the same time is difficult, because some bits get there slightly faster than others. That means you need some serious, high-speed checking of the data when it arrives to verify that it’s all there and in good shape. Serial data doesn’t have this problem, as all of the bits arrive one after the other in a single stream. When data is really going fast, a single point-to-point serial connection is faster than a shared 32-wire parallel connection.
+And boy howdy, is PCIe ever fast! A PCIe connection uses one wire for sending and one for receiving. Each of these pairs of wires between a PCIe controller and a device is called a lane. Each direction of a lane runs at 2.5 Gbps, or 5 Gbps with PCIe 2.0. Better yet, each point-to-point connection can use 1, 2, 4, 8, 12, 16, or 32 lanes to achieve a maximum theoretical bandwidth of 320 Gbps. The effective data rate drops a little bit because of the encoding scheme—the way the data is broken down and reassembled—but full-duplex data throughput can go up to a whopping 16 Gbps on a ×16 connection.
+Begin Tech Tip sidebar (Change to Note for AIO)
+(5)Tech Tip
+(6)PCIe 3.0 and 4.0 
+At the time of this writing, nearly every PCIe device for sale at retail outlets is PCIe 2.0, because 5 Gbps per lane seems fast enough with today’s devices. That hasn’t stopped the industry group behind the PCI specifications, PCI-SIG, from planning ahead. In November 2010 they announced the specifications for PCIe 3.0, with devices capable of achieving lane speeds up to 8 Gbps. The first devices to use PCIe 3.0 appeared in early 2012. Plus they’ve announced plans for PCIe 4.0 with the expectation of reaching 16-Gbps lane speeds. Expect PCIe 4.0 specifications in 2014 with devices to follow. The future looks very fast indeed!
+End Tech Tip
+The most common PCIe slot is the 16-lane (×16) version most commonly used for video cards, as shown in Figure 9.30. The first versions of PCIe motherboards used a combination of a single PCIe ×16 slot and a number of standard PCI slots. (Remember, PCI is designed to work with other expansion slots, even other types of PCI.) There is also a small form factor version of PCI Express for mobile computers called PCI Express Mini Card.
+Figure 30: PCIe ×16 slot (black) with PCI slots (blue)
+The bandwidth generated by a ×16 slot is far more than anything other than a video card would need, so most PCIe motherboards also contain slots with fewer lanes. Currently ×1 is the most common general-purpose PCIe slot (see Figure 9.31).
+Figure 31: PCIe ×1 slot (top)
+Note: When you talk about the lanes, such as ×1 or ×8, use “by” rather than “ex” for the multiplication mark. So “by 1” and “by 8” is the correct pronunciation. You’ll of course hear it spoken as both “by 8” and “8 ex” for the next few years until the technology has become a household term.
+Begin Try This! Box
+(5)Try This!
+(6)Shopping Trip
+So, what’s the latest PCIe motherboard out there? Get online or go to your local computer store and research higher-end motherboards. What combinations of PCIe slots can you find on a single motherboard? Jot them down and compare your findings with your classmates’ findings.
+End Try This! Box
+(2)Installing Expansion Cards
+Installing an expansion card successfully—another one of those bread-and-butter tasks for the PC tech—requires at least four steps. First, you need to know that the card works with your system and your operating system. Second, you have to insert the card in an expansion slot properly and without damaging that card or the motherboard. Third, you need to provide drivers for the operating system—proper drivers for the specific OS. Fourth, you should always verify that the card functions properly before you walk away from the PC.
+Exam Tip: The four steps involved in installing expansion cards apply to all types of expansion cards. The CompTIA A+ exams will ask you about cards ranging from the common—sound, video, and networking—to the legacy—serial, parallel, and modem. They’ll ask about wireless networking cards, TV tuner cards, video capture cards, and more, all of which we’ll cover in their proper chapters in this book. You install any of them using the same four steps: knowledge, physical installation, device drivers, and verification. 
+(3)Step 1: Knowledge
+Learn about the device you plan to install—preferably before you purchase it! Does the device work with your system and operating system? Does it have drivers for your operating system? If you use Windows, the answer to these questions is almost always “yes.” If you use an old operating system such as Windows XP or a less common operating system such as Linux, these questions become critical. A lot of older hardware simply won’t work with Windows Vista or Windows 7 at all, especially if you go for the 64-bit versions. Check the device’s documentation and check the device manufacturer’s Web site to verify that you have the correct drivers. While you’re checking, make sure you have the latest version of the driver; most devices get driver updates more often than the weather changes in Texas.
+For Windows systems, your best resource for this knowledge is the Microsoft Web site. The specific list of supported hardware has changed names many times. Currently for Windows 7 it’s called the Windows 7 Compatibility Center. Earlier operating systems called it the Hardware Compatibility List (HCL) or Windows Logo’d Product List, and you’ll still hear lots of people refer to it by one of those names, especially the former. You can check out the Web site here: 
+www.microsoft.com/windows/compatibility/windows-7/en-us/default.aspx
+This might list your product, but most people just look on the box of the device in question (see Figure 9.32)—all Windows-certified devices proudly display that they work with Windows.
+Figure 32: Works with Windows 7!
+Please use F09-32r and see F09-32r Ref.tif for adding a highlight.
+(3)Step 2: Physical Installation
+To install an expansion card successfully, you need to take steps to avoid damaging the card, the motherboard, or both. This means knowing how to handle a card and avoiding electrostatic discharge (ESD) or any other electrical issue. You also need to place the card firmly and completely into an available expansion slot.
+Optimally, a card should always be in one of two places: in a computer or in an anti-static bag. When inserting or removing a card, be careful to hold the card only by its edges. Do not hold the card by the slot connectors or touch any components on the board (see Figure 9.33).
+Figure 33: Where to handle a card
+Pickup photo art from previous edition F08-27
+Use an anti-static wrist strap if possible, properly attached to the PC, as noted in Chapter 2. If you don’t have a wrist strap, you can use the tech way of avoiding ESD by touching the power supply after you remove the expansion card from its anti-static bag. This puts you, the card, and the PC at the same electrical potential and thus minimizes the risk of ESD.
+Modern systems have a trickle of voltage on the motherboard at all times when the computer is plugged into a power outlet. Chapter 10 covers power for the PC and how to deal with it in detail, but here’s the short version: Always unplug the PC before inserting an expansion card! Failure to do so can destroy the card, the motherboard, or both. It’s not worth the risk.
+Never insert or remove a card at an extreme angle. This may damage the card. A slight angle is acceptable and even necessary when removing a card. Always secure the card to the case with a connection screw or other retaining mechanism. This keeps the card from slipping out and potentially shorting against other cards. Also, many cards use the screw connection to ground the card to the case (see Figure 9.34).
+Figure 34: Always secure all cards properly.
+Many technicians have been told to clean the slot connectors if a particular card is not working. This is almost never necessary after a card is installed and, if done improperly, can cause damage. You should clean slot connectors only if you have a card that’s been on the shelf for a while and the contacts are obviously dull.
+Never use a pencil eraser for this purpose. Pencil erasers can leave behind bits of residue that wedge between the card and slot, preventing contact and causing the card to fail. Grab a can of contact cleaning solution and use it instead. Contact cleaning solution is designed exactly for this purpose, cleans contacts nicely, and doesn’t leave any residue. You can find contact cleaning solution at any electronics store.
+A fully inserted expansion card sits flush against the back of the PC case—assuming the motherboard is mounted properly, of course—with no gap between the mounting bracket on the card and the screw hole on the case. If the card is properly seated, no contacts are exposed above the slot. Figure 9.35 shows a properly seated (meaning fitted snugly in the slot) expansion card.
+Figure 35: Properly seated expansion card; note the tight fit between case and mounting bracket and the evenness of the card in the slot.
+Pickup photo art from previous edition F08-29
+Begin Cross Check Box
+(5)Cross Check
+(6)BIOS
+Although most devices bring their own BIOS in the form of device drivers, that’s not always the case, as you know from Chapter 8. So turn there now and see if you can answer these questions. Aside from device drivers, how can a device bring BIOS to a system so the device will work properly? What about devices that are common and necessary, such as the keyboard? How do they bring their own BIOS to a system? Or do they?
+End CrossCheck Box
+(3)Step 3: Device Drivers
+You know from Chapter 8 that all devices, whether built into the motherboard or added along the way, require BIOS. For almost all expansion cards, that BIOS comes in the form of device drivers—software support programs—loaded from an optical disc provided by the card manufacturer.
+Installing device drivers is fairly straightforward. You should use the correct drivers—kind of obvious, but you’d be surprised how many techs mess this up—and, if you’re upgrading, you might have to unload current drivers before loading new drivers. Finally, if you have a problem, you may need to uninstall the drivers you just loaded or roll back to earlier, more stable drivers.
+(4)Getting the Correct Drivers
+To be sure you have the best possible driver you can get for your device, you should always check the manufacturer’s Web site. The drivers that come with a device may work well, but odds are good that you’ll find a newer and better driver on the Web site. How do you know that the drivers on the Web site are newer? First, take the easy route: look on the disc. Often the version is printed right on the CD or DVD. If it’s not printed there, you’re going to have to load the disc in your optical drive and poke around. Many driver discs have an AutoRun screen that advertises the version. If nothing is on the pop-up screen, look for a Readme file (see Figure 9.36).
+Figure 36: Part of a Readme file showing the driver version
+(4)Driver or Device?
+In almost all cases, you should install the device driver after you install the device. Without the device installed, the driver installation will not see the device and will give an error screen. The only exceptions to this rule are USB and FireWire devices—with these you should always install the driver first.
+(4)Removing the Old Drivers
+Some cards—and this is especially true with video cards—require you to remove old drivers of the same type before you install the new device. To do this, you must first locate the driver in Device Manager. Right-click the device driver you want to uninstall and select Uninstall (see Figure 9.37). Many devices, especially ones that come with a lot of applications, will have an uninstall option in the Add or Remove Programs (Windows XP) or Programs and Features (Windows Vista/7) applet in the Control Panel (see Figure 9.38).
+Figure 37: Uninstalling a device
+Figure 38: The Uninstall/Change option in Programs and Features
+(4)Unsigned Drivers
+Microsoft truly wants your computer to work, so they provide an excellent and rigorous testing program for hardware manufacturers called the Windows Certification Program. Developers initially use software to test their devices and, when they’re ready, submit the device for further testing. Hardware and drivers that survive the testing get to wear the Designed for Windows logo. The drivers get a digital signature that says Microsoft tested them and found all was well.
+Not all driver makers go through the rather involved process of the Windows Certification Program, so their software does not get a digital signature from Microsoft. When Windows runs into such a driver, it brings up a scary-looking screen (see Figure 9.39) that says you’re about to install an unsigned driver.
+Figure 39: Unsigned driver warning
+Please use F09-39r
+The fact that a company refuses to use the Windows Certification Program doesn’t mean their drivers are bad—it simply means they haven’t gone through Microsoft’s exhaustive quality-assurance certification procedure. If I run into this, I usually check the driver’s version to make sure I’m not installing something outdated, and then I just take my chances and install it. (I’ve yet to encounter a problem with an unsigned driver that I haven’t also seen with Designed for Windows drivers.)
+With the 64-bit versions of Windows Vista and Windows 7, Microsoft tightened the rules to try to provide the most stable platform possible. You simply cannot install unsigned drivers without clunky workarounds. Microsoft must approve each 64-bit driver.
+(4)Installing the New Driver
+You have two ways to install a new driver: by using the installation disc directly or by using the Add Hardware Wizard in the Control Panel. Most experienced techs prefer to run from the installation disc. Most devices come with extra programs. My motherboard comes with a number of handy applications for monitoring temperature and overclocking. The Add Hardware Wizard does not install anything but the drivers. Granted, some techs find this a blessing because they don’t want all of the extra junk that sometimes comes with a device, but most installation discs give clear options so you can pick and choose what you want to install (see Figure 9.40).
+Figure 40: Installation menu
+The other reason to use installation discs instead of the Add Hardware Wizard stems from the fact that many expansion cards are actually many devices in one, and each device needs its own drivers. Some video cards have built-in TV tuners, for example. The Add Hardware Wizard will install all of the devices, but the installation disc brings them to your attention. Go for the optical disc installation program first and save the Add Hardware Wizard for problems, as you’ll see in the next section.
+(4)Driver Rollback
+All versions of Windows offer the nifty feature of rolling back to previous drivers after an installation or driver upgrade. If you decide to live on the edge and install beta drivers for your video card, for example, and your system becomes frightfully unstable, you can back up to the drivers that worked before. (Not that I’ve ever had to use that feature, of course.) To access the rollback feature, simply open Device Manager and access the properties for the device you want to adjust. On the Driver tab (see Figure 9.41), you’ll find the Roll Back Driver button.
+Figure 41: Driver rollback feature
+Pickup photo art from previous edition F08-35
+Begin Tech Tip Box
+(5)Tech Tip
+(6)Permissions
+To install drivers in a Windows computer, you need to have the proper permission. I’m not talking about asking somebody if you’re allowed to install the device. Permissions are granted in Windows to enable people to do certain things, such as add a printer to a local computer or install software, or to stop people from being able to do such tasks. Specifically, you need administrative permissions to install drivers.
+End Tech Tip Box
+(3)Step 4: Verify
+As a last step in the installation process, inspect the results of the installation and verify that the device works properly. Immediately after installing, you should open Device Manager and verify that Windows sees the device (see Figure 9.42). Assuming that Device Manager shows the device working properly, your next check is to put the device to work by making it do whatever it is supposed to do. If you installed a printer, print something; if you installed a scanner, scan something. If it works, you’re finished!
+Figure 42: Device Manager shows the device working properly.
+Pickup photo art from previous edition F08-36
+Begin Tech Tip Box
+(5)Tech Tip
+(6)Beta Drivers
+Many PC enthusiasts try to squeeze every bit of performance out of their PC components, much as auto enthusiasts tinker with engine tunings to get a little extra horsepower out of their engines. Expansion card manufacturers love enthusiasts, who often act as free testers for their unpolished drivers, known as beta drivers. Beta drivers are fine for the most part, but they can sometimes cause amazing system instability—never a good thing! If you use beta drivers, make sure you know how to uninstall or roll back to previous drivers.
+End Tech Tip Box
+(2)Troubleshooting Expansion Cards
+A properly installed expansion card rarely makes trouble; it’s the botched installations that produce headaches. Chances are high that you’ll have to troubleshoot an expansion card installation at some point, usually from an installation you botched personally.
+The first sign of an improperly installed card usually shows up the moment you first try to get that card to do whatever it’s supposed to do and it doesn’t do it. When this happens, your primary troubleshooting process is a reinstallation—after checking in with Device Manager.
+Other chapters in this book cover specific hardware troubleshooting: sound cards in Chapter 25, for example, and video cards in Chapter 21. Use this section to help you decide what to look for and how to deal with the problem.
+Device Manager provides the first diagnostic and troubleshooting tool in Windows. After you install a new device, Device Manager gives you many clues if something has gone wrong.
+Occasionally, Device Manager may not even show the new device. If that happens, verify that you inserted the device properly and, if needed, that the device has power. Run the Add Hardware Wizard and see if Windows recognizes the device. You’ll find the wizard as a Control Panel applet in Windows XP and Windows Vista. In Windows 7, you run the program by clicking Start and typing the name of the executable in the Search bar: hdwwiz.exe.
+Exam Tip: Don’t be surprised to see hdwwiz.exe on the CompTIA A+ exams. It’s the only way to run the Add Hardware Wizard in Windows 7. 
+If Device Manager doesn’t recognize the device at this point, you have one of two problems: either the device is physically damaged and you must replace it, or the device is an onboard device, not a card, and is turned off in CMOS.
+Device Manager rarely completely fails to see a device. More commonly, device problems manifest themselves in Device Manager via error icons:
+1. A black “!” on a yellow circle (Windows XP) or triangle (Windows Vista/7) indicates that a device is missing (see Figure 9.43), that Windows does not recognize a device, or that there’s a device driver problem. A device may still work even while producing this error.
+Figure 43: An “!” in Device Manager, indicating a problem with the selected device
+Pickup photo art from previous edition F08-37
+1. A black downward-pointing arrow on a white field in Windows Vista and Windows 7 indicates a disabled device. This usually points to a device that’s been manually turned off, or a damaged device. A device producing this error will not work. Windows XP uses a red “X” for the same status indicator.
+The “!” symbol is the most common error symbol and usually the easiest to fix. First, double-check the device’s connections. Second, try reinstalling the driver with the Update Driver button. To get to the Update Driver button, right-click the desired device in Device Manager and select Properties. In the Properties dialog box, select the Driver tab. On the Driver tab, click the Update Driver button to open the updating wizard (see Figure 9.44).
+Figure 44: Updating the driver
+Pickup photo art from previous edition F08-38
+If you get a downward-pointing arrow or a red “X” error, first check that the device isn’t disabled. Right-click on the device and select Enable. If that doesn’t work (it often does not), try rolling back the driver (if you updated the driver) or uninstalling (if it’s a new install). Shut the system down and make triple-sure you have the card physically installed. Then redo the entire driver installation procedure, making sure you have the most current driver for that device. If none of these procedures works, return the card—it’s almost certainly bad.
+As you look at the errors in Device Manager, you’ll notice error codes for the device that does not work properly. Windows has about 20 error codes, but the fixes still boil down to the same methods just shown. If you really want to frustrate yourself, try the Troubleshooter. It starts most fixes the same way: by reinstalling the device driver.
+(1)Upgrading and Installing Motherboards
+To most techs, the concept of adding or replacing a motherboard can be extremely intimidating. It really shouldn’t be; motherboard installation is a common and necessary part of PC repair. It is inexpensive and easy, although it can sometimes be a little tedious and messy because of the large number of parts involved. This section covers the process of installation and replacement and shows you some of the tricks that make this necessary process easy to handle.
+(2)Choosing the Motherboard and Case
+Choosing a motherboard and case can prove quite a challenge for any tech, whether newly minted or a seasoned veteran. You first have to figure out the type of motherboard you want, such as AMD- or Intel-based. Then you need to think about the form factor, which of course influences the type of case you’ll need. Third, how rich in features is the motherboard and how tough is it to configure? You have to read the motherboard manual to find out. Finally, you need to select the case that matches your space needs, budget, and form factor. Now look at each step in a little more detail.
+Exam Tip: Being able to select and install a motherboard appropriate for a client or customer is something every CompTIA A+ technician should know.
+Begin Try This! Box
+(5)Try This!
+(6)Building a Recommendation
+Family, friends, and potential clients often solicit the advice of a tech when they’re thinking about upgrading their PC. This solicitation puts you on the spot to make not just any old recommendation, but one that works with the needs and budget of the potential upgrader. To do this successfully, you need to manage expectations and ask the right questions, so Try This!
+What does the upgrader want to do that compels him or her to upgrade? Write it down! Some of the common motivations for upgrading are to play that hot new game or to take advantage of new technology. What’s the minimum system needed to run tomorrow’s action games? What do you need to make multimedia sing? Does the motherboard need to have SuperSpeed USB 3.0 built in to accommodate digital video or some other special purpose?
+How much of the current system does the upgrader want to save? Upgrading a motherboard can very quickly turn into a complete system rebuild. What form factor is the old case? If it’s a microATX case, that constrains the motherboards you can use with it to microATX or the smaller FlexATX. If the desired motherboard is a full-sized ATX board, you’ll need to get a new case. Does the new motherboard possess the same type of CPU socket as the old motherboard? If not, that’s a sure sign you’ll need to upgrade the CPU as well. What about RAM? If the old motherboard was using DDR SDRAM, and the new motherboard requires DDR2 or DDR3 SDRAM, you’ll need to replace the RAM. If you need to upgrade the memory, it is best to know how many channels the new RAM interface supports, because performance is best when all channels are populated. What if the old motherboard was using an AGP graphics accelerator that the new motherboard does not support, but you don’t want to splurge on a PCI Express graphics accelerator right now? In this situation you might want to consider moving to a motherboard with integrated graphics. What’s great about integrated graphics is that if the motherboard also possesses a ×16 PCI Express slot, you can upgrade to a more powerful discrete graphics accelerator later.
+Once you’ve gathered information on motivation and assessed the current PC of the upgrader, it’s time to get down to business: field trip time! This is a great excuse to get to the computer store and check out the latest motherboards and gadgets. Don’t forget to jot down notes and prices while you’re there. By the end of the field trip, you should have the information to give the upgrader an honest assessment of what an upgrade will entail, at least in monetary terms. Be honest—in other words, don’t just tell upgraders what you think they want to hear—and you won’t get in trouble.
+End Try This! Box
+First, determine what motherboard you need. What CPU are you using? Will the motherboard work with that CPU? Because most of us buy the CPU and the motherboard at the same time, make the seller guarantee that the CPU will work with the motherboard. If you can, choose a motherboard that works with much higher speeds than the CPU you can afford; that way you can upgrade later. How much RAM do you intend to install? Are extra RAM sockets available for future upgrades?
+Note: Chapter 31 covers items needed for specialized PCs. 
+A number of excellent motherboard manufacturers currently exist. Some of the more popular brands are ASUS, BIOSTAR, DFI, GIGABYTE, Intel, MSI, and Shuttle. Your supplier may also have some lesser-known but perfectly acceptable brands of motherboards. As long as the supplier has an easy return policy, it’s perfectly fine to try one of these.
+Second, make sure you’re getting a form factor that works with your case. Don’t try to put a regular ATX motherboard into a microATX case!
+Third, all motherboards come with a technical manual, better known as the motherboard book (see Figure 9.45). You must have this book! This book is your primary source for all of the critical information about the motherboard. If you set up CPU or RAM timings incorrectly in CMOS, for example, and you have a dead PC, where would you find the CMOS-clear jumper? Where do you plug in the speaker? Even if you let someone else install the motherboard, insist on the motherboard book; you will need it.
+Figure 45: Motherboard box and book
+Begin Tech Tip Box
+(5)Tech Tip
+(6)Replacement Motherboard Books 
+If you have a motherboard with no manual, you can usually find a copy of the manual in Adobe Acrobat (.PDF) format online at the manufacturer’s Web site. It’s a good idea to grab and print a copy to keep with the motherboard. I often tape a copy (either hard copy or burned onto a disc) of the manual in the case where I installed the motherboard. Just don’t cover any vents!
+End Tech Tip Box
+Fourth, pick your case carefully. Cases come in many sizes: slimline, desktop, mini-tower, mid-tower, tower, and cube. Plus you can get specialized cases, such as tiny cases for entertainment systems or ones that fit the same format as a stereo receiver or DVD player. Slimline and desktop models generally sit on the desk, beneath the monitor. The various tower cases usually occupy a bit of floor space next to the desk. The mini-tower and mid-tower cases are the most popular choices. Make sure you get a case that fits your motherboard—most microATX and all FlexATX cases are too small for a regular ATX motherboard. Cube cases generally require a specific motherboard, so be prepared to buy both pieces at once. A quick test-fit before you buy saves a lot of return trips to the supplier.
+Cases come with many options, but three more common options point to a better case. One option is a removable face (see Figure 9.46) to make disassembly much easier.
+Figure 46: Removable face
+Another common feature, front-mounted ports for USB, FireWire, and headphones, can make using a PC much easier. Better cases offer these ports, although you can also get add-on components that fit into the now-useless floppy drive bay to bring added front connectivity to the PC. Figure 9.47 shows a case with both types of front connectors.
+Figure 47: Case with both front-mounted ports and an add-on flash memory card reader
+Pickup photo art from previous edition F09.23
+Better cases offer tool-free component installation, so you don’t have to screw down cards or drives. They just snap into place. (You’ll still need a trusty screwdriver to secure the motherboard, though. No installation is completely tool-free yet.) 
+Power supplies often come with the case. Watch out for “really good deal” cases because that invariably points to a cheap or missing power supply. You also need to verify that the power supply has sufficient wattage. This issue is handled in Chapter 10.
+(2)Installing the Motherboard
+If you’re replacing a motherboard, first remove the old motherboard. Begin by removing all of the cards. Also remove anything else that might impede removal or installation of the motherboard, such as a hard drive. Keep track of your screws—the best idea is to return the screws to their mounting holes temporarily, at least until you can reinstall the parts. Sometimes you even have to remove the power supply temporarily to enable access to the motherboard. 
+Exam Tip: The CompTIA A+ exams may test you on the basics of installing a motherboard, so you need to know this section.
+Unscrew the motherboard. It will not simply lift out. The motherboard mounts to the case via small connectors called standouts that slide into keyed slots or screw into the bottom of the case (see Figure 9.48). Screws then go into the standouts to hold the motherboard in place. Be sure to place the standouts properly before installing the new motherboard.
+Caution: Watch out for ESD here! Remember that it’s very easy to damage or destroy a CPU and RAM with a little electrostatic discharge. It’s also fairly easy to damage the motherboard with ESD. Always wear your anti-static wrist strap.
+Figure 48: Standout in a case, ready for the motherboard
+Production: Please add highlight circle as in F09-48 Ref.tif
+When you insert the new motherboard, do not assume that you will put the screws and standouts in the same place as they were in your old motherboard. When it comes to the placement of screws and standouts, only one rule applies: anywhere it fits. Do not be afraid to be a little tough here! Installing motherboards can be a wiggling, twisting, knuckle-scraping process.
+Caution: Pay attention to the location of the standouts if you’re swapping a motherboard. If you leave a screw-type standout beneath a spot on the motherboard where you can’t add a screw and then apply power to the motherboard, you run the risk of shorting the motherboard.
+Begin Tech Tip Box
+(5)Tech Tip
+(6)Before the Case
+A lot of techs install the CPU, CPU fan, and RAM into the motherboard before installing the motherboard into the case. This helps in several ways, especially with a new system. First, you want to make certain that the CPU and RAM work well with the motherboard and with each other—without that, you have no hope of setting up a stable system. Second, installing these components first prevents the phenomenon of flexing the motherboard. Some cases don’t provide quite enough support for the motherboard, and pushing in RAM can make the board bend. Third, attaching a CPU fan can be a bear of a task, one that’s considerably easier to do on a table top than within the confines of a case. 
+End Tech Tip Box
+The next part of motherboard installation is connecting the LEDs, buttons, and front-mounted ports on the front of the box. This is sometimes easier to do before you install the motherboard fully in the case. You can trace the wire leads from the front of the case to the appropriate standouts on the motherboard. These usually include the following:
+1. Soft power button
+2. Reset button
+3. Speaker
+4. Hard drive activity light 
+5. Power light
+6. USB
+7. FireWire
+8. Sound
+These wires have specific pin connections to the motherboard. Although you can refer to the motherboard book for their location, usually a quick inspection of the motherboard will suffice for an experienced tech (see Figure 9.49).
+Figure 49: Motherboard wire connections labeled on the motherboard
+You need to follow a few rules when installing these wires. First, the lights are LEDs, not light bulbs; they have a positive side and a negative side. If they don’t work one way, turn the connector around and try the other. Second, when in doubt, guess. Incorrect installation only results in the device not working; it won’t damage the computer. Refer to the motherboard book for the correct installation. The third and last rule is that, with the exception of the soft power switch on an ATX system, you do not need any of these wires for the computer to run. Many techs often simply ignore these wires, although this would not be something I’d do to any system but my own.
+No hard-and-fast rule exists for determining the function of each wire. Often the function of each wire is printed on the connector (see Figure 9.50). If not, track each wire to the LED or switch to determine its function.
+Figure 50: Sample of case wires
+Finally, install the motherboard into the case fully and secure it with the appropriate screws. Once you get the motherboard mounted in the case, with the CPU and RAM properly installed, it’s time to insert the power connections and test it. A POST card can be helpful with the system test because you won’t have to add the speaker, a video card, monitor, and keyboard to verify that the system is booting. If you have a POST card, start the system, and watch to see if the POST takes place—you should see a number of POST codes before the POST stops. If you don’t have a POST card, install a keyboard, speaker, video card, and monitor. Boot the system and see if the BIOS information shows up on the screen. If it does, you’re probably okay. If it doesn’t, it’s time to refer to the motherboard book to see where you made a mistake. 
+If you get no power at all, check to make sure you plugged in all the necessary power connectors. If you get power to fans but get nothing on the screen, you could have several problems. The CPU, RAM, or video card might not be connected to the motherboard properly. The only way to determine the problems is to test. Check the easy connections first (RAM and video) before removing and reseating the CPU. (Also, see Chapter 10 for power issues.) 
+Begin long exam tip
+Exam Tip: Very old motherboards used to require techs to set jumpers to determine the bus speed for the motherboard. This enabled these motherboards to accommodate CPUs that needed a 100-MHz bus, for example, and other CPUs that needed a 66-MHz bus. The CompTIA A+ exams might refer to these kinds of manual adjustments needed for installation. 
+Setting these jumpers incorrectly resulted in bizarre behavior. First, if you set the bus speed too high, many CPUs wouldn’t even try to power up. If you set the speed too low, you wouldn’t get optimal use out of the CPU. The motherboard manuals had extensive charts for settings for the CPUs supported. 
+Modern motherboards autodetect CPU and RAM settings and adjust accordingly, so these errors only happen when you intentionally overclock or underclock a CPU through the CMOS setup utility. 
+End exam tip
+Begin superhead
+(1)802
+End superhead
+(1)Troubleshooting Motherboards
+Motherboards fail. Not often, but motherboards and motherboard components can die from many causes: time, dust, cat hair, or simply slight manufacturing defects made worse by the millions of amps of current sluicing through the motherboard traces. Installing cards, electrostatic discharge, flexing the motherboard one time too many when swapping out RAM or drives—any of these factors can cause a motherboard to fail. The motherboard is a hard-working, often abused component of the PC. Unfortunately for the common tech, troubleshooting a motherboard problem can be difficult and time consuming. Let’s wrap up this chapter with a look at symptoms of a failing motherboard, techniques for troubleshooting, and the options you have when you discover a motherboard problem.
+(2)Symptoms
+Motherboard failures commonly fall into three types: catastrophic, component, and ethereal. With a catastrophic failure, the PC just won’t boot. Check the power and hard drive activity indicator lights on the front of the PC. Assuming they worked before, having them completely flat points to power supply failure or motherboard failure.
+This sort of problem happens to brand-new systems because of manufacturing defects—often called a burn-in failure—and to any system that gets a shock of electrostatic discharge. Burn-in failure is uncommon and usually happens in the first 30 days of use. Swap out the motherboard for a replacement and you should be fine. If you accidentally zap your motherboard when inserting a card or moving wires around, be chagrined. Change your daring ways and wear an anti-static wrist strap!
+Component failure happens rarely and appears as flaky connections between a device and motherboard, or as intermittent problems. A hard drive plugged into a faulty controller on the motherboard, for example, might show up in CMOS autodetect but be inaccessible in Windows. Another example is a serial controller that worked fine for months until a big storm took out the external modem hooked to it, and doesn’t work anymore, even with a replacement modem.
+The most difficult of the three types of symptoms to diagnose are those I call ethereal symptoms. Stuff just doesn’t work all of the time. The PC reboots itself. You get a Blue Screen of Death (BSoD) in the midst of heavy computing, such as right before you smack the villain and rescue the damsel. What can cause such symptoms? If you answered any of the following, you win the prize:
+1. Faulty component
+2. Buggy device driver
+3. Buggy application software
+4. Slight corruption of the operating system
+5. Power supply problems
+Err…you get the picture.
+What a nightmare scenario to troubleshoot! The Way of the Tech knows paths through such perils, though, so let’s turn to troubleshooting techniques now.
+(2)Techniques
+Troubleshooting a potential motherboard failure requires time, patience, and organization. Some problems will certainly be quicker to solve than others. If the hard drive doesn’t work as expected, as in the previous example, check the settings on the drive. Try a different drive. Try the same drive with a different motherboard to verify that it’s a good drive. Like every other troubleshooting technique, what you’re trying to do with motherboard testing is to isolate the problem by eliminating potential factors.
+This three-part system—check, replace, verify good component—works for both simple and more complicated motherboard problems. You can even apply the same technique to ethereal-type problems that might be anything, but you should add one more verb: document. Take notes on the individual components you test so you don’t repeat efforts or waste time. Plus, taking notes can lead to the establishment of patterns. Being able to re-create a system crash by performing certain actions in a specific order can often lead you to the root of the problem. Document your actions. Motherboard testing is time-consuming enough without adding inefficiency.
+(2)Options
+Once you determine that the motherboard has problems, you have several options for fixing the three types of failures. If you have a catastrophic failure, you must replace the motherboard. Even if it works somewhat, don’t mess around. The motherboard should provide bedrock stability for the system. If it’s even remotely buggy or problematic, get rid of it!
+Caution: If you’ve lost components because of ESD or a power surge, you would most likely be better off replacing the motherboard. The damage you can’t see can definitely sneak up to bite you and create system instability.
+If you have a component failure, you can often replace the component with an add-on card that will be as good as or better than the failed device. Adaptec, for example, makes fine cards that can replace the built-in SATA ports on the motherboard (see Figure 9.51).
+Figure 51: Adaptec PCIe SATA card
+If your component failure is more a technology issue than physical damage, you can try upgrading the BIOS on the motherboard. As you’ll recall from Chapter 8 on BIOS, every motherboard comes with a small set of code that enables the CPU to communicate properly with the devices built into the motherboard. You can quite readily upgrade this programming by flashing the BIOS: running a small command-line program to write new BIOS in the flash ROM chip. Refer to Chapter 8 for the details on flashing.
+Begin Tech Tip Box
+(5)Tech Tip
+(6)Limits of BIOS Upgrades 
+Flashing the BIOS for a motherboard can fix a lot of system stability problems and provide better implementation of built-in technology. What it cannot do for your system is improve the hardware. If AMD comes out with a new, improved, lower-voltage Phenom, for example, and your motherboard cannot scale down the voltage properly, you cannot use that CPU—even if it fits in your motherboard’s Socket AM3. No amount of BIOS flashing can change the hardware built into your motherboard.
+End Tech Tip Box
+Finally, if you have an ethereal, ghost-in-the-machine type of problem that you have finally determined to be motherboard related, you have only a couple of options for fixing the problem. You can flash the BIOS in a desperate attempt to correct whatever it is, which sometimes does work and is less expensive than the other option, which is replacing the motherboard
+(1)Chapter 9 Review
+(2)Chapter Summary
+After reading this chapter and completing the exercises, you should understand the following about motherboards.
+(3)Explain how motherboards work
+1. Every piece of hardware connects either directly or indirectly to the motherboard. Wires called traces make up the buses on the system, enabling hardware to communicate. Motherboards are several layers thick, with traces running across each layer, creating a veritable highway of wires.
+2. Motherboards are defined by their form factor, chipset, and components. The form factor defines the physical size and airflow; the chipset defines the type of CPU, the type and amount of RAM, and the components a motherboard will support.
+1. The Advanced Technology (AT) form factor, though now obsolete, was the predominant form factor for motherboards through the mid-1990s. Its identifying features included a large keyboard plug and a split power socket called P8/P9.
+2. LPX and NLX were slimline form factors, meaning they were ideal for low-profile cases. They offered a central riser slot to accept a special riser card into which expansion cards fit horizontally.
+3. The Advanced Technology Extended (ATX) form factor replaced AT as the form factor of choice by the late 1990s. It offered several improvements over AT, including repositioning the power supply for better airflow, easier access to CPU and RAM slots, and better performance by moving RAM closer to the Northbridge and CPU. MicroATX (μATX) and FlexATX are subtypes of ATX and are considerably smaller.
+4. The ITX form factor is newer than ATX and is designed to support small form factor (SFF) systems. While the regular ITX form factor never gained acceptance, the Mini-ITX, Nano-ITX, and Pico-ITX form factors are quite popular.
+5. Several PC manufacturers make proprietary motherboards, meaning they do not adhere to a standard form factor such as ATX or ITX. Servicing a system like this can be frustrating, as parts may be difficult to find and are often available only from authorized dealers.
+6. Motherboards come with differing features or components such as USB/FireWire ports, audio, video, RAID, and AMR or CNR slots for modems and network cards. Sometimes a motherboard supports several USB/FireWire ports but does not have rear ports for all of them. In this case, the motherboard likely has connections for the additional ports to be used in conjunction with a dongle to create front-mounted ports.
+7. Popular motherboard manufacturers include ASUS, BIOSTAR, DFI, GIGABYTE, Intel, MSI, VIA, and Shuttle.
+(3)Recognize modern expansion buses
+1. Every device in the computer connects to the external data bus and the address bus. Expansion slots enable expansion cards to connect to these same buses. Depending on the system, the expansion slots may connect to the Southbridge or the Northbridge. Many systems have more than one type of expansion bus, with slots connecting to both the Southbridge and the Northbridge. It is the chipset that extends the address bus and data bus to the expansion slots.
+1. Expansion buses run at a standardized speed, depending on the type of expansion bus. This speed, which is much slower than the frontside bus, is dictated by the expansion bus crystal. The chipset uses wait states and buffers to compensate for the difference in speed between the expansion and frontside buses.
+2. PCI is 32 bits, runs at 33 MHz, and is self-configuring (no more manual configuration of expansion card jumpers). Additionally, it coexists with other expansion buses.
+3. AGP is a special PCI slot for video cards, with a direct connection to the Northbridge. You can easily find the AGP slot on a motherboard: a lone slot that’s brown in color. AGP is now replaced by PCIe.
+4. Enhancements to the PCI bus paved the way for a few modern variations. PCI-X is 64 bits wide, backward compatible with PCI, and available in a variety of speeds up to 533 MHz. Mini-PCI is designed for laptops with an emphasis on low power consumption and a small, flat physical design. Finally, PCIe, with its point-to-point serial connection, touts speeds as high as 16 Gbps.
+(3)Upgrade and install motherboards
+1. Not all motherboards fit in all cases. If you upgrade a motherboard, make sure the new motherboard fits in the existing case. If you purchase a new motherboard and a new case, make sure you purchase a case that supports the form factor of your motherboard.
+2. Determine the CPU you or your client wants before purchasing a motherboard. Not all CPUs are supported by, or even fit in, all motherboards. Make sure your motherboard supports your CPU and, if possible, purchase a motherboard that supports higher speeds than your CPU in case you want to upgrade the processor at a later time.
+3. To replace a motherboard, first remove all of the expansion cards from the old motherboard. Unscrew the motherboard and remove it from the case.
+4. Before installing a new motherboard in the case, attach the CPU, heat sink/fan, and RAM. Check the standouts in the case—you might have to add or remove a few to accommodate the new motherboard. Once installed, boot the system and make sure there are no POST errors and the BIOS information appears on the screen. Then install any expansion cards.
+5. Cases come with a series of little wires that connect to LEDs on the front of the case. You need to plug these wires in to the motherboard for the LEDs to function. LEDs have a positive side and a negative side, so the wires must be connected the right way or the LEDs will not work. If you find that the LEDs are not working, turn the connector around to reverse the positive/negative connection. Getting it wrong will not damage your system; it will only cause the LEDs not to light up.
+(3)Troubleshoot motherboard problems
+1. Motherboards and motherboard components can die for many reasons, including time, dust, pet hair, manufacturing defects, ESD, or physical damage. Motherboard failures usually fall into one of three main categories: catastrophic, component, or ethereal.
+2. Catastrophic failure is typically caused by manufacturing defects (burn-in failure) or ESD. Burn-in failures are uncommon and usually manifest within the first 30 days of use. In the case of a catastrophic failure, replace the motherboard.
+3. Component failure appears as a flaky connection between a device and the motherboard or as intermittent problems. In the case of a component failure, replace the failed component with an expansion card or peripheral device. Sometimes a BIOS upgrade can fix component failures.
+4. Ethereal failure is the most difficult to diagnose. Symptoms vary from the PC rebooting itself to Blue Screens of Death and can be caused by a faulty component, buggy device driver, buggy application software, operating system corruption, or power supply problems.
+5. Use three steps to troubleshoot problems: check, replace, and verify. For example, first check the settings of the problem device. If the device still fails, replace the device. If the device continues to malfunction, try the device with a different motherboard. Remember to document your troubleshooting steps. Not only will it help you to become an efficient troubleshooter, but it also can lead to the establishment of patterns. Being able to re-create a system crash by performing certain actions in a specific order can often lead you to the root of the problem.
+(2)Key Terms
+Accelerated Graphics Port (AGP) ()
+AT ()
+ATX ()
+audio modem riser (AMR) ()
+burn-in failure () 
+catastrophic failure () 
+chipset () 
+communications and networking riser (CNR) () 
+component failure ()
+device driver ()
+expansion bus ()
+expansion bus crystal ()
+expansion slot ()
+FlexATX () 
+form factor ()
+I/O Controller Hub (ICH) ()
+LPX ()
+Memory Controller Hub (MCH) () 
+microATX (μATX) () 
+Mini-ITX ()
+Mini-PCI ()
+motherboard ()
+motherboard book () 
+Nano-ITX ()
+NLX ()PCI Express (PCIe) ()
+PCI Extended (PCI-X) ()
+Peripheral Component Interconnect (PCI) ()
+Pico-ITX () 
+printed circuit board (PCB) () 
+riser card () 
+slimline () 
+soft power () 
+standouts ()
+Super I/O chip () 
+traces ()
+unsigned driver ()
+Windows Certification Program ()
+(2)Key Term Quiz
+Use the Key Terms list to complete the sentences that follow. Not all terms will be used.
+1. The __________________ defines the type of processor and RAM required for the motherboard and determines to a degree the built-in devices supported by a motherboard, including the expansion slots.
+2. The most common bus on today’s computers is the flexible __________________ and its derivatives.
+3. The __________________ form factor replaced the LPX slimline form factor.
+4. The __________________ bus was designed for laptop computers.
+5. The __________________ determines the physical size of the motherboard as well as the general location of components and ports.
+6. The smallest ATX motherboard form factor is the __________________.
+7. The newest and fastest expansion bus in use today, with speeds up to 16 Gbps, is __________________.
+8. A device driver for a device manufactured by a company that is not participating in the Windows Certification Program is reported as a(n) __________________.
+9. The __________________ is your primary source for all of the critical information about the motherboard.
+10. The motherboard mounts to the case via small connectors called __________________ that slide into keyed slots or screw into the bottom of the case.
+(2)Multiple-Choice Quiz
+1. Which of the following are part of the ATX form factor? (Select two.)
+1. FlexATX
+2. macroATX
+3. microATX
+4. picoATX
+1. Which of the following form factors dominates the PC market?
+1. AT
+2. ATX
+3. Mini-ITX
+4. NLX
+1. Which of the following slots features serial data transfers?
+1. AGP
+2. PCI
+3. PCIe
+4. PCI-X
+1. A client brought in an old computer that won’t boot. He wants to see if any data can be recovered from the hard drive. When the tech opened the case, he noted that two expansion cards were plugged into some kind of circuit board that plugged into the motherboard. The expansion cards were parallel with the motherboard, in other words, rather than perpendicular. Into what kind of circuit board did the expansion cards most likely connect? (Select two.)
+1. Daughterboard
+2. Expansion board
+3. Riser card
+4. Southbridge
+1. In a routine check of a system newly built by her latest intern, Sarah discovers that everything works except the hard drive and power LEDs on the front of the case. What could be the problem? (Select two.)
+1. The intern forgot to connect the LED leads to the motherboard.
+2. The intern reversed the LED leads to the motherboard.
+3. There is no power to the motherboard.
+4. There is no activity on the hard drive.
+1. Robert installed a new motherboard, CPU, and RAM into his old case. After he attached the power correctly and pressed the power button, not only did the system not boot up, but he smelled ozone and realized the motherboard had shorted out. What could have been the cause?
+1. Robert installed an ATX motherboard into an ITX case.
+2. Robert installed an ITX motherboard into an ATX case.
+3. Robert used an ITX power supply on an ATX motherboard.
+4. Robert left a standout in the wrong place under the motherboard.
+1. Which of the following enables you to access the Add Hardware Wizard in Windows 7 Professional?
+1. addhdware.exe
+2. hdware.exe
+3. hdwwiz.exe
+4. addhwiz.exe
+1. Brian bought a new motherboard that advertised support for eight USB ports. When he pulled the motherboard out of the box, though, he found that it only had four USB ports. What’s likely the issue here?
+1. The extra four USB ports will connect to the front of the case or via a dongle to an expansion slot.
+2. The extra four USB ports require an add-on expansion card.
+3. The FireWire port will have a splitter that makes it four USB ports.
+4. The motherboard chipset might support eight USB ports, but the manufacturer only included four ports.
+1. Martin bought a new motherboard to replace his older ATX motherboard. As he left the shop, the tech on duty called after him, “Check your standouts!” What could the tech have meant?
+1. Standouts are the connectors on the motherboard for the front panel buttons, such as the on/off switch and reset button.
+2. Standouts are the metal edges on some cases that aren’t rolled.
+3. Standouts are the metal connectors that attach the motherboard to the case.
+4. Standouts are the dongles that enable a motherboard to support more than four USB ports.
+1. Amanda bought a new system that, right in the middle of an important presentation, gave her a Blue Screen of Death. Now her system won’t boot at all, not even to CMOS. After extensive troubleshooting, she determined that the motherboard was at fault and replaced it. Now the system runs fine. What was the most likely cause of the problem?
+1. Burn-in failure
+2. Electrostatic discharge
+3. Component failure
+4. Power supply failure
+1. Solon has a very buggy computer that keeps locking up at odd moments and rebooting spontaneously. He suspects the motherboard. How should he test it?
+1. Check settings and verify good components.
+2. Verify good components and document all testing.
+3. Replace the motherboard first to see if the problems disappear.
+4. Check settings, verify good components, replace components, and document all testing.
+1. As tech support for a computer shop, you receive a call from an irate customer insisting that you sent him the wrong motherboard, because it won’t fit in his old case. Which of the following questions might enable you to determine the problem? Select the best answer.
+1. Will you describe the location of the connectors on the back of the motherboard?
+2. Will you describe the location of the standouts on the case?
+3. What kind of CPU are you using?
+4. What type of RAM are you using?
+1. Which of the following companies makes chipsets?
+1. AMI
+2. GIGABYTE
+3. MSI
+4. AMD
+1. What purpose does the Super I/O chip serve?
+1. The Super I/O chip handles the communication with RAM.
+2. The Super I/O chip handles the communication with video.
+3. The Super I/O chip handles the communication with legacy devices.
+4. The Super I/O chip handles the communication between the Northbridge and Southbridge chips.
+1. What should you do before installing an expansion card? (Select two.)
+1. Attach an anti-static wrist strap
+2. Install the drivers
+3. Plug the PC into a grounded outlet
+4. Unplug the PC
+(2)Essay Quiz
+1. This chapter talks about motherboards made in layers that contain the wires or traces. Find an Internet site that talks about the motherboard manufacturing process. Why do you think motherboards are made in layers? What advantages do the layers provide?
+2. Some people believe that selecting a motherboard based on the motherboard chipset is even more important than basing the decision on the kind of processor. Do you agree or disagree, and why?
+3. Prepare a PowerPoint presentation or write a paper that would help your classmates select and replace a bad motherboard. Be sure to walk through all of the necessary steps.
+4. Your neighbors Dora and Jim just learned that you’re studying computer hardware. They feel that their computer is slightly out of date. They want to upgrade the processor, but not the motherboard. Prepare a list of at least five questions you should ask them before you know what CPU they can choose or whether it is feasible to upgrade their system.
+(2)Lab Projects
+(3)Lab Project 9.1
+Examine all of the ports and connectors on the back of your computer. With the computer turned off, you may disconnect the cables from the ports. (If necessary, document where and how the cables are connected so you can replace them correctly.) Determine the kinds of ports that are built in and those that are provided by expansion cards. From this information alone, can you ascertain whether your motherboard is an ATX or ITX form factor? What else would you need to know, if anything? Draw a diagram of the back of your system and label every port and all connectors. State if their sources are from the motherboard or from an expansion card. Last, state the form factor of the motherboard.
+(3)Lab Project 9.2
+One of the most important skills a PC technician can possess is the ability to read and interpret documentation. No single piece of documentation is as important as the motherboard book. Let’s see how well you can understand this documentation. Consult your motherboard book or use one that your instructor provides. (If you do not have the motherboard book, try to download it from the manufacturer’s Web site.) Then write a paragraph about your motherboard that includes answers to the following questions:
+1. What make and model is the motherboard?
+2. What chipset does it use?
+3. What kinds of RAM slots does it contain?
+4. What kinds of expansion slots does your motherboard have and how many of each kind does it have?
+5. What kinds of onboard ports does it have?
+6. What kinds of CPUs does it support and what kind of processor slot does it have?
+7. Does your motherboard use jumpers or dip switches for configuration? If so, what do the jumpers or dip switches control?
+8. The motherboard book probably contains an illustration of the way the motherboard components are laid out. By examining this illustration, determine what form factor your motherboard uses.
+9. Does your motherboard have any unusual or proprietary features?
+(3)Lab Project 9.3
+You know now how important the motherboard chipset is in determining the kind of CPU and RAM that you can install in the computer. You also know that motherboards may look similar but have very different features and prices. Imagine that you are going to build a new computer by ordering the components. Price is not a problem, so you will want to select the best and most powerful components. On the Internet, search sites such as www.intel.com or www.amd.com along with sites such as www.newegg.com to select a motherboard and a particular chipset. Then select a compatible CPU and RAM. Explain where you found the information about the components, what brands/models you selected, and how much each will cost.
+Now imagine that your budget will not allow you to buy these components at this time. In fact, you’ve decided that you can afford only 75 percent of the cost of these components. What will you do to save money? Will you change the motherboard and the chipset or will you use a less powerful CPU with a smaller amount of RAM? Consider what you can upgrade at a later time when you have more available cash. Again search the Internet and select components that would be satisfactory but are not the latest and the greatest. Be sure that the CPU and RAM you select are indeed compatible with your motherboard and chipset. What did you select and how much will it cost you?
+(3)Lab Project 9.4
+Open your computer case and determine the kind of expansion slots available on your motherboard. How many of each kind are available? What cards are installed in the slots? Now examine the back and front of the computer case to see what ports are available. What devices do you have plugged into the ports?
+Begin textbook solutions
+(2)Key Term Quiz Answers
+1. The chipset defines the type of processor and RAM required for the motherboard and determines to a degree the built-in devices supported by a motherboard, including the expansion slots.
+2. The most common bus on today’s computers is the flexible Peripheral Component Interconnect (PCI) and its derivatives.
+3. The NLX form factor replaced the LPX slimline form factor.
+4. The Mini-PCI bus was designed for laptop computers.
+5. The form factor determines the physical size of the motherboard as well as the general location of components and ports.
+6. The smallest ATX motherboard form factor is the microATX.
+7. The newest and fastest expansion bus in use today, with speeds up to 16 Gbps, is PCI Express (PCIe).
+8. A device driver for a device manufactured by a company that is not participating in the Windows Certification program is reported as a(n) unsigned driver.
+9. The motherboard book is your primary source for all of the critical information about the motherboard.
+10. The motherboard mounts to the case via small connectors called standouts that slide into keyed slots or screw into the bottom of the case.
+(2)Multiple-Choice Quiz Answers
+1. Which of the following are part of the ATX form factor? (Select two.)
+1. FlexATX
+2. macroATX
+3. microATX
+4. picoATX
+Answer: A, C
+1. Which of the following form factors dominates the PC market?
+1. AT
+2. ATX
+3. Mini-ITX
+4. NLX
+Answer: B
+1. Which of the following slots features serial data transfers?
+1. AGP
+2. PCI
+3. PCIe
+4. PCI-X
+Answer: C
+1. A client brought in an old computer that won’t boot. He wants to see if any data can be recovered from the hard drive. When the tech opened the case, he noted that two expansion cards were plugged into some kind of circuit board that plugged into the motherboard. The expansion cards were parallel with the motherboard, in other words, rather than perpendicular. Into what kind of circuit board did the expansion cards most likely connect? (Select two.)
+1. Daughterboard
+2. Expansion board
+3. Riser card
+4. Southbridge
+Answer: A, C
+1. In a routine check of a system newly built by her latest intern, Sarah discovers that everything works except the hard drive and power LEDs on the front of the case. What could be the problem? (Select two.)
+1. The intern forgot to connect the LED leads to the motherboard.
+2. The intern reversed the LED leads to the motherboard.
+3. There is no power to the motherboard.
+4. There is no activity on the hard drive.
+Answer: A, B
+1. Robert installed a new motherboard, CPU, and RAM into his old case. After he attached the power correctly and pressed the power button, not only did the system not boot up, but he smelled ozone and realized the motherboard had shorted out. What could have been the cause?
+1. Robert installed an ATX motherboard into an ITX case.
+2. Robert installed an ITX motherboard into an ATX case.
+3. Robert used an ITX power supply on an ATX motherboard.
+4. Robert left a standout in the wrong place under the motherboard.
+Answer: D
+1. Which of the following enables you to access the Add Hardware Wizard in Windows 7 Professional?
+1. addhdware.exe
+2. hdware.exe
+3. hdwwiz.exe
+4. addhwiz.exe
+Answer: C
+1. Brian bought a new motherboard that advertised support for eight USB ports. When he pulled the motherboard out of the box, though, he found that it only had four USB ports. What’s likely the issue here?
+1. The extra four USB ports will connect to the front of the case or via a dongle to an expansion slot.
+2. The extra four USB ports require an add-on expansion card.
+3. The FireWire port will have a splitter that makes it four USB ports.
+4. The motherboard chipset might support eight USB ports, but the manufacturer only included four ports.
+Answer: A
+1. Martin bought a new motherboard to replace his older ATX motherboard. As he left the shop, the tech on duty called after him, “Check your standouts!” What could the tech have meant?
+1. Standouts are the connectors on the motherboard for the front panel buttons, such as the on/off switch and reset button.
+2. Standouts are the metal edges on some cases that aren’t rolled.
+3. Standouts are the metal connectors that attach the motherboard to the case.
+4. Standouts are the dongles that enable a motherboard to support more than four USB ports.
+Answer: C
+1. Amanda bought a new system that, right in the middle of an important presentation, gave her a Blue Screen of Death. Now her system won’t boot at all, not even to CMOS. After extensive troubleshooting, she determined that the motherboard was at fault and replaced it. Now the system runs fine. What was the most likely cause of the problem?
+1. Burn-in failure
+2. Electrostatic discharge
+3. Component failure
+4. Power supply failure
+Answer: A
+1. Solon has a very buggy computer that keeps locking up at odd moments and rebooting spontaneously. He suspects the motherboard. How should he test it?
+1. Check settings and verify good components.
+2. Verify good components and document all testing.
+3. Replace the motherboard first to see if the problems disappear.
+4. Check settings, verify good components, replace components, and document all testing.
+Answer: D
+1. As tech support for a computer shop, you receive a call from an irate customer insisting that you sent him the wrong motherboard, because it won’t fit in his old case. Which of the following questions might enable you to determine the problem? Select the best answer.
+1. Will you describe the location of the connectors on the back of the motherboard?
+2. Will you describe the location of the standouts on the case?
+3. What kind of CPU are you using?
+4. What type of RAM are you using?
+Answer: A
+1. Which of the following companies makes chipsets?
+1. AMI
+2. GIGABYTE
+3. MSI
+4. AMD
+Answer: D
+1. What purpose does the Super I/O chip serve?
+1. The Super I/O chip handles the communication with RAM.
+2. The Super I/O chip handles the communication with video.
+3. The Super I/O chip handles the communication with legacy devices.
+4. The Super I/O chip handles the communication between the Northbridge and Southbridge chips.
+Answer: C
+1. What should you do before installing an expansion card? (Select two.)
+1. Attach an anti-static wrist strap
+2. Install the drivers
+3. Plug the PC into a grounded outlet
+4. Unplug the PC
+Answer: A, D
+(2)Essay Quiz Answers
+1. This chapter talks about motherboards made in layers that contain the wires or traces. Find an Internet site that talks about the motherboard manufacturing process. Why do you think motherboards are made in layers? What advantages do the layers provide?
+Answer: Answers will vary. The main point of the layered structure of the motherboard is that it may contain multiple layers of wires or traces without their signals interfering with each other. The layered approach allows the manufacturer to add complexity and additional components to the board without extending the overall length and width of the board. Shorter traces also allow signals to travel faster than they would if the wires were longer, as would be necessary if motherboards did not use layers. The multiple layers also add strength to the board itself, so it doesn’t bend easily.
+1. Some people believe that selecting a motherboard based on the motherboard chipset is even more important than basing the decision on the kind of processor. Do you agree or disagree, and why?
+Answer: Answers will vary. If the student agrees, the student will likely point out that the chipset determines what kind of processor and RAM the computer supports. It also determines performance and upgradeability. The flip side of the argument revolves around choice of CPU. If you know you want the latest hot-rod processor from AMD, for example, you can then find the right chipset and motherboard to support it. Choosing that CPU will also almost always dictate the type of RAM you can use.
+1. Prepare a PowerPoint presentation or write a paper that would help your classmates select and replace a bad motherboard. Be sure to walk through all of the necessary steps.
+Answer: The answers may include several points, such as the following:
+1. Determine what motherboard you need and make sure your CPU will work with the motherboard.
+2. Make sure the motherboard form factor matches the case and will fit inside the box.
+3. Be sure you can return the motherboard if it does not match your CPU or case.
+4. After unplugging the computer, remove any cards or drives that prevent you from accessing the motherboard.
+5. Remove the power connector from the old motherboard.
+6. Unscrew the old motherboard and lift it out.
+7. Check to see if you need to move any of the standouts before the new motherboard will fit into the case. Use as many standouts as your new motherboard will support.
+8. If you are going to use the same CPU or RAM, remove it from the old motherboard and place it into the new one. If you have a new CPU or new RAM, insert it into the new motherboard. Also place the CPU fan into position before you attempt to insert the motherboard into the case.
+9. Plug in the wires for the LEDs and buttons on the front of the box, making sure you align the positive and negative connections as directed in the motherboard book.
+10. Test the motherboard either with a POST card or by installing a keyboard, video card, and monitor.
+11. Replace the cards, drives, and other components.
+12. Check the CMOS setup for anything you may need to configure.
+1. Your neighbors Dora and Jim just learned that you’re studying computer hardware. They feel that their computer is slightly out of date. They want to upgrade the processor, but not the motherboard. Prepare a list of at least five questions you should ask them before you know what CPU they can choose or whether it is feasible to upgrade their system.
+Answer: Answers will vary. Questions might include the following:
+1. Who is the manufacturer and what is the model of your current CPU?
+2. What kind of CPU socket or slot does your motherboard have?
+3. Who is the manufacturer and what is the model of your motherboard?
+4. What chipset does your motherboard use?
+5. How much RAM does your computer currently have?
+6. Why do you want to upgrade your CPU?
+7. Are you sure you want to upgrade only the CPU or are you willing to upgrade the motherboard and the RAM as well?
+(2)Cross Check Answers
+(3)High-Speed CPUs and RAM
+The student will find the answer to the first question in Chapter 7, and the answer to the second question in Chapter 6. 
+1. The student can write out the different clock frequencies supported by DDR2 and DDR3 memory according to the clock speed or the DDR I/O speed (which will be double or quadruple the clock speed):
+1. DDR2 speeds, clock/I/O speed format (MHz): 100/200, 133/266, 166/333, 200/400, 250/500
+2. DDR3 speeds, clock/I/O speed format (MHz): 100/400, 133/533, 166/667, 200/800
+1. The CPUs that support DDR3 memory as of this writing are AMD Phenom II and Intel Core i7.
+(3)BIOS
+Many devices have a BIOS chip on the device itself. Things like RAID and sound cards have a ROM chip onboard that contains BIOS for that device. More common and necessary devices, like a keyboard or optical drive, have their BIOS stored in a ROM chip on the motherboard.
+End textbook solutions
+Begin EOC AIO
+(1)Chapter Review
+(2)Questions
+1. Which of the following statements about the expansion bus is true?
+1. The expansion bus runs at the speed of the system clock.
+2. The expansion bus crystal sets the speed for the expansion bus.
+3. The CPU communicates with RAM via the expansion bus.
+4. The frontside bus is another name for the expansion bus.
+1. What does a black down arrow next to a device in Device Manager indicate?
+1. A compatible driver has been installed that may not provide all of the functions for the device.
+2. The device is missing or Windows cannot recognize it.
+3. The system resources have been assigned manually.
+4. The device has been disabled.
+1. Which variation of the PCI bus was specifically designed for laptops?
+1. PCI-X
+2. PCIe
+3. Mini-PCI
+4. AGP
+1. Which of the following form factors dominates the PC industry?
+1. AT
+2. ATX
+3. ITX
+4. CTX
+1. Amanda bought a new system that, right in the middle of an important presentation, gave her a Blue Screen of Death. Now her system won’t boot at all, not even to CMOS. After extensive troubleshooting, she determined that the motherboard was at fault and replaced it. Now the system runs fine. What was the most likely cause of the problem?
+1. Burn-in failure
+2. Electrostatic discharge
+3. Component failure
+4. Power supply failure
+1. Martin bought a new motherboard to replace his older ATX motherboard. As he left the shop, the tech on duty called after him, “Check your standouts!” What could the tech have meant?
+1. Standouts are the connectors on the motherboard for the front panel buttons, such as the on/off switch and reset button.
+2. Standouts are the metal edges on some cases that aren’t rolled.
+3. Standouts are the metal connectors that attach the motherboard to the case.
+4. Standouts are the dongles that enable a motherboard to support more than four USB ports.
+1. Solon has a very buggy computer that keeps locking up at odd moments and rebooting spontaneously. He suspects the motherboard. How should he test it?
+1. Check settings and verify good components.
+2. Verify good components and document all testing.
+3. Replace the motherboard first to see if the problems disappear.
+4. Check settings, verify good components, replace components, and document all testing.
+1. When Jane proudly displayed her new motherboard, the senior tech scratched his beard and asked, “What kind of ICH does it have?” What could he possibly be asking about?
+1. The AMR slot
+2. The CNR slot
+3. The Northbridge
+4. The Southbridge
+1. What companies dominate the chipset market? (Select two.)
+1. ATI
+2. Intel
+3. NVIDIA
+4. SiS
+1. If Windows recognizes a device, where will it appear? 
+1. Device Manager
+2. C:\Windows\System32\Devices
+3. Desktop
+4. Safely remove hardware applet
+(2)Answers
+1. B. A separate expansion bus crystal enables the expansion bus to run at a different speed than the frontside bus.
+2. D. The device has been disabled.
+3. C. The Mini-PCI format conserves space and power, making it an ideal card type for use in laptops.
+4. B. Almost all modern motherboards follow the ATX form factor.
+5. A. Although all of the answers are plausible, the best answer here is that her system suffered burn-in failure.
+6. C. Standouts are the metal connectors that attach the motherboard to the case.
+7. D. Solon needs to check settings, verify good components, replace components, and document all testing.
+8. D. Intel calls their Southbridge chips the I/O Controller Hub (ICH) on many of their chipsets.
+9. B, C. Intel and NVIDIA produce the vast majority of the chipsets used in personal computers.
+10. A. Windows displays recognized devices in Device Manager. 
+End trade EOC

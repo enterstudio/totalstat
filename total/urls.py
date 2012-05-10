@@ -9,7 +9,7 @@ urlpatterns = patterns('',
     # url(r'^$', 'total.views.home', name='home'),
     # url(r'^total/', include('total.foo.urls')),
     url(r'^$', 'book_statistics.views.dispersion'),
-    url(r'^frequency$', 'book_statistics.views.frequency')
+
 
 
     # Uncomment the admin/doc line below to enable admin documentation:

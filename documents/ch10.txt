@@ -1,0 +1,664 @@
+﻿CompTIA A+® Guide to Managing and Troubleshooting PCs                 March 29, 2012
+(cn)Chapter 10
+(ct)Power Supplies
+Begin Quotes
+“This flipping circuit board, Jen. Some chump has run the data lines right through the power supply. Amateur hour! I’ve got tears in my eyes!”
+—Moss, THE IT CROWD (“THE RED DOOR”)
+End Quotes
+In this chapter, you will learn how to
+1. Explain the basics of electricity
+2. Describe the details about powering the PC
+3. Install and maintain power supplies 
+4. Understand power supply troubleshooting and fire safety
+Powering the PC requires a single box—the power supply—that takes electricity from the wall socket and transforms it into electricity to run the motherboard and other internal components. Figure 10.1 shows a typical power supply inside a case. All of the wires dangling out of it connect to the motherboard and peripherals.
+Figure 1: Typical power supply mounted inside the PC system unit
+As simple as this appears on the surface, power supply issues are of critical importance for techs. Problems with power can create system instability, crashes, and data loss—all things most computer users would rather avoid! Good techs therefore know an awful lot about powering the PC, from understanding the basic principles of electricity to knowing the many variations of PC power supplies. Plus, you need to know how to recognize power problems and implement the proper solutions. Too many techs fall into the “just plug it in” camp and never learn how to deal with power, much to their clients’ unhappiness.
+Exam Tip: Some questions on the CompTIA A+ certification exams could refer to a power supply as a PSU, for power supply unit. A power supply also falls into the category of field replaceable unit (FRU), which refers to the typical parts a tech should carry, such as RAM and a hard drive.
+Begin Superhead
+(1)Historical/Conceptual
+End Superhead
+(1)Understanding Electricity
+Electricity is a flow of negatively charged particles, called electrons, through matter. All matter enables the flow of electrons to some extent. This flow of electrons is very similar to the flow of water through pipes; so similar that the best way to learn about electricity is by comparing it to how water flows though pipes. So let’s talk about water for a moment.
+Water comes from the ground, through wells, aquifers, rivers, and so forth. In a typical city, water comes to you through pipes from the water supply company that took it from the ground. What do you pay for when you pay your water bill each month? You pay for the water you use, certainly, but built into the price of the water you use is the surety that when you turn the spigot, water will flow at a more or less constant rate. The water sits in the pipes under pressure from the water company, waiting for you to turn the spigot.
+Electricity works essentially the same way as water. Electric companies gather or generate electricity and then push it to your house under pressure through wires. Just like water, the electricity sits in the wires, waiting for you to plug something into the wall socket, at which time it’ll flow at a more or less constant rate. You plug a lamp into an electrical outlet and flip the switch, electricity flows, and you have light. You pay for reliability, electrical pressure, and electricity used.
+The pressure of the electrons in the wire is called voltage and is measured in units called volts (V). The amount of electrons moving past a certain point on a wire is called the current or amperage, which is measured in units called amperes (amps or A). The amount of amps and volts needed so that a particular device will function is expressed as how much wattage (watts or W) that device needs. The correlation between the three is very simple math: V × A = W (or VA = W). You’ll learn more about wattage a little later in this chapter.
+Wires of all sorts—whether copper, tin, gold, or platinum—have a slight resistance to the flow of electrons, just as water pipes have a slight amount of friction that resists the flow of water. Resistance to the flow of electrons is measured in ohms (Ω).
+1. Pressure = voltage (V)
+2. Volume flowing = amperes (A)
+3. Work = wattage (W)
+4. Resistance = ohms (Ω)
+A particular thickness of wire only handles so much electricity at a time. If you push too much through, the wire will overheat and break, much as an overloaded water pipe will burst. To make sure you use the right wire for the right job, all electrical wires have an amperage rating, such as 20 amps. If you try to push 30 amps through a 20-amp wire, the wire will break and electrons will seek a way to return into the ground. Not a good thing, especially if the path back to the ground is through you!
+Circuit breakers and ground wires provide the basic protection from accidental overflow. A circuit breaker is a heat-sensitive electrical switch rated at a certain amperage. If you push too much amperage through the circuit breaker, the wiring inside detects the increase in heat and automatically opens, stopping the flow of electricity before the wiring overheats and breaks. You reset the circuit breaker to reestablish the circuit, and electricity flows once more through the wires. A ground wire provides a path of least resistance for electrons to flow back to ground in case of an accidental overflow.
+Many years ago, your electrical supply used fuses instead of circuit breakers. Fuses are small devices with a tiny filament designed to break if subjected to too much current. Unfortunately, fuses had to be replaced every time they blew, making circuit breakers much more preferable. Even though you no longer see fuses in a building’s electrical circuits, many electrical devices—such as a PC’s power supply—often still use fuses for their own internal protection.
+Exam Tip: An electrical outlet must have a ground wire to be suitable for PC use.
+Electricity comes in two flavors: direct current (DC), in which the electrons flow in one direction around a continuous circuit, and alternating current (AC), in which the flow of electrons alternates direction back and forth in a circuit (see Figure 10.2). Most electronic devices use DC power, but all power companies supply AC power because AC travels long distances much more efficiently than DC.
+Figure 2: Diagrams showing DC and AC flow of electrons
+Begin Superhead
+(1)801
+End Superhead
+(1)Powering the PC
+Your PC uses DC voltage, so some conversion process must take place before the PC can use AC power from the power company. The power supply in a computer converts high-voltage AC power from the wall socket to low-voltage DC. The first step in powering the PC, therefore, is to get and maintain a good supply of AC power. Second, you need a power supply to convert AC to the proper voltage and amperage of DC power for the motherboard and peripherals. Finally, you need to control the byproduct of electricity use, namely heat. Let’s look at the specifics of powering the PC.
+(2)Supplying AC
+Every PC power supply must have standard AC power from the power company, supplied steadily rather than in fits and spurts, and protection against accidental blurps in the supply. The power supply connects to the power cord (and thus to an electrical outlet) via a standard IEC-320 connector. In the United States, standard AC comes in somewhere between 110 and 120 V, often written as ~115 VAC (volts of alternating current). The rest of the world uses 220–240 VAC, so most power supplies are dual-voltage and compatible with both. Power supplies with voltage-selection switches are referred to as fixed-input. Power supplies that you do not have to manually switch for different voltages are known as auto-switching. Figure 10.3 shows the back of a power supply. Note the three components, from top to bottom: the hard on/off switch, the 115/230 switch, and the IEC-320 connector.
+Figure 3: Back of fixed-input power supply, showing typical switches and power connection
+Caution: Flipping the AC switch on the back of a power supply can wreak all kinds of havoc on a PC. Moving the switch to ~230 V in the United States makes for a great practical joke (as long as the PC is off when you do it)—the PC might try to boot up but probably won’t get far. You don’t risk damaging anything by running at half the AC the power supply is expecting. In countries that run ~230 standard, on the other hand, firing up the PC with the AC switch set to ~115 can cause the power supply to die a horrid, smoking death. Watch that switch!
+Before plugging any critical components into an AC outlet, take a moment to test the outlet first by using a multimeter or a device designed exclusively to test outlets. Failure to test AC outlets properly can result in inoperable or destroyed equipment, as well as possible electrocution. The IEC-320 plug has three holes, called hot, neutral, and ground. These names describe the function of the wires that connect to them behind the wall plate. The hot wire carries electrical voltage, much like a pipe that delivers water. The neutral wire carries no voltage, but instead acts like a water drain, completing the circuit by returning electricity to the local source, normally a breaker panel. The ground wire makes it possible for excess electricity to return safely to the ground. When testing AC power, you want to check for three things: that the hot outputs approximately 115 V (or whatever the proper voltage is for your part of the world), that the neutral connects to ground (0 V output), and that the ground connects to ground (again, 0 V). Figure 10.4 shows the voltages at an outlet. You can use a multimeter—often also referred to as a volt-ohm meter (VOM) or digital multimeter (DMM)—to measure a number of aspects of electrical current. A multimeter consists of two probes, an analog or digital meter, and a dial to set the type of test you want to perform. Refer to Figure 10.5 to become familiar with the components of the multimeter.
+Figure 4: Outlet voltages
+Figure 5: Digital multimeter
+Note that some multimeters use symbols rather than letters to describe AC and DC settings. The V with the solid line above a dashed line, for example, in Figure 10.6, refers to direct current. The V~ stands for alternating current.
+Figure 6: Multimeter featuring DC and AC symbols
+Every multimeter offers at least four types of electrical tests: continuity, resistance, AC voltage (VAC), and DC voltage (VDC). Continuity tests whether electrons can flow from one end of a wire to the other end. If so, you have continuity; if not, you don’t. You can use this setting to determine if a fuse is good or to check for breaks in wires. If your multimeter doesn’t have a continuity tester (many cheaper multimeters do not), you can use the resistance tester. A broken wire or fuse will show infinite resistance, while a good wire or fuse will show no resistance. Testing AC and DC voltages is a matter of making sure the measured voltage is what it should be.
+Begin Try This! Box
+(5)Try This!
+(6)Using a Multimeter to Test AC Outlets
+Every competent technician knows how to use a multimeter, so if you haven’t used one in the past, get hold of one and Try This!
+First you need to set up the meter for measuring AC. Follow these steps:
+1. Move the selector switch to the AC V (usually red). If multiple settings are available, put it into the first scale higher than 120 V (usually 200 V). Auto-range meters set their own range; they don’t need any selection except AC V.
+2. Place the black lead in the common (–) hole. If the black lead is permanently attached, ignore this step.
+3. Place the red lead in the V-Ohm-A (+) hole. If the red lead is permanently attached, ignore this step.
+Once you have the meter set up for AC, go through the process of testing the various wires on an AC socket. Just don’t put your fingers on the metal parts of the leads when you stick them into the socket! Follow these steps:
+1. Put either lead in hot, the other in neutral. You should read 110 to 120 V AC.
+2. Put either lead in hot, the other in ground. You should read 110 to 120 V AC.
+3. Put either lead in neutral, the other in ground. You should read 0 V AC.
+If any of these readings is different from what is described here, it’s time to call an electrician.
+End Try This! Box
+Begin Tech Tip Box
+(5)Tech Tip
+(6)AC Adapters
+Many devices in the computing world use an AC adapter rather than an internal power supply. Even though it sits outside a device, an AC adapter converts AC current to DC, just like a power supply. Unlike power supplies, AC adapters are rarely interchangeable. Although manufacturers of different devices often use the same kind of plug on the end of the AC adapter cable, these adapters are not necessarily interchangeable. In other words, just because you can plug an AC adapter from your friend’s laptop into your laptop does not mean it’s going to work.
+You need to make sure that three things match before you plug an AC adapter into a device: voltage, amperage, and polarity. If either the voltage or amperage output is too low, the device won’t run. If the polarity is reversed, it won’t work, just like putting a battery in a flashlight backwards. If either the voltage or amperage—especially the latter—is too high, on the other hand, you can very quickly toast your device. Don’t do it! Always check the voltage, amperage, and polarity of a replacement AC adapter before you plug it into a device.
+End Tech Tip Box
+(3)Using Special Equipment to Test AC Voltage
+A number of good AC-only testing devices are available. With these devices, you can test all voltages for an AC outlet by simply inserting them into the outlet. Be sure to test all of the outlets the computer system uses: power supply, external devices, and monitor. Although convenient, these devices aren’t as accurate as a multimeter. My favorite tester is made by Radio Shack, a simple-seeming tool (see Figure 10.7). This handy device provides three light-emitting diodes (LEDs) that describe everything that can go wrong with a plug.
+Figure 7: Circuit tester
+(3)Protecting the PC from Spikes and Sags in AC Power
+If all power companies could supply electricity in smooth, continuous flows with no dips or spikes in pressure, the next two sections of this chapter would be irrelevant. Unfortunately, no matter how clean the AC supply appears to a multimeter, the truth is that voltage from the power company tends to drop well below (sag) and shoot far above (surge or spike) the standard 115 V (in the United States). These sags and spikes usually don’t affect lamps and refrigerators, but they can keep your PC from running or can even destroy a PC or peripheral device. Two essential devices handle spikes and sags in the supply of AC: surge suppressors and uninterruptible power supplies.
+Exam Tip: Large sags in electricity are also known as brownouts. When the power cuts out completely, it’s called a blackout.
+(4)Surge Suppressors 
+Surges or spikes are far more dangerous than sags. Even a strong sag only shuts off or reboots your PC; any surge can harm your computer, and a strong surge destroys components. Given the seriousness of surges, every PC should use a surge suppressor device that absorbs the extra voltage from a surge to protect the PC. The power supply does a good job of surge suppression and can handle many of the smaller surges that take place fairly often. But the power supply takes a lot of damage from this and will eventually fail. To protect your power supply, a dedicated surge suppressor works between the power supply and the outlet to protect the system from power surges (see Figure 10.8).
+Figure 8: Surge suppressor
+Most people tend to spend a lot of money on their PC and for some reason suddenly get cheap on the surge suppressor. Don’t do that! Make sure your surge suppressor has the Underwriters Laboratories UL 1449 for 330-V rating to ensure substantial protection for your system. Underwriters Laboratories (www.ul.com) is a U.S.-based, not-for-profit, widely recognized industry testing laboratory whose testing standards are very important to the consumer electronics industry. Additionally, check the joules rating before buying a new surge suppressor. A joule is a unit of electrical energy. How much energy a surge suppressor can handle before it fails is described in joules. Most authorities agree that your surge suppressor should rate at a minimum of 800 joules—and the more joules, the better the protection. My surge suppressor rates out at 1,750 joules.
+While you’re protecting your system, don’t forget that surges also come from telephone and cable connections. If you use a modem, DSL, or cable modem, make sure to get a surge suppressor that includes support for these types of connections. Many manufacturers make surge suppressors with telephone line protection (see Figure 10.9).
+Figure 9: Surge suppressor with telephone line protection
+No surge suppressor works forever. Make sure your surge suppressor has a test/reset button so you’ll know when the device has—as we say in the business—turned into an extension cord. If your system takes a hit and you have a surge suppressor, call the company! Many companies provide cash guarantees against system failure due to surges, but only if you follow their guidelines.
+Caution: No surge suppressor in the world can handle the ultimate surge, the ESD of a lightning strike. If your electrical system takes such a hit, you can kiss your PC goodbye if it was plugged in at the time. Always unplug electronics during electrical storms!
+If you want really great surge suppression, you need to move up to power conditioning. Your power lines take in all kinds of strange signals that have no business being in there, such as electromagnetic interference (EMI) and radio frequency interference (RFI). Most of the time, this line noise is so minimal it’s not worth addressing, but occasionally events (such as lightning) generate enough line noise to cause weird things to happen to your PC (keyboard lockups, messed-up data). All better surge suppressors add power conditioning to filter out EMI and RFI.
+(4)UPS
+An uninterruptible power supply (UPS) protects your computer (and, more importantly, your data) in the event of a power sag or power outage. Figure 10.10 shows a typical UPS. A UPS essentially contains a big battery that provides AC power to your computer regardless of the power coming from the AC outlet.
+Figure 10: Uninterruptible power supply
+All uninterruptible power supplies are measured in both watts (the true amount of power they supply in the event of a power outage) and in volt-amps (VA). Volt-amps is the amount of power the UPS could supply if the devices took power from the UPS in a perfect way. Your UPS provides perfect AC power, moving current smoothly back and forth 60 times a second. Power supplies, monitors, and other devices, however, may not take all of the power the UPS has to offer at every point as the AC power moves back and forth, resulting in inefficiencies. If your devices took all of the power the UPS offered at every point as the power moved back and forth, VA would equal watts.
+If the UPS makers knew ahead of time exactly what devices you planned to plug into their UPS, they could tell you the exact watts, but different devices have different efficiencies, forcing the UPS makers to go by what they can offer (VAs), not what your devices will take (watts). The watts value they give is a guess, and it’s never as high as the VAs. The VA rating is always higher than the watt rating.
+Because you have no way to calculate the exact efficiency of every device you’ll plug into the UPS, go with the wattage rating. You add up the total wattage of every component in your PC and buy a UPS with a higher wattage. You’ll spend a lot of time and mental energy figuring precisely how much wattage your computer, monitor, drives, and so on require to get the proper UPS for your system. But you’re still not finished! Remember that the UPS is a battery with a limited amount of power, so you then need to figure out how long you want the UPS to run when you lose power.
+The quicker and far better method to use for determining the UPS you need is to go to any of the major surge suppressor/UPS makers’ Web sites and use their handy power calculators. My personal favorite is on the American Power Conversion Web site: www.apc.com. APC makes great surge suppressors and UPSs, and the company’s online calculator will show you the true wattage you need—and teach you about whatever new thing is happening in power at the same time.
+Begin Tech Tip Box
+(5)Tech Tip
+(6)UPS Technologies
+There are two main types of UPS: online, where devices are constantly powered through the UPS’s battery, and standby, where devices connected to the UPS receive battery power only when the AC sags below ~80–90 V. Another type of UPS is called line-interactive, which is similar to a standby UPS but has special circuitry to handle moderate AC sags and surges without the need to switch to battery power.
+End Tech Tip Box
+Begin Try This! Box
+(5)Try This!
+(6)Shopping for a UPS
+When it comes to getting a UPS for yourself or a client, nothing quite cuts through the hype and marketing terms like a trip to the local computer store to see for yourself. You need excuses to go to the computer store, so Try This!
+1. Go to your local computer store—or visit an online computer site if no stores are nearby—and find out what’s available.
+2. Answer this question: How can you tell the difference between an online and a standby UPS?
+End Try This! Box
+Every UPS also has surge suppression and power conditioning, so look for the joule and UL 1449 ratings. Also look for replacement battery costs—some UPS replacement batteries are very expensive. Last, look for a UPS with a USB or serial port connection. These handy UPSs come with monitoring and maintenance software (see Figure 10.11) that tells you the status of your system and the amount of battery power available, logs power events, and provides other handy options.
+Figure 11: APC PowerChute software
+Table 10.1 gives you a quick look at the low end and the very high end of UPS products (as of early 2012).
+Brand
+	Model
+	Outlets Protected
+	Backup Time
+	Price
+	Type
+	APC
+	BE350G
+	3 @ 120 V
+	3 min @ 200 W, 10 min @ 100 W
+	$33.99
+	Standby
+	APC
+	Pro 1000
+	4 @ 120 V
+	4 min @ 600 W, 64 min @ 100 W
+	$129.99
+	Standby
+	CyberPower
+	CPS1500AVR
+	6 @ 120 V
+	18 min @ 950 W, 6 min @ 475 W
+	$279.99
+	Line-interactive
+	Table 1: Typical UPS Devices
+(2)Supplying DC
+After you’ve assured the supply of good AC electricity for the PC, the power supply unit (PSU) takes over, converting high-voltage AC into several DC voltages (notably, 5.0, 12.0, and 3.3 V) usable by the delicate interior components. Power supplies come in a large number of shapes and sizes, but the most common size by far is the standard 150 mm × 140 mm × 86 mm desktop PSU shown in Figure 10.12.
+Figure 12: Desktop PSU
+The PC uses the 12.0-V current to power motors on devices such as hard drives and optical drives, and it uses the 5.0-V and 3.3-V current for support of onboard electronics. Manufacturers may use these voltages any way they wish, however, and may deviate from these assumptions. Power supplies also come with standard connectors for the motherboard and interior devices. 
+Exam Tip: Modern power supplies include a lot of connectors. You’ll find cheaper ones with as few as 10 connectors. More powerful models could have 25 or more.
+(3)Power to the Motherboard
+Modern motherboards use a 20- or 24-pin P1 power connector. Some motherboards may require special 4-, 6-, or 8-pin connectors to supply extra power (see Figure 10.13). We’ll talk about each of these connectors in the form factor standards discussion later in this chapter.
+Figure 13: Motherboard power connectors
+(3)Power to Peripherals: Molex, Mini, and SATA
+Many devices inside the PC require power. These include hard drives, floppy drives, optical drives, and fans. The typical PC power supply has up to three types of connectors that plug into peripherals: Molex, mini, and SATA.
+(4)Molex Connectors 
+The most common type of power connection for devices that need 5 or 12 V of power is the Molex connector (see Figure 10.14). The Molex connector has notches, called chamfers, that guide its installation. The tricky part is that Molex connectors require a firm push to plug in properly, and a strong person can defeat the chamfers, plugging a Molex in upside down. Not a good thing. Always check for proper orientation before you push it in!
+Figure 14: Molex connector
+(4)Mini Connectors 
+All power supplies have a second type of connector, called a mini connector (see Figure 10.15), that supplies 5 and 12 V to peripherals, although only floppy disk drives in modern systems use this connector. Drive manufacturers adopted the mini as the standard connector on 3.5-inch floppy disk drives. Often these mini connectors are referred to as floppy power connectors.
+Figure 15: Mini connector
+Begin Try This! Box
+(5)Try This!
+(6)Testing DC
+A common practice for techs troubleshooting a system is to test the DC voltages coming out of the power supply. Even with good AC, a bad power supply can fail to transform AC to DC at voltages needed by the motherboard and peripherals. So grab your trusty multimeter and Try This! on a powered-up PC with the side cover removed. Note that you must have P1 connected to the motherboard and the system must be running (you don’t have to be in Windows, of course).
+1. Switch your multimeter to DC, somewhere around 20 V DC if you need to make that choice. Make sure your leads are plugged into the multimeter properly: red to hot, black to ground. The key to testing DC is that which lead you touch to which wire matters. Red goes to hot wires of all colors; black always goes to ground.
+2. Plug the red lead into the red wire socket of a free Molex connector and plug the black lead into one of the two black wire sockets. You should get a reading of ~5 V. What do you have?
+3. Now move the red lead to the yellow socket. What voltage do you get?
+4. Testing the P1 connector is a little more complicated. You push the red and black leads into the top of P1, sliding in alongside the wires until you bottom out. Leave the black lead in one of the black wire ground sockets. Move the red lead through all of the colored wire sockets. What voltages do you find?
+End Try This! Box
+Caution: As with any power connector, plugging a mini connector into a device the wrong way will almost certainly destroy the device. Check twice before you plug one in!
+Be extra careful when plugging in a mini connector! Whereas Molex connectors are difficult to plug in backward, you can insert a mini connector incorrectly with very little effort. As with a Molex connector, doing so will almost certainly destroy the floppy drive. Figure 10.16 depicts a correctly oriented mini connection, with the small ridge on the connector away from the body of the data socket.
+Figure 16: Correct orientation of a mini connector
+(4)SATA Power Connectors 
+Serial ATA (SATA) drives need a special 15-pin SATA power connector (see Figure 10.17). The larger pin count supports the SATA hot-swappable feature and 3.3-, 5.0-, and 12.0-V devices. SATA power connectors are L shaped, making it almost impossible to insert one incorrectly into a SATA drive. No other device on your computer uses the SATA power connector. For more information about SATA drives, see Chapter 11.
+Figure 17: SATA power connector
+(4)Splitters and Adapters 
+You may occasionally find yourself without enough connectors to power all of the devices inside your PC. In this case, you can purchase splitters to create more connections (see Figure 10.18). You might also run into the phenomenon of needing a SATA connector but having only a spare Molex. Because the voltages on the wires are the same, a simple adapter will take care of the problem nicely.
+Figure 18: Molex splitter
+(3)ATX
+The original ATX power supplies had two distinguishing physical features: the motherboard power connector and soft power. Motherboard power came from a single cable with a 20-pin P1 motherboard power connector. ATX power supplies also had at least two other cables, each populated with two or more Molex or mini connectors for peripheral power.
+When plugged in, ATX systems have 5 V running to the motherboard. They’re always “on” even when powered down. The power switch you press to power up the PC isn’t a true power switch like the light switch on the wall in your bedroom. The power switch on an ATX system simply tells the computer whether it has been pressed. The BIOS or operating system takes over from there and handles the chore of turning the PC on or off. This is called soft power.
+Using soft power instead of a physical switch has a number of important benefits. Soft power prevents a user from turning off a system before the operating system has been shut down. It enables the PC to use power-saving modes that put the system to sleep and then wake it up when you press a key, move a mouse, or receive an e-mail (or other network traffic). (See Chapter 26 for more details on sleep mode.)
+All of the most important settings for ATX soft power reside in CMOS setup. Boot into CMOS and look for a Power Management section. Take a look at the Power On Function option in Figure 10.19. This determines the function of the on/off switch. You may set this switch to turn off the computer, or you may set it to the more common 4-second delay.
+Figure 19: Soft power setting in CMOS
+Production: please use F10-19 Ref.tif to add a circle to F10-19.tif. 
+ATX did a great job supplying power for more than a decade, but over time more powerful CPUs, multiple CPUs, video cards, and other components began to need more current than the original ATX provided. This motivated the industry to introduce a number of updates to the ATX power standards: ATX12V 1.3, EPS12V, multiple rails, ATX12V 2.0, other form factors, and active PFC.
+(4)ATX12V 1.3 
+The first widespread update to the ATX standard, ATX12V 1.3, came out in 2003. This introduced a 4-pin motherboard power connector, unofficially but commonly called the P4, that provided more 12-V power to assist the 20-pin P1 motherboard power connector. Any power supply that provides a P4 connector is called an ATX12V power supply. The term “ATX” was dropped from the ATX power standard, so if you want to get really nerdy you can say—accurately—that there’s no such thing as an ATX power supply. All power supplies—assuming they have a P4 connector—are ATX12V or one of the later standards.
+Exam Tip: SATA also supports a slimline connector that has a 6-pin power segment and a micro connector that has a 9-pin power segment.
+Note: It’s normal and common to have unused power connectors inside your PC case.
+The ATX12V 1.3 standard also introduced a 6-pin auxiliary connector—commonly called an AUX connector—to supply increased 3.3- and 5.0-V current to the motherboard (see Figure 10.20). This connector was based on the motherboard power connector from the precursor of ATX, called AT.
+Begin Cross Check Box
+(5)Cross Check
+(6)ATX Form Factor
+The power supply form factor alone does not define a system as ATX or one of the later varieties; you have to discuss the motherboard as well. Flip back to Chapter 9 and see if you can put the full picture of the ATX standard together. What defines a system as ATX? What improvements did ATX incorporate over AT? What ATX form factors can you purchase?
+End Cross Check Box
+Figure 20: Auxiliary power connector
+The introduction of these two extra power connectors caused the industry some teething problems. In particular, motherboards using AMD CPUs tended to need the AUX connector, while motherboards using Intel CPUs needed only the P4. As a result, many power supplies came with only a P4 or only an AUX connector to save money. A few motherboard makers skipped adding either connector and used a standard Molex connector so people with older power supplies wouldn’t have to upgrade just because they bought a new motherboard (see Figure 10.21).
+Figure 21: Molex power on motherboard
+Please pick-up Figure 10.21 from the previous edition. Make sure it includes the circle highlight.
+The biggest problem with ATX12V was its lack of teeth—it made a lot of recommendations but few requirements, giving PSU makers too much choice (such as choosing or not choosing to add AUX and P4 connectors) that weren’t fixed until later versions.
+(4)EPS12V 
+Server motherboards are thirsty for power, and sometimes ATX12V 1.3 just didn’t cut it. An industry group called the Server System Infrastructure (SSI) developed a non-ATX standard motherboard and power supply called EPS12V. An EPS12V power supply came with a 24-pin main motherboard power connector that resembled a 20-pin ATX connector, but it offered more current and thus more stability for motherboards. It also came with an AUX connector, an ATX12V P4 connector, and a unique 8-pin connector. That’s a lot of connectors! EPS12V power supplies were not interchangeable with ATX12V power supplies.
+EPS12V may not have seen much life beyond servers, but it introduced a number of power features, some of which eventually became part of the ATX12V standard. The most important issue was something called rails.
+(4)Rails 
+Generally, all of the PC’s power comes from a single transformer that takes the AC current from a wall socket and converts it into DC current that is split into three primary DC voltage rails: 12.0 V, 5.0 V, and 3.3 V. Groups of wires run from each of these voltage rails to the various connectors. In ideal circumstances, these rails are wholly independent: an overtaxed 12-V rail shouldn’t draw power from the 3.3-V rail. Many power supply manufacturers, however, do not follow this rule, especially when making cheap power supplies.
+Each rail has a maximum amount of power it can supply. Normal computer use rarely approaches this ceiling, but powerful computers with advanced processors and graphics cards require more power than some rails can provide. In the past, 12-V rails only supplied about 18 amps, which wasn’t enough to power all that high-end equipment. 
+The most popular solution was to include multiple 12-V rails in the power supply. This worked fine, but you needed to make sure that you weren’t drawing all of your power from the same 12-V rail. Most power supplies failed to mark which power cables connected to which rail, so it became a confusing mess of trial and error to work out how to power your components.
+Today’s power supply manufacturers seem more interested in single, high-amperage, 12-V rails, ignoring the 16–18 amp rule. You can find power supplies now with 12-V rails pushing 50 amps or more!
+(4)ATX12V 2.0 
+The ATX12V 2.0 standard incorporated many of the good ideas of EPS12V into the ATX world, starting with the 24-pin connector. This 24-pin motherboard power connector is backward compatible with the older 20-pin connector, so users don’t have to buy a new motherboard if they use an ATX12V 2.0 power supply. ATX12V 2.0 requires two 12-V rails for any power supply rated higher than 230 W. ATX12V 2.0 dropped the AUX connector and requires SATA hard drive connectors.
+In theory, a 20-pin motherboard power supply connector will work on a motherboard with a 24-pin socket, but doing this is risky because the 20-pin connector may not provide enough power to your system. Try to use the right power supply for your motherboard to avoid problems. Many ATX12V 2.0 power supplies have a convertible 24-to-20-pin converter. These are handy if you want to make a nice “clean” connection, because many 20-pin connectors have capacitors that prevent plugging in a 24-pin connector. You’ll also see the occasional 24-pin connector constructed in such a way that you can slide off the extra four pins. Figure 10.22 shows 20-pin and 24-pin connectors; Figure 10.23 shows a convertible connector. Although they look similar, those extra four pins won’t replace the P4 connector. They are incompatible!
+Figure 22: 20- and 24-pin connectors
+Figure 23: Convertible motherboard power connector
+Many modern ATX motherboards feature an 8-pin CPU power connector like the one found in the EPS12V standard to help support high-end CPUs that demand a lot of power. This connector is referred to by several names, including EPS12V, EATX12V, and ATX12V 2x4. One half of this connector will be pin compatible with the P4 power connector and the other half may be under a protective cap. Be sure to check the motherboard installation manuals for recommendations on if and when you need to use the full 8 pins. For backward compatibility, some power supplies provide an 8-pin power connector that can split into two 4-pin sets, one of which is the P4 connector.
+Another notable connector is the auxiliary PCI Express (PCIe) power connector. Figure 10.24 shows the 6-pin PCIe power connector. Some motherboards add a Molex socket for PCIe, and some cards come with a Molex socket as well. Higher-end cards have a dedicated 6-pin or 8-pin PCIe power connector. The 8-pin PCIe connector should not be confused with the EPS12V connector, as they are not compatible. Some PCIe devices with the 8-pin connector will accept a 6-pin PCIe power connection instead, but this may put limits on their performance. Often you’ll find that 8-pin PCIe power cables have two pins at the end that you can detach for easy compatibility with 6-pin devices.
+Figure 24: PCI Express 6-pin power connector
+(4)Niche-Market Power Supply Form Factors 
+The demand for smaller and quieter PCs has led to the development of a number of niche-market power supply form factors. All use standard ATX connectors but differ in size and shape from standard ATX power supplies.
+Here are some of the more common specialty power supply types:
+1. Mini-ATX and micro-ATXSmaller power supply form factors designed specifically for mini-ATX and micro-ATX cases, respectively
+1. TFX12VA small power supply form factor optimized for low-profile ATX systems
+2. SFX12VA small power supply form factor optimized for systems using FlexATX motherboards (see Figure 10.25)
+Figure 25: SFX power supply
+1. CFX12VAn L-shaped power supply optimized for microBTX systems
+2. LFX12VA small power supply form factor optimized for low-profile BTX systems
+Note: You’ll commonly find niche-market power supplies bundled with computer cases (and often motherboards as well). These form factors are rarely sold alone.
+Exam Tip: The CompTIA A+ exams test you pretty heavily on power supplies. You need to know what power supply works with a particular system or with a particular computing goal in mind.
+(4)Active PFC
+Visualize the AC current coming from the power company as water in a pipe, smoothly moving back and forth, 60 times a second. A PC’s power supply, simply due to the process of changing this AC current into DC current, is like a person sucking on a straw on the end of this pipe. It takes gulps only when the current is fully pushing or pulling at the top and bottom of each cycle and creating an electrical phenomena—sort of a back pressure—that’s called harmonics in the power industry. These harmonics create the humming sound you hear from electrical components. Over time, harmonics damage electrical equipment, causing serious problems with the power supply and other electrical devices on the circuit. Once you put a few thousand PCs with power supplies in the same local area, harmonics can even damage the electrical power supplier’s equipment!
+Good PC power supplies come with active power factor correction (active PFC), extra circuitry that smoothes out the way the power supply takes power from the power company and eliminates harmonics (see Figure 10.26). Never buy a power supply that does not have active PFC—all power supplies with active PFC will announce it on the box.
+Figure 26: Power supply advertising active PFC
+Production: please use F10-26 Ref.tif as a reference for adding a circle
+(3)Wattage Requirements
+Every device in a PC requires a certain amount of wattage to function. A typical hard drive draws 15 W of power when accessed, for example, whereas a quad-core AMD Phenom II X4 draws a whopping 125 W at peak usage. The total wattage of all devices combined is the minimum you need the power supply to provide.
+If the power supply cannot produce the wattage a system needs, that PC won’t work properly. Because most devices in the PC require maximum wattage when first starting, the most common result of insufficient wattage is a paperweight that looks like a PC. This can lead to some embarrassing moments. You might plug in a new hard drive for a client, push the power button on the case, and nothing happens—a dead PC! Eek! You can quickly determine if insufficient wattage is the problem. Unplug the drive and power up the system. If the system boots up, the power supply is a likely suspect. The only fix for this problem is to replace the power supply with one that provides more wattage (or leave the new drive out—a less-than-ideal solution).
+No power supply can turn 100 percent of the AC power coming from the power company into DC current, so all power supplies provide less power to the system than the wattage advertised on the box. ATX12V 2.0 standards require a power supply to be at least 70 percent efficient, but you can find power supplies with better than 80 percent efficiency. More efficiency can tell you how many watts the system puts out to the PC in actual use. Plus, the added efficiency means the power supply uses less power, saving you money.
+Exam Tip: The CompTIA A+ certification exams do not require you to figure precise wattage needs for a particular system. When building a PC for a client, however, you do need to know this stuff!
+Begin Tech Tip Box
+(5)Tech Tip
+(6)Built-in Aging
+Don’t cut the specifications too tightly for power supplies. All power supplies produce less wattage over time, simply because of wear and tear on the internal components. If you build a system that runs with only a few watts of extra power available from the power supply initially, that system will most likely start causing problems within a year or less. Do yourself or your clients a favor and get a power supply that has more wattage than you need.
+End Tech Tip Box
+One common argument these days is that people buy power supplies that provide far more wattage than a system needs and therefore waste power. This is untrue. A power supply provides only the amount of power your system needs. If you put a 1000-W power supply (yes, they really exist) into a system that needs only 250 W, that big power supply will put out only 250 W to the system. So buying an efficient, higher-wattage power supply gives you two benefits. First, running a power supply at less than 100 percent load helps it live longer. Second, you’ll have plenty of extra power when adding new components.
+As a general recommendation for a new system, use at least a 500-W power supply. This is a common wattage and gives you plenty of extra power for booting as well as for whatever other components you might add to the system in the future.
+(1)Installing and Maintaining Power Supplies
+Although installing and maintaining power supplies takes a little less math than selecting the proper power supply for a system, they remain essential skills for any tech. Installing takes but a moment, and maintaining is almost as simple. Let’s take a look.
+(2)Installing
+The typical power supply connects to the PC with four standard computer screws, mounted in the back of the case (see Figure 10.27). Unscrew the four screws and the power supply lifts out easily (see Figure 10.28). Insert a new power supply that fits the case and attach it by using the same four screws.
+Figure 27: Mounting screws for power supply
+Figure 28: Removing power supply from system unit
+Handling ATX power supplies requires special consideration. Understand that an ATX power supply never turns off. As long as that power supply stays connected to a power outlet, the power supply will continue to supply 5 V to the motherboard. Always unplug an ATX system before you do any work! For years, techs bickered about the merits of leaving a PC plugged in or unplugged when servicing it. ATX settled this issue forever. Many ATX power supplies provide a real on/off switch on the back of the PSU (see Figure 10.29). If you really need the system shut down with no power to the motherboard, use this switch.
+Figure 29: On/off switch for an ATX system
+Production: please use F10-29r.tif (to come)
+When working on an ATX system, you may find using the power button inconvenient because you’re not using a case or you haven’t bothered to plug the power button’s leads into the motherboard. That means there is no power button. One trick when in that situation is to use a set of car keys or a screwdriver to contact the two wires to start and stop the system (see Figure 10.30).
+Figure 30: Shorting the soft on/off jumpers
+Your first task after acquiring a new power supply is simply making sure it works. Insert the motherboard power connectors before starting the system. If you have video cards with power connectors, plug them in too. Other connectors such as hard drives can wait until you have one successful boot—or if you’re cocky, just plug everything in!
+(2)Cooling
+Heat and computers are not the best of friends. Cooling is therefore a vital consideration when building a computer. Electricity equals heat. Computers, being electrical devices, generate heat as they operate, and too much heat can seriously damage a computer’s internal components.
+The power supply fan provides the basic cooling for the PC (see Figure 10.31). It not only cools the voltage regulator circuits within the power supply but also provides a constant flow of outside air throughout the interior of the computer case. A dead power supply fan can rapidly cause tremendous problems, even equipment failure. If you ever turn on a computer and it boots just fine but you notice that it seems unusually quiet, check to see if the power supply fan has died. If it has, quickly turn off the PC and replace the power supply.
+Figure 31: Power supply fan
+Some power supplies come with a built-in sensor to help regulate the airflow. If the system gets too hot, the power supply fan spins faster. The 3-pin, 3-wire fan sensor connector plugs into the motherboard directly (see Figure 10.32).
+Figure 32: 3-wire fan sensor connector
+Case fans are large, square fans that snap into special brackets on the case or screw directly to the case, providing extra cooling for key components (see Figure 10.33). Most cases come with a case fan, and no modern computer should really be without one or two.
+Figure 33: Case fan
+The single biggest issue related to case fans is where to plug them in. Most case fans come with standard Molex connectors, which are easy to plug in, but other case fans come with special three-pronged power connectors that need to connect to the motherboard. You can get adapters to plug three-pronged connectors into Molex connectors or vice versa.
+(3)Maintaining Airflow
+A computer is a closed system, and computer cases help the fans keep things cool: everything is inside a box. Although many tech types like to run their systems with the side panel of the case open for easy access to the components, in the end they are cheating themselves. Why? A closed case enables the fans to create airflow. This airflow substantially cools off interior components. When the side of the case is open, you ruin the airflow of the system, and you lose a lot of cooling efficiency.
+An important point to remember when implementing good airflow inside your computer case is that hot air rises. Warm air always rises above cold air, and you can use this principle to your advantage in keeping your computer cool.
+In the typical layout of case fans for a computer case, an intake fan is located near the bottom of the front bezel of the case. This fan draws cool air in from outside the case and blows it over the components inside the case. Near the top and rear of the case (usually near the power supply), you’ll usually find an exhaust fan. This fan works the opposite of the intake fan: it takes the warm air from inside the case and sends it to the outside.
+Another important part of maintaining proper airflow inside the case is ensuring that slot covers are covering all empty expansion bays (see Figure 10.34). To maintain good airflow inside your case, you shouldn’t provide too many opportunities for air to escape. Slot covers not only assist in maintaining a steady airflow; they also help keep dust and smoke out of your case.
+Figure 34: Slot covers
+Exam Tip: Missing slot covers can cause the PC to overheat!
+(3)Reducing Fan Noise
+Fans generate noise. In an effort to ensure proper cooling, many techs put several high-speed fans into a case, making the PC sound like a jet engine. You can reduce fan noise by using manually adjustable fans, larger fans, or specialty “quiet” fans. Many motherboards enable you to control fans through software.
+Manually adjustable fans have a little knob you can turn to speed up or slow down the fan (see Figure 10.35). This kind of fan can reduce some of the noise, but you run the risk of slowing down the fan too much and thus letting the interior of the case heat up. A better solution is to get quieter fans.
+Figure 35: Manual fan adjustment device
+Production: please use F10-35 ref.tif. (to come)
+Callouts
+Knob for adjusting fan speed
+Larger fans that spin more slowly are another way to reduce noise while maintaining good airflow. Fans sizes are measured in millimeters (mm) or centimeters (cm). Traditionally, the industry used 80-mm power supply and cooling fans, but today you’ll find 100-mm, 120-mm, and even larger fans in power supplies and cases.
+Many companies manufacture and sell higher-end low-noise fans. The fans have better bearings than run-of-the-mill fans, so they cost a little more, but they’re definitely worth it. They market these fans as “quiet” or “silencer” or other similar adjectives. If you run into a PC that sounds like a jet, try swapping out the case fans for a low-decibel fan from Papst, Panasonic, or Cooler Master. Just check the decibel rating to decide which one to get. Lower, of course, is better.
+Because the temperature inside a PC changes depending on the load put on the PC, the best solution for noise reduction combines a good set of fans with temperature sensors to speed up or slow down the fans automatically. A PC at rest uses less than half of the power of a PC running a video-intensive computer game and therefore makes a lot less heat. Virtually all modern systems support three fans through three 3-pin fan connectors on the motherboard. The CPU fan uses one of these connectors, and the other two are for system fans or the power supply fan.
+Most CMOS setup utilities provide a little control over fans plugged into the motherboard. Figure 10.36 shows a typical CMOS setting for the fans. Note that you can’t tell the fans when to come on or off—only when to set off an alarm when they reach a certain temperature.
+Figure 36: CMOS fan options
+Software is the best way to control your fans. Some motherboards come with system-monitoring software that enables you to set the temperature at which you want the fans to come on and off. If no program came with your motherboard, and the manufacturer’s Web site doesn’t offer one for download, try the popular freeware SpeedFan utility (see Figure 10.37). Written by Alfredo Milani Comparetti, SpeedFan monitors voltages, fan speeds, and temperatures in computers with hardware monitor chips. SpeedFan can even access S.M.A.R.T. information (see Chapter 11) for hard disks that support this feature and show hard disk temperatures, too. You can find SpeedFan at www.almico.com/speedfan.php.
+Note: When shopping for fans, remember your metric system: 80 mm = 8 cm; 120 mm = 12 cm. You’ll find fans marketed both ways.
+Figure 37: SpeedFan
+Even if you don’t want to mess with your fans, always make a point to turn on your temperature alarms in CMOS. If the system gets too hot, an alarm will warn you. There’s no way to know if a fan dies other than to have an alarm.
+Caution: SpeedFan is a powerful tool that does far more than work with fans. Don’t tweak any settings you don’t understand!
+Begin Superhead
+(1)802
+End Superhead
+(1)Troubleshooting Power Supplies
+Power supplies fail in two ways: sudden death and slowly over time. When they die suddenly, the computer will not start and the fan in the power supply will not turn. In this case, verify that electricity is getting to the power supply before you do anything. Avoid the embarrassment of trying to repair a power supply when the only problem is a bad outlet or an extension cord that is not plugged in. Assuming that the system has electricity, the best way to verify that a power supply is working or not working is to use a multimeter to check the voltages coming out of the power supply (see Figure 10.38).
+Figure 38: Testing one of the 5-V DC connections
+Do not panic if your power supply puts out slightly more or less voltage than its nominal value. The voltages supplied by most PC power supplies can safely vary by as much as ±10 percent of their stated values. This means that the 12-V line can vary from roughly 10.5 to 12.9 V without exceeding the tolerance of the various systems in the PC. The 5.0- and 3.3-V lines offer similar tolerances.
+Be sure to test every connection on the power supply—that means every connection on your main power as well as every Molex and mini. Because all voltages are between –20 and +20 VDC, simply set the voltmeter to the 20-V DC setting for everything. If the power supply fails to provide power, throw it into the recycling bin and get a new one—even if you’re a component expert and a whiz with a soldering iron. Don’t waste your or your company’s time; the price of new power supplies makes replacement the obvious way to go.
+(2)No Motherboard
+Power supplies will not start unless they’re connected to a motherboard, so what do you do if you don’t have a motherboard you trust to test? First, try an ATX tester. Many companies make these devices. Look for one that supports both 20- and 24-pin motherboard connectors as well as all of the other connectors on your motherboard. Figure 10.39 shows a power supply tester.
+Figure 39: ATX power supply tester
+Note: Many CMOS utilities and software programs monitor voltage, saving you the hassle of using a multimeter.
+(2)Switches
+Broken power switches form an occasional source of problems for power supplies that fail to start. The power switch is behind the on/off button on every PC. It is usually secured to the front cover or inside front frame on your PC, making it a rather challenging part to access. To test, try shorting the soft power jumpers as described earlier. A key or screwdriver will do the trick.
+(2)When Power Supplies Die Slowly
+If all power supplies died suddenly, this would be a much shorter chapter. Unfortunately, the majority of PC problems occur when power supplies die slowly over time. This means that one of the internal electronics of the power supply has begun to fail. The failures are always intermittent and tend to cause some of the most difficult to diagnose problems in PC repair. The secret to discovering that a power supply is dying lies in one word: intermittent. Whenever you experience intermittent problems, your first guess should be that the power supply is bad. Here are some other clues you may hear from users:
+1. “Whenever I start my computer in the morning, it starts to boot, and then locks up. If I press ctrl-alt-del two or three times, it will boot up fine.”
+2. “Sometimes when I start my PC, I get an error code. If I reboot, it goes away. Sometimes I get different errors.”
+3. “My computer will run fine for an hour or so. Then it locks up, sometimes once or twice an hour.”
+Sometimes something bad happens and sometimes it does not. That’s the clue for replacing the power supply. And don’t bother with the voltmeter; the voltages will show up within tolerances, but only once in a while they will spike and sag (far more quickly than your voltmeter can measure) and cause these intermittent errors. When in doubt, change the power supply. Power supplies break in computers more often than any other part of the PC except hard drives and floppy disk drives. You might choose to keep extra power supplies on hand for swapping and testing.
+(2)Fuses and Fire
+Inside every power supply resides a simple fuse. If your power supply simply pops and stops working, you might be tempted to go inside the power supply and check the fuse. This is not a good idea. First off, the capacitors in most power supplies carry high-voltage charges that can hurt a lot if you touch them. Second, fuses blow for a reason. If a power supply is malfunctioning inside, you want that fuse to blow because the alternative is much less desirable.
+Failure to respect the power of electricity will eventually result in the most catastrophic of all situations: an electrical fire. Don’t think it won’t happen to you! Keep a fire extinguisher handy. Every PC workbench needs a fire extinguisher, but make sure you have the right one. The fire prevention industry has divided fire extinguishers into four fire classes:
+1. Class AOrdinary free-burning combustible, such as wood or paper
+2. Class BFlammable liquids, such as gasoline, solvents, or paint
+3. Class CLive electrical equipment
+4. Class DCombustible metals such as titanium or magnesium
+As you might expect, you should only use a Class C fire extinguisher on your PC if it catches on fire. All fire extinguishers are required to have their type labeled prominently on them. Many fire extinguishers are multiclass in that they can handle more than one type of fire. The most common fire extinguisher is type ABC—it works on all common types of fires.
+Exam Tip: If your power supply is smoking or you smell something burning inside of it, stop using it now. Replace it with a new power supply.
+Begin Superhead
+(1)Beyond A+
+End Superhead
+Power supplies provide essential services for the PC, creating DC out of AC and cooling the system, but that utilitarian role does not stop the power supply from being an enthusiast’s plaything. Plus, servers and high-end workstations have somewhat different needs than more typical systems, so naturally they need a boost in power. Let’s take a look Beyond A+ at these issues.
+(2)It Glows!
+The enthusiast community has been modifying, or modding, their PCs for years: cutting holes in the cases, adding fans to make overclocking feasible, and slapping in glowing strips of neon and cold cathode tubes. The power supply escaped the scene for a while, but it’s back. A quick visit to a good computer store off- or online, such as http://directron.com, reveals power supplies that light up, sport a fancy color, or have more fans than some rock stars. Figure 10.40 shows a see-through PSU.
+Figure 40: See-through power supply that glows blue
+You can also find super-quiet stealth power supplies, with single or double high-end fans that react to the temperature inside your PC—speeding up when necessary but running slowly and silently when not. One of these would make a perfect power supply for a home entertainment PC because it would provide function without adding excessive noise.
+(2)Modular Power Supplies
+It’s getting more and more popular to make PCs look good on both the inside and the outside. Unused power cables dangling around inside PCs creates a not-so-pretty picture. To help stylish people, manufacturers created power supplies with modular cables (see Figure 10.41).
+Figure 41: Modular-cable power supply
+Modular cables are pretty cool, because you add only the lines you need for your system. On the other hand, some techs claim that modular cables hurt efficiency because the modular connectors add resistance to the lines. You make the choice; is a slight reduction in efficiency worth a clean look?
+(2)Temperature and Efficiency
+Watch out for power supplies that list their operating temperature at 25º C—about room temperature. A power supply that provides 500 W at 25º C will supply substantially less in warmer temperatures, and the inside of your PC is usually 15º C warmer than the outside air. Sadly, many power supply makers—even those who make good power supplies—fudge this fact.
+(1)Chapter 10 Review
+(2)Chapter Summary
+After reading this chapter and completing the exercises, you should understand the following about power supplies.
+(3)Explain the basics of electricity
+1. The power supply takes electricity from the wall outlet and transforms it into the kind of electricity that the motherboard and other internal components use. To remove the power supply, unscrew the four screws in the back of the case and lift it out. Installing it is just as simple. Be careful never to open the power supply itself, as the capacitors inside can store a dangerous electrical charge.
+2. Techs need to know basic principles of electricity and how to recognize power problems. Electricity is a flow of negatively charged particles or electrons through matter. Metallic wire is a good conductor, allowing electrons to move freely. The pressure of the electrons in the wire is called voltage and is measured in volts (V). Measured in units called amperes (amps or A), current or amperage is the amount of electrons flowing past a certain point on a wire. Wattage (watts or W) refers to the amount of amps and volts a particular device needs. The formula VA = W expresses the correlation among the three. Resistance to the flow of electrons is measured in ohms (Ω). Fuses and ground wires set limits for the flow of electrons. A ground wire provides a path of least resistance to allow the electrons to flow to the ground.
+3. Electricity may be either direct current (DC), with electrons flowing in one direction around a continuous circuit, or alternating current (AC), with electrons flowing back and forth in a circuit.
+(3)Describe the details about powering the PC
+1. Because power companies supply high-voltage AC, the computer’s power supply converts AC to low-voltage DC that is then portioned out to the internal devices. Heat is a byproduct of electricity and must be controlled in the computer.
+2. The power supply connects to the electrical outlet via a standard IEC-320 connector. Although power in the U.S. ranges from 110 to 120 V, the rest of the world uses 200 to 240 VAC. Most power supplies can switch between 115 and 230 V. The IEC-320 plug has three holes, called hot, neutral, and ground. The hot carries electrical voltage and should output approximately 115 V in the U.S. The neutral returns electricity to the breaker panel and should have 0 V output. The ground wire returns excess electricity to the ground and should also have a 0 V output. You can use a multimeter to test voltages at the outlet.
+3. A multimeter, also called a volt-ohm meter (VOM), uses two probes to provide at least four measurements: AC voltage (V~), DC voltage (V with a solid line above a dashed line), continuity (whether electrons flow from one end of a wire to the other end), and resistance (whether a fuse is good or blown or whether a wire has breaks). Some AC-only testing devices are available that simply plug into the AC outlet and may display results via three light-emitting diodes (LEDs).
+4. A surge suppressor is an inexpensive device that protects your computer from voltage spikes. Inserted between the wall outlet and the power supply, a surge suppressor has a joule rating that measures how much electrical energy it can suppress. Be sure your surge suppressor has at least an 800 joules rating. Because telephone lines and cable connections also produce spikes, your surge suppressor should include connections for a modem, DSL, or cable modem. Make sure you purchase a surge suppressor that has the UL 1449 for 330-V rating, as this will ensure substantial protection for your system. Because surge suppressors work for only a limited time, you should check the manufacturer’s recommended replacement schedules. If your surge suppressor comes with a cash guarantee against system failure due to surges, be aware that manufacturers honor it only if you follow their guidelines.
+5. Because the AC supply lacks consistency and actually provides power with sags and spikes, it is important that you use two devices with a computer: an uninterruptible power supply and a surge suppressor. An uninterruptible power supply (UPS) continues to supply AC power to your computer during both brownouts and blackouts via a battery that is charged from the AC current. All UPSs measure the amount of power or watts they supply, as well as listing the number of minutes the UPS will last with a certain voltage. It’s difficult to estimate exactly how much wattage your computer and devices will require, so the better method to determine the UPS you need is to go to the UPS makers’ Web sites and use their power calculators.
+6. The power supply converts AC into several DC voltages (5.0, 12.0, and 3.3 V). Devices such as hard drives and optical drives require 12.0 V, and onboard electronics use 3.3- and 5.0-V currents.
+7. The power supply has several standard connectors for the motherboard and interior devices. Today’s motherboards have a P1 socket that uses the P1 connector from the power supply. A standard ATX power supply has a 20-pin P1 connector, while the newer ATX12V 2.0 power supplies come with a 24-pin P1 connector. Some motherboards also need a 4-, 6-, or 8-pin connector to provide an additional 12 V of power.
+8. Peripherals use two or possibly three different kinds of connectors: the larger Molex connector, the smaller mini connector, and the SATA connector. Used with hard drives and optical drives, the Molex has chamfers to ensure that it is connected properly. Used today only for floppy drives, the mini connector can easily be inserted incorrectly, thus destroying the floppy drive. The SATA connector is used for SATA drives. If you do not have enough connectors for all of the devices inside your PC, you can create more connections with a splitter. Similarly, if your power supply does not have the connector a device needs, you can purchase adapters to convert one type to another.
+9. The ATX power supply includes full support for power-saving functions and waking from sleep due to incoming network traffic. Using the soft power feature, the ATX power supply puts a 5-V charge on the motherboard as long as there is AC from the wall socket. You can configure the ATX soft power through the Power Management section of the CMOS setup. Always unplug an ATX system before you work on it. ATX power supplies use a single P1 connector for motherboard power.
+10. The ATX standard has undergone several updates. ATX12V 1.3 introduced additional 4-pin (P4) and 6-pin auxiliary (AUX) connectors. ATX12V 2.0 introduced the 24-pin connector (inspired by EPS12V), dropped the AUX connector, and required SATA connectors. Additionally, ATX12V 2.0 requires two 12-V rails for any power supply rated higher than 230 W.
+11. The non-ATX standard EPS12V introduced a 24-pin motherboard connector and a unique 8-pin connector. It was not swappable with ATX power supplies, and while its popularity was short-lived, it introduced several features that became part of the ATX12V standard, including rails.
+12. The demand for smaller and quieter PCs led to the development of niche-market power supply form factors. MiniATX, microATX, TFX12V, SFX12V, CFX12V, and LFX12V have the same connectors as standard ATX power supplies but differ in size or shape.
+13. Active power factor correction (active PFC) helps to eliminate harmonics, which can damage electrical components. Never buy a power supply that does not have active PFC.
+14. Power supplies are rated in watts. If you know the amount of wattage that every device in the PC needs, you can arrive at the total wattage required for all devices, and that is the minimum wattage your power supply should provide. If the power supply does not provide sufficient wattage, the computer will not work. For a new computer system, you should select at least a 500-W power supply to have extra power for adding components in the future.
+15. Because converting from AC to DC may result in a significant loss of wattage, purchase a power supply that offers a high percentage of efficiency. The ATX12V 2.0 standard requires a power supply to be at least 70 percent efficient, but you can find power supplies with better than 80 percent efficiency. Be aware that power supplies produce less wattage over time, so don’t cut the wattage specification too tightly. While power supplies range from 200 to 600 W, you should know that the more AC the power supply draws, the more heat it produces.
+(3)Install and maintain power supplies
+1. Power supplies connect to the PC case via four screws mounted in the rear of the case. Unscrew the four screws and the power supply will lift out. Because an ATX power supply is always on, be sure to unplug it from the wall outlet before working on it.
+2. Adequate cooling is important to prevent damage to the computer’s internal components. The fan inside the power supply itself cools the voltage regulator circuits within the power supply and provides a constant flow of outside air throughout the interior of the computer case. If the fan is not working, turn the computer off before you experience equipment failure. Some power supplies regulate airflow by using a sensor with a three-wire connector that plugs into the motherboard.
+3. To improve cooling, most cases come with a case fan. If the case does not have one, you should add one. Most case fans use standard Molex connectors, but some use a special three-pronged power connector that plugs directly into the motherboard. To enable the fans to create airflow, the case needs to be closed. If slot covers are left off of empty expansion bays, the computer can overheat. Slot covers also help keep dust and smoke out of the case. Beware of “great deals” on cases that come with power supplies, because the included power supply is often substandard.
+4. Electrical problems range from irregular AC to dying or faulty power supplies. Power supplies may fail suddenly or slowly over time. After you make sure that the wall outlet is providing electricity, checking voltages from the power supply with a voltmeter is the best way to verify that the power supply is working or has failed. A power supply is functioning properly if the output voltages are within 10 percent over or under the expected voltage. Be sure to check all of the connections on the power supply. If you determine that the power supply is bad, the most economical solution is to throw it away and replace it with a new one.
+5. Power supplies will not start unless they are connected to a motherboard. If you need to test a power supply but don’t have a motherboard, use an ATX tester.
+(3)Understand power supply troubleshooting and fire safety
+1. If one of the internal electrical components in the power supply begins to fail, the result is usually intermittent problems, making diagnosis difficult. If you are experiencing intermittent problems, such as lockups or different error codes that disappear after rebooting, suspect the power supply. Unfortunately, the voltmeter is not good for diagnosing intermittent problems. Power supplies fail almost as often as floppy drives and hard drives, so it is a good idea to keep power supplies in stock for swapping and testing.
+2. Never open a power supply, even to check the fuse; the unit contains capacitors that carry high-voltage charges that can hurt you.
+3. Every PC workbench should have a Class C fire extinguisher handy in case of an electrical fire. Some fire extinguishers are multiclass and will work fine for a PC as well.
+(2)Key Terms
+active power factor correction (active PFC) () 
+alternating current (AC) () 
+amperes (amps or A) () 
+direct current (DC) () 
+field replaceable unit (FRU) () 
+IEC-320 () 
+joule () 
+mini connector ()
+Molex connector () 
+multimeter () 
+ohms ()
+P1 power connector ()
+power conditioning () 
+power supply fan () 
+power supply unit (PSU) () 
+rails () 
+resistance ()
+SATA power connector () 
+slot covers () 
+soft power () 
+surge suppressor () 
+uninterruptible power supply (UPS) () 
+volts (V) () 
+wattage (watts or W) ()
+(2)Key Term Quiz
+Use the Key Terms list to complete the sentences that follow. Not all terms will be used.
+1. Supply power to the floppy drive by using the __________________ from the power supply.
+2. The electric company provides __________________ power that the power supply converts to __________________ for use by the computer components.
+3. If the __________________ are left off the expansion slots, the computer may overheat.
+4. An ATX form factor power supply attaches to the motherboard with a(n) __________________ and supplies 5 V to the motherboard at all times.
+5. Be sure your surge suppressor has a(n) __________________ rating of at least 800.
+6. The measurement unit for the amount of electrons flowing past a certain point on a wire is __________________.
+7. The __________________ provides the basic cooling for the PC.
+8. Be sure the __________________ rating for your power supply is greater than the minimum required by all devices in the computer.
+9. The ability to split voltage supplies into separate __________________ ensures that no device will hog all of the available power.
+10. A spare part that a tech typically carries to replace a failed component in the field is called a(n) __________________.
+(2)Multiple-Choice Quiz
+1. Which of the following ATX12V features was introduced as part of the EPS12V standard?
+1. The P4 motherboard power connector
+2. Voltage rails
+3. The 6-pin AUX connector
+4. Soft power
+1. Which kind of fire extinguisher should you use for computer equipment?
+1. Class A
+2. Class B
+3. Class C
+4. Class D
+1. Under what conditions should a PC technician work inside the power supply?
+1. Only when it is unplugged.
+2. Only when the technician is wearing an anti-static wrist strap.
+3. Anytime, because the power supply only has low-energy DC electricity that will not hurt the technician.
+4. Never, because the power supply has capacitors that hold electrical charges that may harm the technician.
+1. What should you check first if a computer will not start and the fan in the power supply will not turn?
+1. The voltages coming out of the power supply
+2. The motherboard power connector
+3. The power coming into the power supply
+4. The power switch
+1. When you test voltage with a multimeter, you can assume the outlet or connector is functioning properly if the reading is within a certain percentage of the expected number. What is that maximum percentage by which the reading can vary?
+1. 5 percent
+2. 10 percent
+3. 20 percent
+4. 25 percent
+1. What voltage does an ATX12V P4 connector provide for motherboards?
+1. 3.3 V
+2. 3.3 V, 5 V
+3. 5 V
+4. 12 V
+1. When testing an AC outlet, what voltage should the multimeter show between the neutral and ground wires?
+1. 120 V
+2. 60 V
+3. 0 V
+4. –120 V
+1. What sort of power connector does a traditional hard drive typically use?
+1. Molex
+2. Mini
+3. Sub-mini
+4. Micro
+1. Arthur installed a new motherboard in his case and connected the ATX power, but his system would not turn on. He sees an extra 4-wire port on the motherboard. What’s he missing?
+1. He needs to plug in the P2 connector for powering  auxiliary components.
+2. He needs to plug in the P3 connector to power the case fans.
+3. He needs to plug in the P4 connector to power the processor.
+4. He needs to plug in the Aux connector to connect to a secondary power supply.
+1. What is the effect of exceeding the wattage capabilities of a power supply by inserting too many devices?
+1. The system will boot normally, but some of the devices will not function properly.
+2. The system will boot normally and all of the devices will work, but only for a limited time. After an hour or so, the system will spontaneously shut down.
+3. The system will not boot or turn on at all.
+4. The system will try to boot, but the overloaded power supply will fail, burning up delicate internal capacitors.
+1. Where do you put the multimeter leads when you test a Molex connector?
+1. The red lead should always touch the red wire; the black lead should touch a black ground wire.
+2. The red lead should always touch the black ground wire; the black lead should always touch the red hot wire.
+3. The red lead should always touch the yellow hot wire; the black lead should touch the red hot wire.
+4. The red lead should touch either the red or yellow hot wire; the black lead should touch a black ground wire.
+1. Which of the following problems points to a dying power supply?
+1. Intermittent lockups at bootup
+2. A power supply fan that does not turn
+3. A multimeter reading of 11 V for the 12-V power line
+4. A computer that won’t start by shorting the soft power jumpers
+1. What is the minimum PSU required for an ATX system that requires Molex, mini, and SATA connectors?
+1. ATX
+2. ATX12V 1.3
+3. ATX12V 2.0
+4. EPS12V
+1. Which of the following is not a PSU form factor?
+1. TFX12V
+2. SFX12V
+3. CFX12V
+4. LPX12V
+1. Which statement is true?
+1. Removing the expansion slot covers on the back of your case will improve cooling by allowing hot air to escape.
+2. Shop around when purchasing a case; you will often find good deals that include a powerful PSU.
+3. Always keep the power supply plugged in to the wall outlet when working on the inside of a computer, as this helps to ground it.
+4. If your power supply fails, don’t try to repair it; buy a new one.
+(2)Essay Quiz
+1. Jack and Denise have joined your study group. Because neither has any previous experience with basic electricity and its jargon, they want you to explain voltage, amperage, and wattage. In plain language, define these terms and explain what VA = W means.
+2. In the computer field, advances in one area often lead to advances in another area. Do you think improvements in the CPU and other computer devices and functions made the ATX form factor power supply necessary?
+3. Because microprocessors have become more powerful and more devices have been invented for the computer, the wattage demands for the PC have gone up. So has the need for cooling. Discuss the cooling devices that come with today’s PCs and what the user needs to know about keeping the PC cool.
+4. Helene’s computer worked fine last week. Although she has not changed anything since then, today her computer won’t even boot. You suspect that the power supply died. You know she does not have a multimeter. What will you tell her to check to confirm this opinion? If she does need to replace the power supply, how can she be sure the new one will work with her PC?
+(2)Lab Projects
+(3)Lab Project 10.1
+This chapter recommends a 500-W power supply for a new computer. Is that the wattage that manufacturers usually offer with their computers? Check the following Web sites to see what wattage comes with a new PC:
+1. www.dell.com
+2. www.gateway.com
+3. www.hp.com
+Do any of these companies mention a power supply upgrade with a higher wattage rating? If so, what are the wattages and what are the additional costs?
+(3)Lab Project 10.2
+Every technician needs a multimeter. Visit a local electronics store and look at its line of multimeters. (If a store is not nearby, you may use the Internet instead.) What features do the various multimeters offer? What kinds of measurements do they provide? Is the output from some in digital format and others in analog? Which output do you find easier to read? Is one kind more accurate than another? What price ranges are available for multimeters? Then, select the multimeter you would like to add to your toolkit. Why did you choose that model? Now start saving your pennies so you can buy it!
+End Textbook EOC
+Begin textbook solutions
+(2)Key Term Quiz Answers
+1. Supply power to the floppy drive by using the mini connector from the power supply.
+2. The electric company provides alternating current (AC) power that the power supply converts to direct current (DC) for use by the computer components.
+3. If the slot covers are left off the expansion slots, the computer may overheat.
+4. An ATX form factor power supply attaches to the motherboard with a(n) P1 power connector and supplies 5 V to the motherboard at all times.
+5. Be sure your surge suppressor has a(n) joule rating of at least 800.
+6. The measurement unit for the amount of electrons flowing past a certain point on a wire is amperes (amps or A).
+7. The power supply fan provides the basic cooling for the PC.
+8. Be sure the wattage (watts or W) rating for your power supply is greater than the minimum required by all devices in the computer.
+9. The ability to split voltage supplies into separate rails ensures that no device will hog all of the available power.
+10. A spare part that a tech typically carries to replace a failed component in the field is called a(n) field replaceable unit (FPU).
+(2)Multiple-Choice Quiz Answers
+1. Which of the following ATX12V features was introduced as part of the EPS12V standard?
+1. The P4 motherboard power connector
+2. Voltage rails
+3. The 6-pin AUX connector
+4. Soft power
+Answer: B
+1. Which kind of fire extinguisher should you use for computer equipment?
+1. Class A
+2. Class B
+3. Class C
+4. Class D
+Answer: C
+1. Under what conditions should a PC technician work inside the power supply?
+1. Only when it is unplugged.
+2. Only when the technician is wearing an anti-static wrist strap.
+3. Anytime, because the power supply only has low-energy DC electricity that will not hurt the technician.
+4. Never, because the power supply has capacitors that hold electrical charges that may harm the technician.
+Answer: D
+1. What should you check first if a computer will not start and the fan in the power supply will not turn?
+1. The voltages coming out of the power supply
+2. The motherboard power connector
+3. The power coming into the power supply
+4. The power switch
+Answer: C
+1. When you test voltage with a multimeter, you can assume the outlet or connector is functioning properly if the reading is within a certain percentage of the expected number. What is that maximum percentage by which the reading can vary?
+1. 5 percent
+2. 10 percent
+3. 20 percent
+4. 25 percent
+Answer: B
+1. What voltage does an ATX12V P4 connector provide for motherboards?
+1. 3.3 V
+2. 3.3 V, 5 V
+3. 5 V
+4. 12 V
+Answer: D
+1. When testing an AC outlet, what voltage should the multimeter show between the neutral and ground wires?
+1. 120 V
+2. 60 V
+3. 0 V
+4. –120 V
+Answer: C
+1. What sort of power connector does a traditional hard drive typically use?
+1. Molex
+2. Mini
+3. Sub-mini
+4. Micro
+Answer: A
+1. Arthur installed a new motherboard in his case and connected the ATX power, but his system would not turn on. He sees an extra 4-wire port on the motherboard. What’s he missing?
+1. He needs to plug in the P2 connector for powering  auxiliary components.
+2. He needs to plug in the P3 connector to power the case fans.
+3. He needs to plug in the P4 connector to power the processor.
+4. He needs to plug in the Aux connector to connect to a secondary power supply.
+Answer: C
+1. What is the effect of exceeding the wattage capabilities of a power supply by inserting too many devices?
+1. The system will boot normally, but some of the devices will not function properly.
+2. The system will boot normally and all of the devices will work, but only for a limited time. After an hour or so, the system will spontaneously shut down.
+3. The system will not boot or turn on at all.
+4. The system will try to boot, but the overloaded power supply will fail, burning up delicate internal capacitors.
+Answer: C
+1. Where do you put the multimeter leads when you test a Molex connector?
+1. The red lead should always touch the red wire; the black lead should touch a black ground wire.
+2. The red lead should always touch the black ground wire; the black lead should always touch the red hot wire.
+3. The red lead should always touch the yellow hot wire; the black lead should touch the red hot wire.
+4. The red lead should touch either the red or yellow hot wire; the black lead should touch a black ground wire.
+Answer: A
+1. Which of the following problems points to a dying power supply?
+1. Intermittent lockups at bootup
+2. A power supply fan that does not turn
+3. A multimeter reading of 11 V for the 12-V power line
+4. A computer that won’t start by shorting the soft power jumpers
+Answer: A
+1. What is the minimum PSU required for an ATX system that requires Molex, mini, and SATA connectors?
+1. ATX
+2. ATX12V 1.3
+3. ATX12V 2.0
+4. EPS12V
+Answer: C
+1. Which of the following is not a PSU form factor?
+1. TFX12V
+2. SFX12V
+3. CFX12V
+4. LPX12V
+Answer: D
+1. Which statement is true?
+1. Removing the expansion slot covers on the back of your case will improve cooling by allowing hot air to escape.
+2. Shop around when purchasing a case; you will often find good deals that include a powerful PSU.
+3. Always keep the power supply plugged in to the wall outlet when working on the inside of a computer, as this helps to ground it.
+4. If your power supply fails, don’t try to repair it; buy a new one.
+Answer: D
+(2)Essay Quiz Answers
+1. Jack and Denise have joined your study group. Because neither has any previous experience with basic electricity and its jargon, they want you to explain voltage, amperage, and wattage. In plain language, define these terms and explain what VA = W means.
+Answer: Electricity is a flow of electrons or negatively charged particles through a material. Because metallic wire allows electrons to flow freely, it is an excellent conductor. In a conductor, current flow refers to the flow of electrons. Volts, amps, and watts are three units of measurement for electricity. The pressure of electrons in a wire, specifically between two points, is called voltage and is measured in volts. Amperage, measured in amps, is the measure of current flow across a wire at a particular point. A watt is a unit of measurement of how much power a device requires. VA = W refers to the correlation of the three measurements. The formula means volts multiplied by amps equals watts, or the pressure times the current is equal to the power.
+1. In the computer field, advances in one area often lead to advances in another area. Do you think improvements in the CPU and other computer devices and functions made the ATX form factor power supply necessary?
+Answer: One of the factors that led to faster CPUs was reducing the power required by the CPU to help limit heat and prevent other problems. While the old AT power supply provided only 5-V and 12-V power, the ATX power supply also produces 3.3 V that is used by today’s CPUs and other motherboard components. As power management and remote access capabilities became more important, the power supply needed to take advantage of features such as soft power. Although the AT power supply does not include these functions, the ATX is fully capable of handling these and other power management features.
+1. Because microprocessors have become more powerful and more devices have been invented for the computer, the wattage demands for the PC have gone up. So has the need for cooling. Discuss the cooling devices that come with today’s PCs and what the user needs to know about keeping the PC cool.
+Answer: The power supply fan is the basic cooling device. Case fans are large, square fans that provide extra cooling for key components. Larger cases with multiple bays and slots usually have more spaces for case fans, because extra devices mean extra heat. If your system will have a large number of devices and drives, you should add as many fans as the case will accommodate. Closed computer cases help the fans keep things cool inside the box. It is important to ensure that expansion slot covers cover all empty expansion bays to assist in maintaining a steady airflow.
+1. Helene’s computer worked fine last week. Although she has not changed anything since then, today her computer won’t even boot. You suspect that the power supply died. You know she does not have a multimeter. What will you tell her to check to confirm this opinion? If she does need to replace the power supply, how can she be sure the new one will work with her PC?
+Answer: Helene should first plug a lamp or another device into the electrical socket to make sure it is supplying AC. Next, she should make sure the power cord is plugged correctly into both the wall outlet and her computer. She can then turn on the PC and listen for any sounds. She should also check to see if the power supply fan is turning. If she does need to replace the power supply, she can either check the documentation that came with her computer or look at the power supply itself to find a replacement number. Finally, she can remove the old power supply and take it with her to the computer store when she buys the new one.
+(2)Cross Check Answers
+(3)ATX Form Factor
+Three ATX components define a system—not just a motherboard—as ATX: an ATX motherboard, power supply, and case (or system unit). The ATX motherboard comes with a standard layout of primary pieces, such as CPU, chipset, and memory, and has several standardized external connections. The ATX power supply provides a 20- or 24-wire P1 power connector, and all modern ATX power supplies have a 4-wire P4 connector for additional motherboard power. Cases must have the proper standouts and backplates to support ATX motherboards.
+Improvements in ATX over AT were many, but the most visible are soft power and an increased number of built-in input/output devices.
+ATX comes in three standard form factors (although variations exist within the three categories): full ATX, microATX, and FlexATX.
+Begin Trade EOC
+(1)Chapter Review 
+(2)Questions
+1. What is the proper voltage for a U.S. electrical outlet?
+1. 120 V
+2. 60 V
+3. 0 V
+4. –120 V
+1. What voltages does an ATX12V P1 connector provide for the motherboard?
+1. 3.3 V, 5 V
+2. 3.3 V, 12 V
+3. 5 V, 12 V
+4. 3.3 V, 5 V, 12 V
+1. What sort of power connector does a floppy disk drive typically use?
+1. Molex
+2. Mini
+3. Sub-mini
+4. Micro
+1. Joachim ordered a new power supply but was surprised when it arrived because it had an extra 4-wire connector. What is that connector?
+1. P2 connector for plugging in auxiliary components
+2. P3 connector for plugging in case fans
+3. P4 connector for plugging into modern motherboards
+4. Aux connector for plugging into a secondary power supply
+1. What should you keep in mind when testing DC connectors?
+1. DC has polarity. The red lead should always touch the hot wire; the black lead should touch a ground wire.
+2. DC has polarity. The red lead should always touch the ground wire; the black lead should always touch the hot wire.
+3. DC has no polarity, so you can touch the red lead to either hot or ground.
+4. DC has no polarity, so you can touch the black lead to either hot or neutral but not ground.
+1. What voltages should the two hot wires on a Molex connector read?
+1. Red = 3.3 V; Yellow = 5 V
+2. Red = 5 V; Yellow = 12 V
+3. Red = 12 V; Yellow = 5 V
+4. Red = 5 V; Yellow = 3.3 V
+1. Why is it a good idea to ensure that the slot covers on your computer case are all covered?
+1. To maintain good airflow inside your case.
+2. To help keep dust and smoke out of your case.
+3. Both A and B are correct reasons.
+4. Trick question! Leaving a slot uncovered doesn’t hurt anything.
+1. A PC’s power supply provides DC power in what standard configuration?
+1. Two primary voltage rails, 12 volts and 5 volts, and an auxiliary 3.3 volt connector
+2. Three primary voltage rails, one each for 12-volt, 5-volt, and 3.3-volt connectors
+3. One primary DC voltage rail for 12-volt, 5-volt, and 3.3-volt connectors
+4. One voltage rail with a 12-volt connector for the motherboard, a second voltage rail with a 12-volt connector for the CPU, and a third voltage rail for the 5-volt and 3.3-volt connectors
+1. What feature of ATX systems prevents a user from turning off a system before the operating system has been shut down?
+1. Motherboard power connector
+2. CMOS setup
+3. Sleep mode
+1. Soft power
+1. How many pins does a SATA power connector have?
+1. 6
+2. 9
+3. 12
+4. 15
+(2)Answers
+1. A. U.S. outlets run at 120 V.
+2. D. An ATX12V power supply P1 connector provides 3.3, 5, and 12 volts to the motherboard.
+3. B. Floppy drives commonly use a mini connector.
+4. C. The P4 connector goes into the motherboard to support more power-hungry chips.
+5. A. DC has polarity. The red lead should always touch the hot wire; the black lead should touch a ground wire.
+6. B. A Molex connector’s red wires should be at 5 volts; the yellow wire should be at 12 volts.
+7. C. Both A and B are correct reasons. Keeping the slots covered helps keep a good airflow in your case and keeps the dust and smoke away from all those sensitive internal components.
+8. B. The standard PC power supply configuration has three primary voltage rails, one each for 12-volt, 5-volt, and 3.3-volt connectors.
+9. D. The soft power feature of ATX systems prevents a user from turning off a system before the operating system has been shut down.
+10. D. SATA power connectors have 15 pins.
+End Trade EOC
