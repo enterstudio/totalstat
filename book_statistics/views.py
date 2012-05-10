@@ -58,18 +58,28 @@ def _frequency_plot(file, text):
 	pylab.ylabel(ylabel) 
 	pylab.savefig('public/graphs/%s_frequency.png' % file)
 
+def _create_dispersion_plot(file):
+	if not os.path.exists("words/%s" % file): return
+
+	raw = open("documents/%s" % file).read()
+	tokens = nltk.word_tokenize(raw)
+	text = nltk.Text(tokens)
+	words = [word.strip() for word in open("words/%s" % file).read().decode('utf8').encode('ascii', 'ignore').split(',')]
+	print words
+	_create_plot(file, text,words)
+
+
+def _create_frequency_plot(file):
+	raw = open("documents/%s" % file).read()
+	tokens = nltk.word_tokenize(raw)
+	text = nltk.Text(tokens)
+	fdist1 = nltk.FreqDist(text)
+	_frequency_plot(file, fdist1)	
+
 def dispersion(request):
 	files = os.listdir('documents')
 	for file in files:
-		raw = open("documents/%s" % file).read()
-		tokens = nltk.word_tokenize(raw)
-		text = nltk.Text(tokens)
-		_create_plot(file, text,["users", "groups", "ntfs", "permissions"])
-		
-		raw = open("documents/%s" % file).read()
-		tokens = nltk.word_tokenize(raw)
-		text = nltk.Text(tokens)
-		fdist1 = nltk.FreqDist(text)
-		_frequency_plot(file, fdist1)
+		_create_dispersion_plot(file)
+		_create_frequency_plot(file)
 		
 	return render_to_response("index.html", {'chapters' : [1,2,3,4]}, context_instance = RequestContext(request))
