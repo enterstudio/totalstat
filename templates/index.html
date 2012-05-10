@@ -39,20 +39,19 @@
         </div>
 	        
 		<div id="main">  
+			{% for chapter in chapters %}
 		    <div class="wrapper">
 		    	<div class='box box_small box1'>
-		    		<h3><a href='single.html'>Dispersion Plot</a></h3>
-		    		<a href='{{ STATIC_URL }}dispersion.png' rel='lightbox[grouped]' ><img width="280" height="180" src="{{ STATIC_URL }}dispersion.png" alt="" /></a>
+		    		<h3><a href='single.html'>Chapter {{chapter}} Dispersion</a></h3>
+		    		<a href='{{ STATIC_URL }}graphs/ch{{chapter}}.txt_dispersion.png' rel='lightbox[grouped]' ><img width="280" height="180" src="{{ STATIC_URL }}graphs/ch{{chapter}}.txt_dispersion.png" alt="" /></a>
 		    	</div> <!--end box_small-->
 		    	
 		    	<div class='box box_small box2'>
-		    		<h3><a href='{{ STATIC_URL }}single.html'>Frequency Plot</a></h3>
-		    		<a href='{{ STATIC_URL }}frequency.png' rel='lightbox[grouped]' ><img width="280" height="180" src="{{ STATIC_URL }}frequency.png" alt="" /></a>
+		    		<h3><a href='{{ STATIC_URL }}single.html'>Chapter {{chapter}} Frequency</a></h3>
+		    		<a href='{{ STATIC_URL }}graphs/ch{{chapter}}.txt_frequency.png' rel='lightbox[grouped]' ><img width="280" height="180" src="{{ STATIC_URL }}graphs/ch{{chapter}}.txt_frequency.png" alt="" /></a>
 		    	</div> <!--end box_small-->
-	            	
-	            	
             </div><!--end wrapper-->
-	            
+	        {% endfor %}
 		</div><!--end main-->
 	</div><!--end top-->   
 	
